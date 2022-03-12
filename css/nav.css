@@ -1,0 +1,54 @@
+/*#########################*/
+/*   Barre de navigation   */
+/*#########################*/
+
+nav {
+    font-size: 1.5em;
+    font-family: Potta One;
+    margin:1em;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+nav ul li{
+    display: inline;
+    border-style:solid;
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: rgb(122, 60, 202);
+    padding:10px;
+    margin: 10px;
+}
+
+/*################*/
+/*  Liens du nav  */
+/*################*/
+
+nav a:link {
+    background:-webkit-linear-gradient(left, rgb(144, 9, 156) 30%, rgb(170, 33, 224) 90%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+}
+nav a:visited {
+    background:-webkit-linear-gradient(left, rgb(207, 109, 16) 30%, rgb(224, 179, 33) 90%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+}
+nav a:hover {
+    background:-webkit-linear-gradient(left, rgb(30, 21, 112) 30%, rgb(56, 53, 206) 90%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+}
+nav a:active {
+    background:-webkit-linear-gradient(left, rgb(22, 82, 150) 30%, rgb(32, 127, 170) 90%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+}
