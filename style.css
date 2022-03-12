@@ -10,3 +10,31 @@ body {
     background-color: #1c1c1e;
     color: #fefefe; 
 }
+
+/*#########################*/
+/*        Les titres       */
+/*#########################*/
+
+h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Potta One', cursive;
+    font-family: 'Rubik', sans-serif;
+}
+
+h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Potta One', cursive;
+    font-family: 'Rubik', sans-serif;
+}
+
+.contacts {
+    text-align: center;
+}
+
+/*#########################*/
+/*       Les images        */
+/*#########################*/
+
+img {
+    border-radius: 300px;
+}

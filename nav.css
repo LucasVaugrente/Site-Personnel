@@ -16,8 +16,10 @@ nav {
 
 nav ul li{
     display: inline;
-    border-style:inset;
+    border-style:solid;
     border-radius: 20px;
+    border-width: 3px;
+    border-color: rgb(122, 60, 202);
     padding:10px;
     margin: 10px;
 }
