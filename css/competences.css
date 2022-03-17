@@ -2,11 +2,34 @@
 /*        Les compétences        */
 /*###############################*/
 
-.competences h3, .competences div {
+#competences h3, #competences div {
     text-align: center;
 }
 
-.competences div {
+#competences div {
     display:flex;
     justify-content: space-around;
+}
+
+a {
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Potta One', cursive;
+    font-family: 'Rubik', sans-serif;
+}
+
+#competences a:link {
+    text-decoration:none; 
+    color:white;
+}
+
+#competences a:visited {
+    color:white;
+}
+
+#competences a:hover {
+    color:white;
+}
+
+#competences a:active {
+    color:white;
 }

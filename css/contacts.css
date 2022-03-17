@@ -1,4 +1,28 @@
-h1 + div {
-    display : flex;
-    flex-direction: row;
+#contact div {
+    text-align: center;
+    display:flex;
+    justify-content: space-around;
+}
+
+a {
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Potta One', cursive;
+    font-family: 'Rubik', sans-serif;
+}
+
+#contact a:link {
+    text-decoration:none; 
+    color:white;
+}
+
+#contact a:visited {
+    color:white;
+}
+
+#contact a:hover {
+    color:white;
+}
+
+#contact a:active {
+    color:white;
 }

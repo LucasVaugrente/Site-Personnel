@@ -21,6 +21,11 @@ h1, h2, h3 {
     font-family: 'Rubik', sans-serif;
 }
 
+h1 {
+    text-indent: 5%;
+    font-size: 40px;
+}
+
 h3 {
     font-size:30px;
 }
@@ -89,7 +94,7 @@ img {
 @keyframes slide {
     to { margin-left : 90%; }
 }
-
+/*
 #corps {    
     display : none;
-}
+}*/
