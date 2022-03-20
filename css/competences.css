@@ -9,6 +9,8 @@
 #competences div {
     display:flex;
     justify-content: space-around;
+    background-color: rgb(94, 94, 94);
+    border-radius: 40px;
 }
 
 a {
