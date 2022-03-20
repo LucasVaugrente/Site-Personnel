@@ -1,0 +1,19 @@
+/*###############################*/
+/*          Les projets          */
+/*###############################*/
+
+#projets article {
+    background-color: rgb(218, 203, 203);
+    border-radius: 30px;
+    max-height: 20em;
+}
+
+.p1, .p3, .p5 {
+    margin-left: 5%;
+    margin-right: 50%;
+}
+
+.p2, .p4 {
+    margin-left: 45%;
+    margin-right: 10%;
+}
