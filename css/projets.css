@@ -6,6 +6,17 @@
     background-color: rgb(218, 203, 203);
     border-radius: 30px;
     max-height: 20em;
+    margin-top: 1em;
+    padding: 1em;
+    padding-left: 2em;
+    font-size: 20px;
+}
+
+#projets h2 {
+    background:-webkit-linear-gradient(left, rgb(144, 9, 156) 30%, rgb(170, 33, 224) 90%);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
 }
 
 .p1, .p3, .p5 {
