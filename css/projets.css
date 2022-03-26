@@ -2,7 +2,7 @@
 /*          Les projets          */
 /*###############################*/
 
-#projets article {
+.projets article {
     background-color: rgb(218, 203, 203);
     border-radius: 30px;
     max-height: 20em;
@@ -12,19 +12,40 @@
     font-size: 20px;
 }
 
-#projets h2 {
-    background:-webkit-linear-gradient(left, rgb(144, 9, 156) 30%, rgb(170, 33, 224) 90%);
-    background-clip:text;
-    -webkit-background-clip:text;
-    color:transparent;
+.projets h2 {
+    color:#1c1c1e;
 }
 
-.p1, .p3, .p5 {
+.projet1, .projet3, .projet5 {
     margin-left: 5%;
     margin-right: 50%;
 }
 
-.p2, .p4 {
+.projet2, .projet4 {
     margin-left: 45%;
     margin-right: 10%;
+}
+
+.projets article .projet1 {
+    margin-right:55%;
+    padding-bottom: 1em;
+}
+
+.projet2 img {
+    border-radius: 10px;
+    float:right;
+}
+
+.projet1 video {
+    border-radius: 10px;
+}
+
+.projet1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projet1 p {
+    overflow-wrap: break-word;
 }

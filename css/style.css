@@ -34,67 +34,6 @@ h3 {
 /*       Les images        */
 /*#########################*/
 
-img {
+#myself img, #contact img{
     border-radius: 300px;
 }
-
-/*##########################*/
-/*  Chargement de la page   */
-/*##########################*/
-
-.container .bar {
-    font-size : 20px;
-    width : 200px;
-    height : 25px;
-    margin : 100px auto;
-    margin-top : 250px;
-    border : 3px solid rgb(84, 43, 131);
-    border-radius : 7px;
-    position : relative;
-    background : #825cc0;
-}
-
-.container .bar::after {
-    content : "Chargement...";
-    font-family: Potta One;
-    position : absolute;
-    left:14%;
-    top:auto;
-} 
-
-.container .bar .sphere {
-    display : block;
-    width : 24px;
-    height : 100%;
-    background : rgb(84, 43, 131);
-    border-radius: 50%;
-    -moz-animation : slide 1.75s infinite ease-in-out alternate;
-    -webkit-animation: slide 1.75s infinite ease-in-out alternate;
-    -ms-animation : slide 1.75s infinite ease-in-out alternate;
-    -o-animation : slide 1.75s infinite ease-in-out alternate;
-    animation : slide 1.75s infinite ease-in-out alternate;
-}
-
-@-moz-keyframes slide {
-    to { margin-left : 90%; }
-}
-
-@-webkit-keyframes slide {
-    to { margin-left : 90%; }
-}
-
-@-ms-keyframes slide {
-    to { margin-left : 90%; }
-}
-
-@-o-keyframes slide {
-    to { margin-left : 90%; }
-}
-
-@keyframes slide {
-    to { margin-left : 90%; }
-}
-/*
-#corps {    
-    display : none;
-}*/
