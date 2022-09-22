@@ -1,5 +1,14 @@
 #myself div {
     display: flex;
+    background-color: antiquewhite;
+    color: black;
+}
+
+.titre {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 1em;
+    padding-left: 5em;
 }
 
 .profil {
