@@ -1,11 +1,9 @@
 #myself div {
     display: flex;
-    background-image: url("img/bg.jpg");
 }
 
 .profil {
     font-size: 1.2em;
-    font-family: 'Fredoka', sans-serif;
     text-align: center;
     padding: 1em;
     padding-left: 5em;
@@ -14,7 +12,6 @@
 }
 
 .parcours {
-    font-family: 'Fredoka', sans-serif;
     font-size: 1.2em;
     padding: 1em;
     padding-top: 3em;

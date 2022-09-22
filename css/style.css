@@ -15,10 +15,9 @@ body {
 /*        Les titres       */
 /*#########################*/
 
-h1, h2, h3 {
+h1, h2, h3, a, p {
     font-family: 'Fredoka', sans-serif;
-    font-family: 'Potta One', cursive;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 h1 {
