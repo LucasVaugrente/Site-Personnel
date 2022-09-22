@@ -1,5 +1,6 @@
 #myself div {
     display: flex;
+    background-image: url("img/bg.jpg");
 }
 
 .profil {
