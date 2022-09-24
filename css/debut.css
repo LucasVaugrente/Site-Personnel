@@ -49,7 +49,6 @@
 }
 
 #debut a:hover {
-    transform: scaleX(0.999);
     text-decoration:underline;
 }
 

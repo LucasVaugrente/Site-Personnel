@@ -40,6 +40,17 @@
     width: 35px;
 }
 
+.navbar a:link {
+    color: white;
+}
+
+.navbar a:hover {
+    color: rgb(131, 253, 245);
+}
+
+.navbar a:active {
+    opacity: 0.6;
+}
 
 @media screen and (max-width:1100px) {
 
