@@ -24,18 +24,17 @@
 
 .btn-commencer {
     margin-top: 2em;
-    padding: 1em;
+    padding: 0.9em;
     width: 10em;
-    border-style: solid;
+    color: rgb(131, 253, 245);
     background-color: rgb(23, 17, 54);
+    font-weight: bold;
+    font-size: 1em;
+    border-style: solid;
     border-color: rgb(131, 253, 245);
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.7s ease;
-    
-    color: rgb(131, 253, 245);
-    font-weight: bold;
-    font-size: 1.2em;
 }
 
 .btn-commencer:hover {
