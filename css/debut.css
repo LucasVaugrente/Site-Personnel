@@ -1,5 +1,19 @@
 #debut {
-    padding: 30vh 40vh 30vh 40vh;
+    padding: 30vh 40vh 30vh 20vh;
     background-color: rgb(23, 17, 54);
     color: rgb(67, 123, 220);
+    display: flex;
+    flex-direction: column;
+}
+
+.nom {
+    font-size: 3vw;
+}
+
+.statut {
+    font-size: 5vw;
+}
+
+.pitch {
+    font-size: 1.1em;
 }
