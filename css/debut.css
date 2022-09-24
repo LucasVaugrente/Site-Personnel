@@ -6,16 +6,20 @@
     flex-direction: column;
 }
 
+.bienvenue {
+    font-size: 1.2vw;
+}
+
 .nom {
-    font-size: 3vw;
+    font-size: 3.2vw;
 }
 
 .statut {
-    font-size: 5vw;
+    font-size: 4.2vw;
 }
 
 .pitch {
-    font-size: 1.1em;
+    font-size: 1.2vw;
 }
 
 .btn-commencer {
@@ -27,19 +31,37 @@
     border-color: rgb(131, 253, 245);
     border-radius: 25px;
     cursor: pointer;
+    transition: all 0.7s ease;
 }
 
-.btn-commencer:hover,  .btn-commencer:hover a {
+.btn-commencer:hover {
     background-color: rgb(131, 253, 245);
-    color:rgb(23, 17, 54);
+    transition: all 0.7s ease;
 }
 
-.btn-commencer:active {
-    opacity:0.5;
+.btn-commencer:hover a {
+    color:rgb(23, 17, 54);
 }
 
 .btn-commencer a {
     color: rgb(131, 253, 245);
     font-weight: bold;
     font-size: 1.2em;
+}
+
+#debut a:link {
+    color: rgb(131, 253, 245);
+}
+
+#debut a:hover {
+    transform: scaleX(0.999);
+    text-decoration:underline;
+}
+
+#debut a:visited {
+    color: rgb(131, 253, 245);
+}
+
+#debut a:active {
+    opacity: 0.6;
 }
