@@ -1,11 +1,12 @@
 #myself div {
     display: flex;
-    background-color: antiquewhite;
+    background-color: rgb(223, 202, 240);
     color: black;
 }
 
 #myself h1 {
     padding-top: 23vh;
+    background-color: rgb(223, 202, 240);
 }
 
 .titre {
