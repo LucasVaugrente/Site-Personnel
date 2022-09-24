@@ -33,32 +33,3 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
-
-/*################*/
-/*  Liens dans le texte  */
-/*################*/
-
-/* a:link {
-    background:-webkit-linear-gradient(left, rgb(144, 9, 156) 30%, rgb(170, 33, 224) 90%);
-    background-clip:text;
-    -webkit-background-clip:text;
-    color:transparent;
-}
-a:visited {
-    background:-webkit-linear-gradient(left, rgb(207, 109, 16) 30%, rgb(224, 179, 33) 90%);
-    background-clip:text;
-    -webkit-background-clip:text;
-    color:transparent;
-}
-a:hover {
-    background:-webkit-linear-gradient(left, rgb(30, 21, 112) 30%, rgb(56, 53, 206) 90%);
-    background-clip:text;
-    -webkit-background-clip:text;
-    color:transparent;
-}
-a:active {
-    background:-webkit-linear-gradient(left, rgb(22, 82, 150) 30%, rgb(32, 127, 170) 90%);
-    background-clip:text;
-    -webkit-background-clip:text;
-    color:transparent;
-} */

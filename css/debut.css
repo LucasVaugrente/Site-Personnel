@@ -32,21 +32,17 @@
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.7s ease;
+    
+    color: rgb(131, 253, 245);
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .btn-commencer:hover {
     background-color: rgb(131, 253, 245);
-    transition: all 0.7s ease;
-}
-
-.btn-commencer:hover a {
     color:rgb(23, 17, 54);
-}
-
-.btn-commencer a {
-    color: rgb(131, 253, 245);
-    font-weight: bold;
-    font-size: 1.2em;
+    text-decoration: none;
+    transition: all 0.7s ease;
 }
 
 #debut a:link {
