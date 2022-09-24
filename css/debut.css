@@ -17,3 +17,29 @@
 .pitch {
     font-size: 1.1em;
 }
+
+.btn-commencer {
+    margin-top: 2em;
+    padding: 1em;
+    width: 10em;
+    border-style: solid;
+    background-color: rgb(23, 17, 54);
+    border-color: rgb(131, 253, 245);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn-commencer:hover,  .btn-commencer:hover a {
+    background-color: rgb(131, 253, 245);
+    color:rgb(23, 17, 54);
+}
+
+.btn-commencer:active {
+    opacity:0.5;
+}
+
+.btn-commencer a {
+    color: rgb(131, 253, 245);
+    font-weight: bold;
+    font-size: 1.2em;
+}
