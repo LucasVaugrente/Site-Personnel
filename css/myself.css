@@ -4,6 +4,10 @@
     color: black;
 }
 
+#myself h1 {
+    padding-top: 23vh;
+}
+
 .titre {
     font-size: 1.2em;
     text-align: center;
@@ -33,7 +37,7 @@
 /*  Liens dans le texte  */
 /*################*/
 
-a:link {
+/* a:link {
     background:-webkit-linear-gradient(left, rgb(144, 9, 156) 30%, rgb(170, 33, 224) 90%);
     background-clip:text;
     -webkit-background-clip:text;
@@ -56,4 +60,4 @@ a:active {
     background-clip:text;
     -webkit-background-clip:text;
     color:transparent;
-}
+} */

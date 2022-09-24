@@ -20,7 +20,7 @@ nav ul li{
     margin: 10px;
 }
 
-header {
+.nav-bar {
     background-color: #1c1c1e;
     position:sticky;
     top:0px;

@@ -14,24 +14,16 @@
     <!-- Import des polices utilisés -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Potta+One&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Potta+One&family=Rubik:ital@1&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <!-- Import des fichiers css-->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/nav.css">
+    <!-- <link rel="stylesheet" href="css/nav.css"> -->
     <link rel="stylesheet" href="css/myself.css">
-    <link rel="stylesheet" href="css/projets.css">
+    <!-- <link rel="stylesheet" href="css/projets.css">
     <link rel="stylesheet" href="css/competences.css">
-    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/contacts.css"> -->
+    <link rel="stylesheet" href="css/debut.css">
 
     <!-- Titre de l'onglet de la page -->
     <title>Lucas Vaugrente</title>
@@ -42,39 +34,40 @@
 
     <main>
 
-        <header id="accueil">
-
-            <nav>
-                <img src="img/logo2.png" title="Logo" alt="Logo" width="100px" height="100px">
+        <nav class="navbar">
+            <a href="#" class="logo">Lucas Vaugrente</a>
+            <div class="nav-links">
                 <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#myself">A propos de moi</a></li>
-                    <li><a href="#projets">Projets</a></li>
-                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#debut">Home</a></li>
+                    <li><a href="#myself">About</a></li>
+                    <li><a href="#projets">Projects</a></li>
+                    <li><a href="#competences">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
-
-        </header>
+            </div>
+            
+            <img src="img/menu-btn.png" alt="Menu Burger" title="Icône Menu Burger" class="menu-burger">
+        </nav>
 
         <div id="debut">
 
-            <p>Bonjour, je suis</p>
-            <h3>Lucas Vaugrente.</h3>
-            <h2>Etudiant en Informatique.</h2>
-            <p>J'étudie en ce moment à l'IUT de Lannion pour avoir le diplôme du BUT Informatique, durant ma troisième année je compte faire une alternance dans le développement web et d'application.</p>
+            <span class="bienvenue">Bienvenue sur mon site, je suis</span>
+            <span class="nom">Lucas Vaugrente.</span>
+            <span class="statut">Etudiant en Informatique.</span>
+            <span class="pitch">J'étudie en ce moment à l'IUT de Lannion pour avoir le diplôme du BUT Informatique, durant ma troisième année je compte faire une alternance dans le développement web et d'application.</span>
 
             <a href="#myself">Commencer</a>
 
         </div>
 
+
         <div id="myself">
 
-            <div>
+            <h1 class="titre">
+                Qui suis-je ?
+            </h1>
 
-                <h1 class="titre">
-                    Qui suis-je ?
-                </h1>
+            <div>
 
                 <div class="profil">
                     <img src="img/matete2.png" alt="Mon portait" title="Mon portait" width="350px" height="350px">
@@ -360,5 +353,14 @@
     </main>
 
 </body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu-burger");
+    const navLinks = document.querySelector(".nav-links ");
+
+    menuHamburger.addEventListener('click', ()=> {
+        navLinks.classList.toggle('mobile-menu');
+    })
+</script>
 
 </html>
