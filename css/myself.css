@@ -21,17 +21,6 @@
     padding-left: 6em;
 }
 
-.reveal {
-    opacity: 0;
-    transform: translateY(-30px);
-}
-
-.reveal-visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: .3s;
-}
-
 .profil img {
     border-radius: 50%;
     box-shadow: 5px 5px 10px rgb(103, 103, 103);
