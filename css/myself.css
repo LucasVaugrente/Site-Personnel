@@ -6,14 +6,13 @@
 }
 
 #myself h1 {
-    padding-top: 23vh;
+    padding-top: 16vh;
     background-color: rgb(223, 202, 240);
 }
 
 .titre {
-    font-size: 2em;
+    font-size: 3vw;
     text-align: center;
-    padding: 1em;
 }
 
 .profil {
@@ -26,11 +25,6 @@
     box-shadow: 5px 5px 10px rgb(103, 103, 103);
 }
 
-.para1, .para2 {
-    text-indent: 20px; 
-    padding: 0 2em 1em 2em ;
-}
-
 .parcours {
     font-size: 1.2em;
     padding: 1em;
@@ -38,4 +32,39 @@
     display : flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+.parcours a:link {
+    color: rgb(194, 47, 47);
+}
+
+.parcours a:hover {
+    text-decoration:underline;
+}
+
+.parcours a:visited {
+    color: rgb(194, 47, 47);
+}
+
+.parcours a:active {
+    opacity: 0.6;
+}
+
+.para1, .para2 {
+    text-indent: 20px; 
+    padding: 0 2em 1em 2em ;
+}
+
+.parcours_etu {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.but-info, .lycee {
+    background-color: rgb(208, 182, 230);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgb(103, 103, 103);
+    text-align: center;
 }
