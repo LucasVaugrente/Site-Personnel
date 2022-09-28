@@ -3,16 +3,14 @@
     background-color: rgb(223, 202, 240);
     align-items: center;
     color: black;
+    padding-bottom: 2em;
 }
 
-#myself h1 {
-    padding-top: 16vh;
-    background-color: rgb(223, 202, 240);
-}
-
-.titre {
+.titre-myself {
     font-size: 3vw;
     text-align: center;
+    padding-top: 16vh;
+    background-color: rgb(223, 202, 240);
 }
 
 .profil {
@@ -61,7 +59,7 @@
 }
 
 .but-info, .lycee {
-    background-color: rgb(208, 182, 230);
+    background-color: rgb(216, 194, 235);
     padding: 1em;
     margin: 1em;
     border-radius: 25px;

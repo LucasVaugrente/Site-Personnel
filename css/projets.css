@@ -2,50 +2,14 @@
 /*          Les projets          */
 /*###############################*/
 
-.projets article {
-    background-color: rgb(218, 203, 203);
-    border-radius: 30px;
-    max-height: 20em;
-    margin-top: 1em;
-    padding: 1em;
-    padding-left: 2em;
-    font-size: 20px;
+.titre-projets {
+    font-size: 3vw;
+    text-align: center;
+    padding-top: 16vh;
+    background-color: rgb(23, 17, 54);
+    color: white;
 }
 
-.projets h2 {
-    color:#1c1c1e;
-}
-
-.projet1, .projet3, .projet5 {
-    margin-left: 5%;
-    margin-right: 50%;
-}
-
-.projet2, .projet4 {
-    margin-left: 45%;
-    margin-right: 10%;
-}
-
-.projets article .projet1 {
-    margin-right:55%;
-    padding-bottom: 1em;
-}
-
-.projet2 img {
-    border-radius: 10px;
-    float:right;
-}
-
-.projet1 video {
-    border-radius: 10px;
-}
-
-.projet1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.projet1 p {
-    overflow-wrap: break-word;
+.section-projets {
+    background-color: rgb(23, 17, 54);;
 }

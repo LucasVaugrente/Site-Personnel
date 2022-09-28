@@ -21,9 +21,9 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/debut.css">
     <link rel="stylesheet" href="css/myself.css">
-    <!-- <link rel="stylesheet" href="css/projets.css">
-    <link rel="stylesheet" href="css/competences.css">
-    <link rel="stylesheet" href="css/contacts.css"> -->
+    <link rel="stylesheet" href="css/projets.css">
+    <!-- <link rel="stylesheet" href="css/competences.css">-->
+    <!--<link rel="stylesheet" href="css/contacts.css"> -->
 
     <!-- Titre de l'onglet de la page -->
     <title>Lucas Vaugrente</title>
@@ -63,7 +63,7 @@
 
         <div id="myself">
 
-            <h1 class="titre">
+            <h1 class="titre-myself">
                 Qui suis-je ?
             </h1>
 
@@ -108,81 +108,82 @@
 
         <div id="projets" class="projets">
 
-            <h1>
+            <h1 class="titre-projets">
                 Projets
             </h1>
 
-            <article class="projet1">
+            <section class="section-projets">
 
-                <h2>Space Invaders</h2>
+                <article class="projet1">
 
-                <p>
-                    <a>Langage : Python</a><br>
-                    <a>Module : Pygame</a><br>
-                    <a>Projet à 4</a><br>
-                    <a>Acquis : </a><br>
-                    <a href="https://github.com/Luvey35/Space_Invaders" target="_blank">Projet sur GitHub</a>
-                </p>
+                    <h2>Space Invaders</h2>
+    
+                    <ul>
+                        <p class="p1-pitch">Ce projet codé en <a href="">Python</a> avec le module <a href="">Pygame</a> est une reproduction du jeu Space Invaders, qui consiste à éliminer des obstacles qui s'approchent de nous en se déplacant de gauche à droite.</p>
+                        <a href="https://github.com/Luvey35/Space_Invaders" target="_blank">Projet sur GitHub</a>
+                    </ul>
+    
+                    <!-- <video src="videos/space_invaders.mp4" autoplay="autoplay" preload="auto" width="400px" height="300px"
+                        loop></video> -->
+    
+                </article>
+    
+                <article class="projet2">
+    
+                    <!-- <img src="img/labyrinthe.png" alt="Labyrithne" title="Labyrithne" width="200px" height="200px"> -->
+    
+                    <h2>Labyrinthe</h2>
+    
+                    <p>
+                        <a>Langage : Python</a><br>
+                        <a>Module : Pygame</a><br>
+                        <a>Projet à 2</a><br>
+                        <a>Acquis : </a><br>
+                        <a href="https://github.com/Luvey35/Labyrinthe" target="_blank">Projet sur GitHub</a>
+                    </p>
+    
+                </article>
+    
+                <article class="projet3">
+    
+                    <h2>Yams</h2>
+    
+                    <ul>
+                        <li><a>Langage : C</a></li>
+                        <li><a>Projet seul</a></li>
+                        <li><a>Acquis : </a></li>
+                        <li><a href="https://github.com/Luvey35/Yams" target="_blank">Projet sur GitHub</a></li>
+                    </ul>
+    
+                </article>
+    
+                <article class="projet4">
+    
+                    <h2>Site Kohfrais</h2>
+    
+                    <ul>
+                        <li><a>Langage : HTML, CSS, Bootstrap</a></li>
+                        <li><a>Projet à 4</a></li>
+                        <li><a>Acquis : </a></li>
+                        <li><a href="https://github.com/Luvey35/Site_KohFrais" target="_blank">Projet sur GitHub</a></li>
+                    </ul>
+    
+                </article>
+    
+                <article class="projet5">
+    
+                    <h2>Mon Site Web Personnelle</h2>
+    
+                    <ul>
+                        <li><a>Langage : HTML, CSS</a></li>
+                        <li><a>Projet seul</a></li>
+                        <li><a>Acquis : </a></li>
+                        <li><a href="https://github.com/Luvey35/Site_Personnelle" target="_blank">Projet sur GitHub</a></li>
+                    </ul>
+    
+                </article>
 
-                <!-- <video src="videos/space_invaders.mp4" autoplay="autoplay" preload="auto" width="400px" height="300px"
-                    loop></video> -->
-
-            </article>
-
-            <article class="projet2">
-
-                <!-- <img src="img/labyrinthe.png" alt="Labyrithne" title="Labyrithne" width="200px" height="200px"> -->
-
-                <h2>Labyrinthe</h2>
-
-                <p>
-                    <a>Langage : Python</a><br>
-                    <a>Module : Pygame</a><br>
-                    <a>Projet à 2</a><br>
-                    <a>Acquis : </a><br>
-                    <a href="https://github.com/Luvey35/Labyrinthe" target="_blank">Projet sur GitHub</a>
-                </p>
-
-            </article>
-
-            <article class="projet3">
-
-                <h2>Yams</h2>
-
-                <ul>
-                    <li><a>Langage : C</a></li>
-                    <li><a>Projet seul</a></li>
-                    <li><a>Acquis : </a></li>
-                    <li><a href="https://github.com/Luvey35/Yams" target="_blank">Projet sur GitHub</a></li>
-                </ul>
-
-            </article>
-
-            <article class="projet4">
-
-                <h2>Site Kohfrais</h2>
-
-                <ul>
-                    <li><a>Langage : HTML, CSS, Bootstrap</a></li>
-                    <li><a>Projet à 4</a></li>
-                    <li><a>Acquis : </a></li>
-                    <li><a href="https://github.com/Luvey35/Site_KohFrais" target="_blank">Projet sur GitHub</a></li>
-                </ul>
-
-            </article>
-
-            <article class="projet5">
-
-                <h2>Mon Site Web Personnelle</h2>
-
-                <ul>
-                    <li><a>Langage : HTML, CSS</a></li>
-                    <li><a>Projet seul</a></li>
-                    <li><a>Acquis : </a></li>
-                    <li><a href="https://github.com/Luvey35/Site_Personnelle" target="_blank">Projet sur GitHub</a></li>
-                </ul>
-
-            </article>
+            </section>
 
         </div>
 
