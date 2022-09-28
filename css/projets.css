@@ -16,10 +16,14 @@
     flex-direction: column;
 }
 
-.projet1 {
-    background-color:aqua;
+.projet1, .projet2 {
+    background-color:rgb(88, 163, 190);
+    border-radius: 20px;
     display: flex;
     flex-direction: row;
+    margin: 3em 15vw 2em 15vw;
+    padding: 1em 1em;
+    min-height: 20em;
 }
 
 .p1-content {
@@ -27,8 +31,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-right: 3em;
 }
 
-.p1-pitch, .p1-pitch a{
+.p1-titre {
+    font-size: 2em;
+}
+
+.p1-pitch {
     text-align: center;
-}   
+    padding: 0 2em 0 2em;
+}
+
+.video-si {
+    padding-right: 1em;
+}
+
+.logo-github {
+    padding: 1em;
+}
+
+.logo-github:hover {
+    filter: invert(80%);
+}
