@@ -11,5 +11,24 @@
 }
 
 .section-projets {
-    background-color: rgb(23, 17, 54);;
+    background-color: rgb(23, 17, 54);
+    display: flex;
+    flex-direction: column;
 }
+
+.projet1 {
+    background-color:aqua;
+    display: flex;
+    flex-direction: row;
+}
+
+.p1-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.p1-pitch, .p1-pitch a{
+    text-align: center;
+}   
