@@ -45,10 +45,13 @@
     padding: 0 2em 0 2em;
 }
 
-.video-si {
+.video-si, .video-yams {
     padding-right: 1em;
 }
 
+.video-kf {
+    padding-left: 1em;
+}
 .img-laby, .logo-github {
     padding: 1em;
 }
