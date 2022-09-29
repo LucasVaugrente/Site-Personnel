@@ -16,22 +16,23 @@
     flex-direction: column;
 }
 
-.p1-titre, .p2-titre, .p3-titre, .p4-titre, .p5-titre {
+.p-titre {
     font-size: 2em;
 }
 
-.projet1, .projet2, .projet3, .projet4, .projet5 {
+.projet {
     background-color:rgb(88, 163, 190);
     border-radius: 20px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin: 3em 15vw 2em 15vw;
     padding: 1em 1em;
     min-height: 20em;
     max-height: 20em;
 }
 
-.p1-content {
+.p-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,14 +40,7 @@
     margin-right: 3em;
 }
 
-.p2-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.p1-pitch, .p2-pitch {
+.p-pitch {
     text-align: center;
     padding: 0 2em 0 2em;
 }
@@ -55,11 +49,7 @@
     padding-right: 1em;
 }
 
-.img-laby {
-    padding: 1em;
-}
-
-.logo-github {
+.img-laby, .logo-github {
     padding: 1em;
 }
 
