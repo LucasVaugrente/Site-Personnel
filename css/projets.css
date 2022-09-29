@@ -16,7 +16,11 @@
     flex-direction: column;
 }
 
-.projet1, .projet2 {
+.p1-titre, .p2-titre, .p3-titre, .p4-titre, .p5-titre {
+    font-size: 2em;
+}
+
+.projet1, .projet2, .projet3, .projet4, .projet5 {
     background-color:rgb(88, 163, 190);
     border-radius: 20px;
     display: flex;
@@ -32,10 +36,6 @@
     align-items: center;
     justify-content: center;
     margin-right: 3em;
-}
-
-.p1-titre, .p2-titre {
-    font-size: 2em;
 }
 
 .p1-pitch {
