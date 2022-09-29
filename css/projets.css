@@ -28,6 +28,7 @@
     margin: 3em 15vw 2em 15vw;
     padding: 1em 1em;
     min-height: 20em;
+    max-height: 20em;
 }
 
 .p1-content {
@@ -38,13 +39,24 @@
     margin-right: 3em;
 }
 
-.p1-pitch {
+.p2-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p1-pitch, .p2-pitch {
     text-align: center;
     padding: 0 2em 0 2em;
 }
 
 .video-si {
     padding-right: 1em;
+}
+
+.img-laby {
+    padding: 1em;
 }
 
 .logo-github {
