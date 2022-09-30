@@ -45,6 +45,17 @@
     padding: 0 2em 0 2em;
 }
 
+.git-lan {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.langues-prog {
+    padding: 0.5em;
+}
+
 .video-si, .video-yams {
     padding-right: 1em;
     border-radius: 20px;
