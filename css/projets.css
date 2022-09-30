@@ -47,11 +47,14 @@
 
 .video-si, .video-yams {
     padding-right: 1em;
+    border-radius: 20px;
 }
 
 .video-kf {
     padding-left: 1em;
+    border-radius: 20px;
 }
+
 .img-laby, .logo-github {
     padding: 1em;
 }
