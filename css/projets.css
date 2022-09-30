@@ -17,11 +17,13 @@
 }
 
 .p-titre {
-    font-size: 2em;
+    font-size: 2.5em;
+    padding-top: 0.5em;
+    color: rgb(66, 22, 128);
 }
 
 .projet {
-    background-color:rgb(88, 163, 190);
+    background-color:rgb(99, 151, 190);
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -41,8 +43,8 @@
 }
 
 .p-pitch {
-    text-align: center;
-    padding: 0 2em 0 2em;
+    text-align: justify;
+    padding: 1em 2em 0 2em;
 }
 
 .git-lan {
@@ -72,4 +74,24 @@
 
 .logo-github:hover {
     filter: invert(80%);
+}
+
+.projet a {
+    font-size: 1.2em;
+}
+
+.projet a:link {
+    color: rgb(66, 22, 128);
+}
+
+.projet a:hover {
+    text-decoration:underline;
+}
+
+.projet a:visited {
+    color: rgb(66, 22, 128);
+}
+
+.projet a:active {
+    opacity: 0.6;
 }
