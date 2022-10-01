@@ -2,35 +2,3 @@
 /*        Les compétences        */
 /*###############################*/
 
-#competences h3, #competences div {
-    text-align: center;
-}
-
-#competences div {
-    background-color: rgb(94, 94, 94);
-    border-radius: 40px;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-a {
-
-}
-
-#competences a:link {
-    text-decoration:none; 
-    color:white;
-}
-
-#competences a:visited {
-    color:white;
-}
-
-#competences a:hover {
-    color:white;
-}
-
-#competences a:active {
-    color:white;
-}
