@@ -1,4 +1,33 @@
-/*###############################*/
-/*        Les compétences        */
-/*###############################*/
+#competences {
+    background-color: rgb(223, 202, 240);
+    padding-bottom: 3em;
+}
 
+.titre-skills {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 16vh;
+    padding-bottom: 2em;
+    background-color: rgb(223, 202, 240);
+    color: black;
+}
+
+.Cat-langages {
+    font-size: 2em;
+    text-align: center;
+}
+
+.software, .front, .back {
+    background-color: aquamarine;
+    margin: 3em 3em;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+figure {
+    padding: 1em 1em;
+    text-align: center;
+}
