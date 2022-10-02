@@ -8,6 +8,33 @@
 }
 
 .section-contact {
-    background-color: purple;
+    background-color: rgb(23, 17, 54);
+    padding: 5em 5em;
+
+}
+
+.contact-block {
+    background-color: aqua;
+    padding: 2em;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.block {
+    background-color: red;
+    padding: 1.5em;
+    border-radius: 30px;
+}
+
+.info-mail, .info-linkedin, .info-cv, .info-git {
+    display: none;
+    padding-left: 1em;
+    transition: all 1s ease;
+}
+
+.block-mail, .block-cv, .block-linkedin, .block-git {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
 }
