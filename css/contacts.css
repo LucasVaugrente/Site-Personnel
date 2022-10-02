@@ -1,0 +1,13 @@
+.titre-contacts {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 16vh;
+    padding-bottom: 1.5em;
+    background-color: rgb(23, 17, 54);
+    color: white;
+}
+
+.section-contact {
+    background-color: purple;
+    display: flex;
+}
