@@ -18,7 +18,8 @@
 }
 
 .software, .front, .back {
-    background-color: aquamarine;
+    background-color: rgb(203, 184, 218);
+    box-shadow: 0 0 0.6em rgb(23, 17, 54);
     margin: 3em 3em;
     border-radius: 20px;
     display: flex;
@@ -40,15 +41,9 @@
 }
 
 .image img {
-    -webkit-transition: all 0.5s ease; /* Safari et Chrome */
-    -moz-transition: all 0.5s ease; /* Firefox */
-    -o-transition: all 0.5s ease; /* Opera */
     transition: all 0.5s ease;
 }
 
 .image:hover img {
-    -webkit-transform:scale(1.15); /* Safari et Chrome */
-    -moz-transform:scale(1.15); /* Firefox */
-    -o-transform:scale(1.15); /* Opera */
     transform:scale(1.15);
 }
