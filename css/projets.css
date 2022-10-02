@@ -25,6 +25,7 @@
 
 .projet {
     background-color:rgb(99, 151, 190);
+    box-shadow: 0 0 1.5em rgb(103, 103, 103);
     border-radius: 20px;
     display: flex;
     flex-direction: row;
