@@ -2,7 +2,7 @@
     font-size: 3em;
     text-align: center;
     padding-top: 16vh;
-    padding-bottom: 1.5em;
+    padding-bottom: 1em;
     background-color: rgb(23, 17, 54);
     color: white;
 }
@@ -14,7 +14,6 @@
 }
 
 .contact-block {
-    background-color: aqua;
     padding: 2em;
     display: flex;
     flex-direction: row;
@@ -34,6 +33,9 @@
 }
 
 .block-mail, .block-cv, .block-linkedin, .block-git {
+    background-color: aliceblue;
+    padding: 1em;
+    border-radius: 20px;
     display:flex;
     flex-direction: row;
     align-items: center;

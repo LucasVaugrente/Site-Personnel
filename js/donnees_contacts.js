@@ -12,12 +12,12 @@ const info_g = document.querySelector(".info-git");
 
 block_m.addEventListener("mousemove", () => {
     info_m.style.display = 'block';
-    info_m.style.transition = "all 0.5s ease";
+    info_m.style.transition = "all 2s";
 });
 
 block_m.addEventListener("mouseleave", () => {
     info_m.style.display = 'none';
-    info_m.style.transition = "all 1s ease";
+    info_m.style.transition = "all 2s";
 });
 
 
