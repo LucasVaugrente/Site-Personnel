@@ -9,8 +9,7 @@
 
 .section-contact {
     background-color: rgb(23, 17, 54);
-    padding: 5em 5em;
-
+    padding: 3em 5em 5em 5em;
 }
 
 .contact-block {
@@ -26,16 +25,24 @@
     border-radius: 30px;
 }
 
-.info-mail, .info-linkedin, .info-cv, .info-git {
-    text-align: center;
+.contact-block a {
+    font-size: 1.2em;
 }
 
-.info-mail:hover, .info-linkedin:hover, .info-cv:hover, .info-git:hover {
-    color:red;
+.contact-block a:link {
+    color: rgb(222, 222, 222);
 }
 
-.info-mail:visited, .info-linkedin:visited, .info-cv:visited, .info-git:visited {
-    color:white;
+.contact-block a:hover {
+    text-decoration:underline;
+}
+
+.contact-block a:visited {
+    color: rgb(222, 222, 222);
+}
+
+.contact-block a:active {
+    opacity: 0.6;
 }
 
 .block-mail, .block-cv, .block-linkedin, .block-git {
