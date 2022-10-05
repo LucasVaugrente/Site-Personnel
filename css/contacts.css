@@ -27,16 +27,25 @@
 }
 
 .info-mail, .info-linkedin, .info-cv, .info-git {
-    display: none;
-    padding-left: 1em;
-    transition: all 1s ease;
+    text-align: center;
+}
+
+.info-mail:hover, .info-linkedin:hover, .info-cv:hover, .info-git:hover {
+    color:red;
+}
+
+.info-mail:visited, .info-linkedin:visited, .info-cv:visited, .info-git:visited {
+    color:white;
 }
 
 .block-mail, .block-cv, .block-linkedin, .block-git {
-    background-color: aliceblue;
     padding: 1em;
-    border-radius: 20px;
+    margin: 0 0.5em 0 0.5em;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+}
+
+.block-git {
+    margin-right: 7vw;
 }
