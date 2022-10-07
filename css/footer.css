@@ -1,4 +1,46 @@
 footer {
     padding: 5em 5em;
-    background-color: rgb(37, 174, 243);
+    background-color: rgb(21, 158, 227);
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.thanks {
+    text-align: center;
+    padding-top: 4em;
+}
+
+.github-site {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.github-site img {
+    padding-left: 0.3em;
+}
+
+footer a:link {
+    color: rgb(222, 222, 222);
+}
+
+footer a:hover {
+    text-decoration:underline;
+}
+
+footer a:visited {
+    color: rgb(222, 222, 222);
+}
+
+footer a:active {
+    opacity: 0.6;
+}
+
+footer p {
+    color: rgb(222, 222, 222);;
 }
