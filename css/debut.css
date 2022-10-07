@@ -1,5 +1,5 @@
 #debut {
-    padding: 30vh 40vh 30vh 20vh;
+    padding: 30vh 30vh 30vh 20vh;
     background-color: rgb(23, 17, 54);
     color: rgb(67, 123, 220);
     display: flex;
@@ -79,19 +79,11 @@
 }
 
 @media screen and (max-width:1050px) {
-    .bienvenue {
-        font-size: 0.8em;
-    }
-    
     .nom {
         font-size: 2em;
     }
     
     .statut {
         font-size: 3em;
-    }
-    
-    .pitch {
-        font-size: 0.8em;
     }
 }
