@@ -7,19 +7,19 @@
 }
 
 .bienvenue {
-    font-size: 1.4vw;
+    font-size: 1.4em;
 }
 
 .nom {
-    font-size: 3.2vw;
+    font-size: 3em;
 }
 
 .statut {
-    font-size: 4.2vw;
+    font-size: 4em;
 }
 
 .pitch {
-    font-size: 1.4vw;
+    font-size: 1.4em;
 }
 
 .btn-commencer {
@@ -58,4 +58,40 @@
 
 #debut a:active {
     opacity: 0.6;
+}
+
+@media screen and (max-width:1200px) {
+    .bienvenue {
+        font-size: 1.2em;
+    }
+    
+    .nom {
+        font-size: 2.3em;
+    }
+    
+    .statut {
+        font-size: 3.3em;
+    }
+    
+    .pitch {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .bienvenue {
+        font-size: 0.8em;
+    }
+    
+    .nom {
+        font-size: 2em;
+    }
+    
+    .statut {
+        font-size: 3em;
+    }
+    
+    .pitch {
+        font-size: 0.8em;
+    }
 }
