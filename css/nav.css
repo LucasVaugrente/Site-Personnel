@@ -59,8 +59,7 @@
 @media screen and (max-width:1100px) {
 
     .navbar {
-        padding: 0;
-        padding: 50px;
+        padding: 1em 1em 6em 1em;
     }
 
     .navbar .logo {
