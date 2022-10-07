@@ -76,14 +76,45 @@
     .pitch {
         font-size: 1.2em;
     }
+
+    .btn-commencer {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (max-width:1050px) {
     .nom {
-        font-size: 2em;
+        font-size: 2.5em;
     }
     
     .statut {
         font-size: 3em;
+    }
+
+    .pitch {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .bienvenue {
+        font-size: 1.6em;
+    }
+
+    .nom {
+        font-size: 2.6em;
+    }
+    
+    .statut {
+        font-size: 3.1em;
+    }
+
+    .pitch {
+        font-size: 1.7em;
+    }
+
+    .btn-commencer {
+        font-size: 1.6em;
     }
 }

@@ -35,8 +35,8 @@
 .navbar .menu-burger {
     display: none;
     position:absolute;
-    top: 35px;
     right: 50px;
+    top: 43px;
     width: 35px;
 }
 
@@ -65,6 +65,7 @@
 
     .navbar .logo {
         position: fixed;
+        font-size: 3em;
         top: 26px;
         left: 50px;
     }
