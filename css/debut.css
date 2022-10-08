@@ -6,7 +6,7 @@
     flex-direction: column;
 }
 
-.bienvenue {
+.bienvenue, .pitch {
     font-size: 1.4em;
 }
 
@@ -18,10 +18,6 @@
     font-size: 4em;
 }
 
-.pitch {
-    font-size: 1.4em;
-}
-
 .btn-commencer {
     margin-top: 2em;
     padding: 0.9em;
@@ -29,7 +25,7 @@
     color: rgb(131, 253, 245);
     background-color: rgb(23, 17, 54);
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.2em;
     border-style: solid;
     border-color: rgb(131, 253, 245);
     border-radius: 25px;
@@ -60,8 +56,13 @@
     opacity: 0.6;
 }
 
+/*===================================================*/
+/*============    Responsive Design     =============*/
+/*===================================================*/
+
 @media screen and (max-width:1200px) {
-    .bienvenue {
+
+    .bienvenue, .pitch, .btn-commencer {
         font-size: 1.2em;
     }
     
@@ -72,17 +73,10 @@
     .statut {
         font-size: 3.3em;
     }
-    
-    .pitch {
-        font-size: 1.2em;
-    }
-
-    .btn-commencer {
-        font-size: 1.2em;
-    }
 }
 
 @media screen and (max-width:1050px) {
+
     .nom {
         font-size: 2.5em;
     }
@@ -91,30 +85,106 @@
         font-size: 3em;
     }
 
-    .pitch {
+    .pitch, .pitch, .bienvenue {
         font-size: 1.3em;
     }
+    
 }
 
-@media screen and (max-width:600px) {
+/* On commence à voir le haut du mon profil */
 
-    .bienvenue {
-        font-size: 1.6em;
+@media screen and (max-width:950px) {
+
+    #debut {
+        padding-bottom: 30vh;
     }
 
     .nom {
-        font-size: 2.6em;
+        font-size: 2.8em;
     }
     
     .statut {
-        font-size: 3.1em;
+        font-size: 3.3em;
+    }
+
+    .pitch, .pitch, .bienvenue {
+        font-size: 1.6em;
+    }
+}
+
+/* On commence à revoir le haut du mon profil */
+
+@media screen and (max-width:850px) {
+
+    #debut {
+        padding-bottom: 40vh;
+    }
+
+    .nom {
+        font-size: 3.2em;
+    }
+    
+    .statut {
+        font-size: 3.7em;
+    }
+
+    .pitch {
+        font-size: 1.5em;
+    }
+
+    .btn-commencer, .bienvenue {
+        font-size: 1.6em;
+    }
+}
+
+/* On commence à revoir le haut du mon profil */
+
+@media screen and (max-width:750px) {
+
+    #debut {
+        padding-bottom: 50vh;
+    }
+
+    .nom {
+        font-size: 3.4em;
+    }
+    
+    .statut {
+        font-size: 3.9em;
     }
 
     .pitch {
         font-size: 1.7em;
     }
 
-    .btn-commencer {
-        font-size: 1.6em;
+    .btn-commencer, .bienvenue {
+        font-size: 1.8em;
+    }
+}
+
+/* On commence à revoir le haut du mon profil */
+
+@media screen and (max-width:600px) {
+
+    #debut {
+        padding-bottom: 60vh;
+    }
+
+    .nom {
+        font-size: 3.6em;
+        padding: 0.5em 0 0 0;
+    }
+    
+    .statut {
+        font-size: 4.1em;
+        padding: 0.5em 0;
+    }
+
+    .pitch {
+        font-size: 1.9em;
+    }
+
+    .btn-commencer, .bienvenue {
+        font-size: 2em;
     }
 }
