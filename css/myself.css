@@ -29,7 +29,6 @@
     padding-top: 3em;
     display : flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .parcours a:link {
@@ -65,4 +64,18 @@
     border-radius: 25px;
     box-shadow: 0 0 10px rgb(103, 103, 103);
     text-align: center;
+}
+
+@media screen and (max-width:1100px) {
+
+    .parcours-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profil {
+        padding: 4em 1em 1em 1em;
+    }
 }
