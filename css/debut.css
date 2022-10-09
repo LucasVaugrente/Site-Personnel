@@ -188,3 +188,43 @@
         font-size: 2em;
     }
 }
+
+/* On commence à revoir le haut du mon profil */
+
+@media screen and (max-width:520px) {
+
+    #debut {
+        padding-bottom: 70vh;
+    }
+
+    .nom {
+        font-size: 4.3em;    }
+    
+    .statut {
+        font-size: 4.7em;
+    }
+
+    .btn-commencer, .pitch, .bienvenue {
+        font-size: 2.2em;
+    }
+}
+
+/* On commence à revoir le haut du mon profil */
+
+@media screen and (max-width:450px) {
+
+    #debut {
+        padding-bottom: 90vh;
+    }
+
+    .nom {
+        font-size: 4.6em;    }
+    
+    .statut {
+        font-size: 5em;
+    }
+
+    .btn-commencer, .pitch, .bienvenue {
+        font-size: 2.5em;
+    }
+}
