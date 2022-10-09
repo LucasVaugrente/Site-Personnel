@@ -78,4 +78,30 @@
     .profil {
         padding: 4em 1em 1em 1em;
     }
+
+    .para1, .para2 {
+        font-size: 1.1em;
+        padding: 0 5em 1em ;
+    }
+
+    .parcours_etu {
+        font-size: 1.1em;
+        padding: 0 4em;
+    }    
+}
+
+@media screen and (max-width:900px) {
+
+    .para1, .para2 {
+       font-size: 1.3em;
+    }
+
+    .parcours_etu {
+        font-size: 1.3em;
+    }  
+
+    .profil img {
+        width: 450px;
+        height: 450px;
+    }
 }
