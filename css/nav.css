@@ -103,4 +103,16 @@
         font-size: 2em;
     }
 
+    .logo:visited {
+        color: white;
+    }
+
+    .logo:active {
+        color: white;
+    }
+
+    .logo:link {
+        color: white;
+    }
+
 }
