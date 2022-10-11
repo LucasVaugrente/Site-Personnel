@@ -61,13 +61,13 @@
 }
 
 .video-si, .video-yams {
-    padding-right: 1em;
-    border-radius: 20px;
+    margin-right: 1em;
+    border-radius: 25px;
 }
 
 .video-kf {
-    padding-left: 1em;
-    border-radius: 20px;
+    margin-left: 1em;
+    border-radius: 25px;
 }
 
 .img-laby, .logo-github {
@@ -96,4 +96,11 @@
 
 .projet a:active {
     opacity: 0.6;
+}
+
+@media screen and (max-width:1415px) {
+    .projet {
+        min-height: 23em;
+        max-height: 23em;
+    }
 }
