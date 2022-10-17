@@ -56,6 +56,20 @@
     opacity: 0.6;
 }
 
+.test {
+    position: absolute;
+    top: 70%;
+    left: 45%;
+}
+
+.cercle {
+    height: 200px; 
+    width: 200px; 
+    background-color: rgb(131, 253, 245);
+    border-radius: 50%;
+    filter: blur(300px);
+}
+
 /*===================================================*/
 /*============    Responsive Design     =============*/
 /*===================================================*/
