@@ -70,8 +70,13 @@
     background-color: rgb(23, 17, 54);
     color: white;
     border-radius: 20px;
+    transition: all 0.3s ease;
 }
 
 .type_non_selectionne {
     display: none;
+}
+
+.transition_langages {
+    transition: all 0.7s ease;
 }

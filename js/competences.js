@@ -15,7 +15,15 @@ frontWeb.addEventListener('click', ()=> {
     else {
         frontWeb.classList.toggle('type_selectionne');
         softwareDev.classList.remove('type_selectionne');
+        softwareDev.style.transition = "all 0.3s ease";
         backWeb.classList.remove('type_selectionne');
+        backWeb.style.transition = "all 0.3s ease";
+
+        blockSoftwareDev.style.display = "none";
+        blockBackWeb.style.display = "none";
+        blockFrontWeb.style.display = "flex";
+
+        frontWeb.classList.toggle('transition_langages');
     }
 })
 
@@ -25,6 +33,12 @@ softwareDev.addEventListener('click', ()=> {
         softwareDev.classList.toggle('type_selectionne');
         frontWeb.classList.remove('type_selectionne');
         backWeb.classList.remove('type_selectionne');
+
+        blockFrontWeb.style.display = "none";
+        blockBackWeb.style.display = "none";
+        blockSoftwareDev.style.display = "flex";
+
+        softwareDev.classList.toggle('transition_langages');
     }
 })
 
@@ -34,5 +48,11 @@ backWeb.addEventListener('click', ()=> {
         backWeb.classList.toggle('type_selectionne');
         softwareDev.classList.remove('type_selectionne');
         frontWeb.classList.remove('type_selectionne');
+
+        blockSoftwareDev.style.display = "none";
+        blockFrontWeb.style.display = "none";
+        blockBackWeb.style.display = "flex";
+        
+        backWeb.classList.toggle('transition_langages');
     }
 })
