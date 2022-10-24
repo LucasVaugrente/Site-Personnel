@@ -54,11 +54,12 @@
     margin: 0 20%;
 }
 
-.Cat-langages {
+.Cat-langages-W, .Cat-langages-D, .Cat-langages-B {
     font-size: 1.5em;
     text-align: center;
-    margin:1em;
+    margin: 1em;
     padding: 0.5em;
+    cursor: pointer;
 }
 
 .type_selectionne {
