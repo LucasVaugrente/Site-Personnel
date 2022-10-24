@@ -99,6 +99,16 @@
     opacity: 0.6;
 }
 
+.transition_proj_comp {
+    background-color: rgb(23, 17, 54);
+    height: 8vw;
+    width: 100%;
+    margin: -4vw 0px -4vw 0px;
+    -ms-transform: rotate(-4deg) scale(1.2, 1);
+    transform: rotate(-4deg) scale(1.2, 1);
+    z-index: 0;
+}
+
 @media screen and (max-width:1400px) {
     .projet {
         min-height: 23em;
