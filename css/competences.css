@@ -12,19 +12,14 @@
     color: black;
 }
 
-.Cat-langages {
-    font-size: 2em;
-    text-align: center;
-}
-
 .software, .front, .back {
     background-color: rgb(203, 184, 218);
     box-shadow: 0 0 0.6em rgb(23, 17, 54);
-    margin: 3em 3em;
+    margin: 3em 12em;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -46,4 +41,32 @@
 
 .image:hover img {
     scale: 1.15;
+}
+
+.types_langages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(223, 202, 240);
+    box-shadow: 0 0 0.5em rgb(51, 51, 53);
+    border-radius: 20px;
+    margin: 0 20%;
+}
+
+.Cat-langages {
+    font-size: 1.5em;
+    text-align: center;
+    margin:1em;
+    padding: 0.5em;
+}
+
+.type_selectionne {
+    background-color: rgb(23, 17, 54);
+    color: white;
+    border-radius: 20px;
+}
+
+.type_non_selectionne {
+    display: none;
 }
