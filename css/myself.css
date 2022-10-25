@@ -4,12 +4,13 @@
     align-items: center;
     color: black;
     padding-bottom: 2em;
+    z-index: 2;
 }
 
 .titre-myself {
     font-size: 3em;
     text-align: center;
-    padding-top: 16vh;
+    padding-top: 17vh;
     background-color: rgb(223, 202, 240);
 }
 
@@ -66,15 +67,42 @@
     text-align: center;
 }
 
-.transition_myself_proj {
+/* .transition_myself_proj {
     background-color: rgb(223, 202, 240);
     height: 8vw;
     width: 100%;
     margin: -4vw 0px -4vw 0px;
-    -ms-transform: rotate(4deg) scale(1.2, 1);
-    transform: rotate(4deg) scale(1.2, 1);
+    -webkit-transform: rotate(-4deg) scale(1.2, 1);
+    -ms-transform: rotate(-4deg) scale(1.2, 1);
+    transform: rotate(-4deg) scale(1.2, 1);
+} */
+
+.test1 {
+    background-color: red;
+    height: 5em;
+    display: flex;
 }
 
+.transition_myself_proj1 {
+    height: 3em;
+    background-color: aqua;
+}
+
+.transition_myself_proj2 {
+    height: 3em;    
+    background-color: green;
+}
+
+    /* content: '';
+    display: block;
+    position: absolute;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    width: 55%;
+    height: 100%;
+    transform: translate(-10%, 60%);
+    background-color: rgb(139, 33, 33);
+    */
 @media screen and (max-width:1100px) {
 
     .parcours-block {
