@@ -112,7 +112,33 @@
     z-index: 0;
 }
 
+.block-transition {
+    height: 5em;
+    display: flex;
+    background-color: rgb(223, 202, 240);
+}
 
+.block-transition_3 {
+    background-color: rgb(223, 202, 240);
+    width: 50%;
+}
+
+.block-transition_4 {
+    width: 50%;
+    background-color: rgb(223, 202, 240);
+}
+
+.transition_myself_proj3 {
+    height: 5em;
+    background-color: rgb(23, 17, 54);
+    border-bottom-left-radius: 200%;
+}
+
+.transition_myself_proj4 {
+    height: 5em;
+    background-color: rgb(23, 17, 54);
+    border-bottom-right-radius: 200%;
+}
 
 @media screen and (max-width:1400px) {
     .projet {
