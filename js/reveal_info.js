@@ -51,3 +51,19 @@ const observer3 = new IntersectionObserver(handleIntersect3, options);
 document.querySelectorAll('.apparition').forEach(function (r) {
     observer3.observe(r);
 })
+
+// ######################### NAVIGATION ############################## //
+
+const handleIntersect4 = function (entries, observer) {
+    entries.forEach(function(entry) {
+        if(entry.intersectionRatio > ratio) {
+            entry.target.classList.add('nav_reveal-visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}
+
+const observer4 = new IntersectionObserver(handleIntersect4, options);
+document.querySelectorAll('[class*="nav_reveal"]').forEach(function (r) {
+    observer4.observe(r);
+})

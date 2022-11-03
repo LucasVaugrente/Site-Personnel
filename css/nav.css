@@ -57,6 +57,30 @@
     color: white;
 }
 
+[class*="nav_reveal"] {
+    opacity: 0;
+    transform: translateY(60px);
+}
+
+.nav_reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: .6s;
+}
+
+.nav_reveal2 {
+    transition-delay: .1s;
+}
+.nav_reveal3 {
+    transition-delay: .3s;
+}
+.nav_reveal4 {
+    transition-delay: .5s;
+}
+.nav_reveal5 {
+    transition-delay: .7s;
+}
+
 @media screen and (max-width:1100px) {
 
     .navbar {
