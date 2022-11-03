@@ -38,7 +38,7 @@ document.querySelectorAll('.revelation').forEach(function (r) {
 
 // ######################### LANGAGES ############################## //
 
-const handleIntersect3 = function (entries) {
+const handleIntersect3 = function (entries, observer) {
     entries.forEach(function(entry) {
         if(entry.intersectionRatio > ratio) {
             entry.target.classList.add('apparition-visible');
