@@ -80,3 +80,14 @@
 .transition_langages {
     transition: all 0.7s ease;
 }
+
+.apparition {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.apparition-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: .6s;
+}
