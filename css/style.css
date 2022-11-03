@@ -18,3 +18,41 @@ body {
     font-family: 'Poppins';
     min-width: 1080px;
 }
+
+/* ###### ANIMATION PRESENTATION ###### */
+
+[class*="reveal-"] {
+    opacity: 0;
+    transform: translateX(-60px);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateX(0);
+    transition: .6s;
+}
+
+.reveal-2 {
+    transition-delay: .4s;
+}
+
+.reveal-3 {
+    transition-delay: .4s;
+}
+
+.reveal-4 {
+    transition-delay: .7s;
+}
+
+/* ###### ANIMATION PROJETS ###### */ 
+
+.revelation {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.revelation-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: .6s;
+}
