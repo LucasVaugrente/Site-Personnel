@@ -17,6 +17,7 @@
 
 .statut {
     font-size: 4em;
+    white-space: nowrap;
 }
 
 .btn-commencer {
@@ -57,10 +58,10 @@
     opacity: 0.6;
 }
 
-.test {
+.fond {
     position: absolute;
-    top: 70%;
-    left: 45%;
+    top: 70vh;
+    left: 45vw;
 }
 
 .cercle {
@@ -77,33 +78,32 @@
 
 @media screen and (max-width:1200px) {
 
-    .bienvenue, .pitch, .btn-commencer {
+    .bienvenue, .pitch {
         font-size: 1.2em;
     }
     
     .nom {
-        font-size: 2.3em;
+        font-size: 2.8em;
     }
     
     .statut {
-        font-size: 3.3em;
+        font-size: 3.8em;
     }
 }
 
-@media screen and (max-width:1050px) {
+@media screen and (max-width:1100px) {
 
-    .nom {
-        font-size: 2.5em;
-    }
-    
     .statut {
-        font-size: 3em;
-    }
-
-    .pitch, .pitch, .bienvenue {
-        font-size: 1.3em;
+        font-size: 3.5em;
     }
     
+    .bienvenue, .pitch {
+        font-size: 1.1em;
+    }
+
+    .btn-commencer {
+        margin-top: 3em;
+    }
 }
 
 /* On commence à voir le haut du mon profil */
@@ -114,16 +114,20 @@
         padding-bottom: 30vh;
     }
 
-    .nom {
-        font-size: 2.8em;
-    }
-    
-    .statut {
-        font-size: 3.3em;
+    .bienvenue, .pitch {
+        font-size: 1.3em;
     }
 
-    .pitch, .pitch, .bienvenue {
-        font-size: 1.6em;
+    .nom  {
+        margin-top: 0.5em;
+    }
+
+    .pitch {
+        margin-top: 1em;
+    }
+
+    .btn-commencer {
+        margin-top: 4em;
     }
 }
 
@@ -135,20 +139,14 @@
         padding-bottom: 40vh;
     }
 
-    .nom {
-        font-size: 3.2em;
-    }
-    
-    .statut {
-        font-size: 3.7em;
+    .bienvenue, .pitch {
+        font-size: 1.4em;
     }
 
-    .pitch {
-        font-size: 1.5em;
-    }
-
-    .btn-commencer, .bienvenue {
-        font-size: 1.6em;
+    .btn-commencer {
+        width: 12em;
+        padding: 1.2em;
+        margin-top: 5em;
     }
 }
 
@@ -160,20 +158,8 @@
         padding-bottom: 50vh;
     }
 
-    .nom {
-        font-size: 3.4em;
-    }
-    
-    .statut {
-        font-size: 3.9em;
-    }
-
-    .pitch {
-        font-size: 1.7em;
-    }
-
-    .btn-commencer, .bienvenue {
-        font-size: 1.8em;
+    .para1, .para2, .parcours_etu {
+        font-size: 1.5em;
     }
 }
 
@@ -184,24 +170,6 @@
     #debut {
         padding-bottom: 60vh;
     }
-
-    .nom {
-        font-size: 3.6em;
-        padding: 0.5em 0 0 0;
-    }
-    
-    .statut {
-        font-size: 4.1em;
-        padding: 0.5em 0;
-    }
-
-    .pitch {
-        font-size: 1.9em;
-    }
-
-    .btn-commencer, .bienvenue {
-        font-size: 2em;
-    }
 }
 
 /* On commence à revoir le haut du mon profil */
@@ -210,17 +178,6 @@
 
     #debut {
         padding-bottom: 70vh;
-    }
-
-    .nom {
-        font-size: 4.3em;    }
-    
-    .statut {
-        font-size: 4.7em;
-    }
-
-    .btn-commencer, .pitch, .bienvenue {
-        font-size: 2.2em;
     }
 }
 
@@ -232,14 +189,4 @@
         padding-bottom: 90vh;
     }
 
-    .nom {
-        font-size: 4.6em;    }
-    
-    .statut {
-        font-size: 5em;
-    }
-
-    .btn-commencer, .pitch, .bienvenue {
-        font-size: 2.5em;
-    }
 }
