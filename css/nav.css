@@ -1,6 +1,6 @@
 .navbar {
     position: fixed;
-    background-color: rgb(23, 17, 54);
+    background-color: rgb(192, 48, 48);
     padding: 50px;
     display: flex;
     justify-content: space-between;
@@ -36,8 +36,8 @@
 .navbar .menu-burger {
     display: none;
     position:absolute;
-    right: 50px;
-    top: 43px;
+    right: 40px;
+    top: 35px;
     width: 35px;
 }
 
@@ -82,17 +82,6 @@
 }
 
 @media screen and (max-width:1100px) {
-
-    .navbar {
-        padding: 1em 1em 6em 1em;
-    }
-
-    .navbar .logo {
-        position: fixed;
-        font-size: 3em;
-        top: 26px;
-        left: 50px;
-    }
 
     .navbar .menu-burger {
         display: block;
