@@ -1,10 +1,19 @@
 #debut {
-    padding: 30vh 30vh 31vh 20vh;
     background-color: rgb(23, 17, 54);
     color: rgb(67, 123, 220);
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    max-width: 100%;
+    padding-top: 30vh;
+    padding: 30vh 0 0 0;
+}
+
+.content {
     display: flex;
     flex-direction: column;
-    min-height: 40vh;
+    justify-content: center;
+    padding: 0 10%;
 }
 
 .bienvenue, .pitch {
@@ -76,117 +85,3 @@
 /*============    Responsive Design     =============*/
 /*===================================================*/
 
-@media screen and (max-width:1200px) {
-
-    .bienvenue, .pitch {
-        font-size: 1.2em;
-    }
-    
-    .nom {
-        font-size: 2.8em;
-    }
-    
-    .statut {
-        font-size: 3.8em;
-    }
-}
-
-@media screen and (max-width:1100px) {
-
-    .statut {
-        font-size: 3.5em;
-    }
-    
-    .bienvenue, .pitch {
-        font-size: 1.1em;
-    }
-
-    .btn-commencer {
-        margin-top: 3em;
-    }
-}
-
-/* On commence à voir le haut du mon profil */
-
-@media screen and (max-width:950px) {
-
-    #debut {
-        padding-bottom: 30vh;
-    }
-
-    .bienvenue, .pitch {
-        font-size: 1.3em;
-    }
-
-    .nom  {
-        margin-top: 0.5em;
-    }
-
-    .pitch {
-        margin-top: 1em;
-    }
-
-    .btn-commencer {
-        margin-top: 4em;
-    }
-}
-
-/* On commence à revoir le haut du mon profil */
-
-@media screen and (max-width:850px) {
-
-    #debut {
-        padding-bottom: 40vh;
-    }
-
-    .bienvenue, .pitch {
-        font-size: 1.4em;
-    }
-
-    .btn-commencer {
-        width: 12em;
-        padding: 1.2em;
-        margin-top: 5em;
-    }
-}
-
-/* On commence à revoir le haut du mon profil */
-
-@media screen and (max-width:750px) {
-
-    #debut {
-        padding-bottom: 50vh;
-    }
-
-    .para1, .para2, .parcours_etu {
-        font-size: 1.5em;
-    }
-}
-
-/* On commence à revoir le haut du mon profil */
-
-@media screen and (max-width:600px) {
-
-    #debut {
-        padding-bottom: 60vh;
-    }
-}
-
-/* On commence à revoir le haut du mon profil */
-
-@media screen and (max-width:520px) {
-
-    #debut {
-        padding-bottom: 70vh;
-    }
-}
-
-/* On commence à revoir le haut du mon profil */
-
-@media screen and (max-width:450px) {
-
-    #debut {
-        padding-bottom: 90vh;
-    }
-
-}
