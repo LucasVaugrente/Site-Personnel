@@ -1,37 +1,40 @@
 #debut {
     background-color: rgb(23, 17, 54);
-    color: rgb(67, 123, 220);
     position: relative;
     height: 70vh;
-    width: 100vw;
-    max-width: 100%;
-    padding: 30vh 0 0 0;
+    width: 100%;
+    padding: 30vh 10% 0 10%;
+    width: 80%;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 15%;
 }
 
 .bienvenue {
     font-size: 1.2em;
     padding-bottom: 0.5em;
+    color:rgb(161, 195, 255);;
 }
 
 .nom {
     font-size: clamp(40px, 8vw, 60px);
+    color: white;
+    font-weight: 700;
 }
 
 .statut {
     font-size: clamp(40px, 8vw, 50px);
     padding-bottom: 0.3em;
+    color: rgb(219, 237, 255);
 }
 
 .pitch {
     font-size: 1.1em;
-    padding-right: 20em;
+    color: rgb(89, 136, 215);
+    white-space: normal;
 }
 
 .btn-commencer {
@@ -87,3 +90,33 @@
 /*============    Responsive Design     =============*/
 /*===================================================*/
 
+@media screen and (max-width:1024px) {
+
+    #debut {
+        padding: 25vh 2% 0 2%;
+        width: 100vw;
+    }
+
+    .bienvenue {
+        font-size: 1em;
+        width: 80vw;
+    }
+
+    .nom {
+        font-size: 2em;
+    }
+
+    .statut {
+        font-size: 1.8em;
+        width: 80vw;
+    }
+
+    .pitch {
+        font-size: 1em;
+        width: 70vw;
+    }
+
+    .btn-commencer {
+        font-size: 1em;
+    }
+}
