@@ -55,3 +55,11 @@
 .block-git {
     margin-right: 7vw;
 }
+
+@media screen and (max-width:1100px) {
+
+    #contact {
+        width: 100vw;
+    }
+
+}

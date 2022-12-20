@@ -8,7 +8,7 @@
 }
 
 .titre-myself {
-    font-size: 3em;
+    font-size: clamp(40px, 8vw, 55px);
     text-align: center;
     padding-top: 17vh;
     background-color: rgb(223, 202, 240);
@@ -94,8 +94,12 @@
     background-color: rgb(223, 202, 240);
     border-bottom-right-radius: 200%;
 }
-/* 
+
 @media screen and (max-width:1100px) {
+
+    #myself, .block-transition {
+        width: 100vw;
+    }
 
     .parcours-block {
         display: flex;
@@ -108,30 +112,25 @@
         padding: 4em 1em 1em 1em;
     }
 
-    .para1, .para2 {
-        font-size: 1.1em;
-        padding: 0 5em 1em;
+    .para1, .para2, .parcours_etu {
+        font-size: 0.5em;
+        padding: 0 2em 1em;
     }
-
-    .parcours_etu {
-        font-size: 1.1em;
-        padding: 0 4em;
-    }    
 }
 
 @media screen and (max-width:900px) {
 
     .para1, .para2, .parcours_etu {
-       font-size: 1.3em;
+       font-size: 0.9em;
     }
 
     .profil img {
-        width: 450px;
-        height: 450px;
+        width: 300px;
+        height: 300px;
     }
 
     .titre-myself {
-        font-size: 4em;
+        font-size: 3em;
     }
 }
 
@@ -145,7 +144,8 @@
 @media screen and (max-width:500px) {
 
     .para1, .para2, .parcours_etu {
-       font-size: 1.7em;
+       font-size: 1em;
+       text-align: left;
     }
 
     .parcours_etu {
@@ -153,18 +153,6 @@
     }
 
     .titre-myself {
-        font-size: 5em;
+        font-size: 3em;
     }
 }
-
-@media screen and (max-width:400px) {
-
-    .para1, .para2, .parcours_etu {
-       font-size: 2.2em;
-    }
-
-    .profil img {
-        width: 500px;
-        height: 500px;
-    }
-} */

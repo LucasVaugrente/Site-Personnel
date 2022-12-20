@@ -86,3 +86,11 @@
     transform: translateY(0);
     transition: .6s;
 }
+
+@media screen and (max-width:1100px) {
+
+    #competences {
+        width: 100vw;
+    }
+
+}

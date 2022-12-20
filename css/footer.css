@@ -44,3 +44,11 @@ footer a:active {
 footer p {
     color: rgb(222, 222, 222);;
 }
+
+@media screen and (max-width:1100px) {
+
+    footer {
+        width: 100vw;
+    }
+
+}
