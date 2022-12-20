@@ -45,10 +45,42 @@ footer p {
     color: rgb(222, 222, 222);;
 }
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width:1080px) {
 
     footer {
         width: 100vw;
+        padding: 5em 0;
     }
 
+    .droit_github > p {
+        margin-left: 4%;
+    }
+
+    .github-site {
+        margin-right: 4%;
+    }
+
+    .thanks {
+        margin: 0 8%;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+
+    .droit_github {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .droit_github > p {
+        margin:0;
+    }
+
+    .github-site {
+        margin:0;
+        padding-top: 4em;
+    }
 }
