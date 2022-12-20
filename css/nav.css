@@ -35,9 +35,6 @@
 
 .navbar .menu-burger {
     display: none;
-    position:absolute;
-    right: 40px;
-    top: 35px;
     width: 35px;
 }
 
@@ -85,6 +82,8 @@
 
     .navbar .menu-burger {
         display: block;
+        width: 30px;
+        height: 30px;
     }
     
     .nav-links {
@@ -115,6 +114,10 @@
     .navbar .nav-links ul li {
         margin: 25px 0;
         font-size: 2em;
+    }
+
+    .navbar .logo {
+        font-size: 1.5em;
     }
 
     .logo:visited {
