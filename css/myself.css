@@ -113,7 +113,7 @@
     }
 
     .para1, .para2, .parcours_etu {
-        font-size: 0.5em;
+        font-size: 1em;
         padding: 0 2em 1em;
     }
 }
@@ -131,13 +131,6 @@
 
     .titre-myself {
         font-size: 3em;
-    }
-}
-
-@media screen and (max-width:700px) {
-
-    .para1, .para2, .parcours_etu {
-       font-size: 1.5em;
     }
 }
 

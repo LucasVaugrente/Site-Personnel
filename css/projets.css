@@ -19,11 +19,11 @@
 }
 
 .p-titre {
-    font-size: 2.5vw;
+    font-size: 2.3em;
     color:white;
 }
 
-.projet {
+.projet_1, .projet_2, .projet_3, .projet_4, .projet_5 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -121,23 +121,23 @@
     filter: invert(80%);
 }
 
-.projet .langues-prog {
+.section-projets .langues-prog {
     font-size: 1.2em;
 }
 
-.projet a:link {
+.section-projets a:link {
     color: aquamarine;
 }
 
-.projet a:hover {
+.section-projets a:hover {
     text-decoration:underline;
 }
 
-.projet a:visited {
+.section-projets a:visited {
     color: aquamarine;
 }
 
-.projet a:active {
+.section-projets a:active {
     opacity: 0.6;
 }
 
@@ -187,4 +187,68 @@
         width: 100vw;
     }
 
+    .projet_1 {
+        background: url("../img/fond_space_inv.png");
+        background-size: 100vw;
+        backdrop-filter: blur(2px);
+        border-radius: 30px;
+    }
+
+    .projet_2 {
+        background: url("../img/labyrinthe3.png");
+        background-size: 100vw;
+        backdrop-filter: blur(2px);
+        border-radius: 30px;
+    }
+
+    .projet_3 {
+        background: url("../img/fond_kohfrais.png");
+        background-size: 100vw;
+        backdrop-filter: blur(10px);
+        border-radius: 30px;
+    }
+
+    .projet_3 .p-pitch-gauche, .projet_3 .p-titre, .projet_3 .titre-projet-gauche > p, .projet_3 .git-lan a {
+        color: rgb(23, 17, 54);
+    }
+
+    .projet_4 {
+        background: url("../img/fond_yams.jpg");
+        background-size: 100vw;
+        backdrop-filter: blur(2px);
+        border-radius: 30px;
+    }
+
+    .projet_5 {
+        background: url("../img/fond_space_inv.png");
+        background-size: 100vw;
+        backdrop-filter: blur(2px);
+        border-radius: 30px;
+    }
+
+    .projet_1 > img, .projet_2 > img, .projet_3 > img, .projet_4 > img, .projet_5 > img {
+        display: none;
+    }
+
+    .p-pitch-gauche, .p-pitch-droite {
+        background-color: rgba(255, 255, 255, 0.021);
+        margin: 0;
+        color: white;
+    }
+
+    .p-content-gauche, .p-content-droite {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .titre-projet-droite, .titre-projet-gauche {
+        align-items: flex-start;
+        padding: 1.5em;
+        margin: 0;
+    }
+
+    .git-lan {
+        margin: 0 1em;
+    }
 }
