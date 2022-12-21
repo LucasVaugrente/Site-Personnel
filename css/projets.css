@@ -6,6 +6,7 @@
     font-size: 3em;
     text-align: center;
     padding-top: 16vh;
+    padding-bottom: 1em;
     background-color: rgb(23, 17, 54);
     color: white;
 }
@@ -53,6 +54,8 @@
     border-radius: 30px;
     position: relative;
     margin-right: -100px;
+    box-shadow: 0 0 0.6em black;
+    transition: all 0.5s ease;
 }
 
 .p-pitch-droite {
@@ -63,6 +66,8 @@
     border-radius: 30px;
     position: relative;
     margin-left: -100px;
+    box-shadow: 0 0 0.6em black;
+    transition: all 0.5s ease;
 }
 
 .titre-projet-gauche p, .titre-projet-droite p {
@@ -96,19 +101,30 @@
     width: 700px;
     height: 300px;
     border-radius: 30px;
+    box-shadow: 0 0 0.6em black;
+    transition: all 0.5s ease;
 }
 
 .video-kf {
     width: 700px;
     height: 300px;
     border-radius: 30px;
+    box-shadow: 0 0 0.6em black;
+    transition: all 0.5s ease;
 }
 
 .img-laby {
     width: 700px;
     height: 300px;
     border-radius: 30px;
+    box-shadow: 0 0 0.6em black;
+    transition: all 0.5s ease;
 }
+
+.video-si:hover, .video-yams:hover, .video-kf:hover, .img-laby:hover, .p-pitch-gauche:hover, .p-pitch-droite:hover {
+    box-shadow: 0 0 1em black;
+    transition: all 0.5s ease;
+} 
 
 .logo-github {
     border-radius: 50px;
@@ -116,6 +132,7 @@
 
 .lien-github_projet {
     display: flex;
+    padding-left: 0.5em;
 }
 
 .logo-github:hover {
@@ -251,6 +268,11 @@
         background-color: rgba(255, 255, 255, 0.021);
         margin: 0;
         color: white;
+        box-shadow: none;
+    }
+
+    .p-pitch-gauche:hover, .p-pitch-droite:hover {
+        box-shadow: none;
     }
 
     .p-content-gauche, .p-content-droite {

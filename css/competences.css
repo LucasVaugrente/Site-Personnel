@@ -15,7 +15,8 @@
 .software, .front, .back {
     background-color: rgb(203, 184, 218);
     box-shadow: 0 0 0.6em rgb(23, 17, 54);
-    margin: 3em 12em;
+    margin: 3em 10%;
+    width: 80%;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -87,10 +88,34 @@
     transition: .6s;
 }
 
+.titre_types {
+    display: none;
+
+}
+
 @media screen and (max-width:1100px) {
 
     #competences {
         width: 100vw;
     }
 
+}
+
+@media screen and (max-width:900px) {
+    
+    .types_langages {
+        display:none;
+    }
+
+    .titre_types {
+        display: block;
+        text-align: center;
+        font-size: 1.5em;
+        color: rgb(37, 27, 87);
+        font-weight: 900;
+    }
+
+    .software, .front, .back {
+        display: flex;
+    }
 }
