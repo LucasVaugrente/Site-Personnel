@@ -84,6 +84,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     margin: 1em;
 }
 
@@ -190,22 +191,32 @@
     .projet_1 {
         background: url("../img/fond_space_inv.png");
         background-size: 100vw;
-        backdrop-filter: blur(2px);
+        
         border-radius: 30px;
+    }
+
+    .projet_1 .p-content-gauche {
+        backdrop-filter: blur(3px);
     }
 
     .projet_2 {
         background: url("../img/labyrinthe3.png");
         background-size: 100vw;
-        backdrop-filter: blur(2px);
         border-radius: 30px;
+    }
+
+    .projet_2 .p-content-droite {
+        backdrop-filter: blur(3px);
     }
 
     .projet_3 {
         background: url("../img/fond_kohfrais.png");
         background-size: 100vw;
-        backdrop-filter: blur(10px);
         border-radius: 30px;
+    }
+
+    .projet_3 .p-content-gauche {
+        backdrop-filter: blur(3px);
     }
 
     .projet_3 .p-pitch-gauche, .projet_3 .p-titre, .projet_3 .titre-projet-gauche > p, .projet_3 .git-lan a {
@@ -215,15 +226,21 @@
     .projet_4 {
         background: url("../img/fond_yams.jpg");
         background-size: 100vw;
-        backdrop-filter: blur(2px);
         border-radius: 30px;
+    }
+    
+    .projet_4 .p-content-droite {
+        backdrop-filter: blur(3px);
     }
 
     .projet_5 {
         background: url("../img/fond_space_inv.png");
         background-size: 100vw;
-        backdrop-filter: blur(2px);
         border-radius: 30px;
+    }
+
+    .projet_5 .p-content-gauche {
+        backdrop-filter: blur(3px);
     }
 
     .projet_1 > img, .projet_2 > img, .projet_3 > img, .projet_4 > img, .projet_5 > img {
