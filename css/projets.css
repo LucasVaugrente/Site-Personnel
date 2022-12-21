@@ -20,41 +20,71 @@
 
 .p-titre {
     font-size: 2.5vw;
-    padding-top: 0.5em;
-    color: rgb(66, 22, 128);
+    color:white;
 }
 
 .projet {
-    background-color:rgb(99, 151, 190);
-    box-shadow: 0 0 1.5em rgb(103, 103, 103);
-    border-radius: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 3em 15vw 2em 15vw;
-    padding: 1em 1em;
-    min-height: 20em;
-    max-height: 20em;
+    margin: 1em 15% 5em 15%;
+    width: 70%;
 }
 
-.p-content {
+.p-content-gauche {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    margin-right: 2em;
 }
 
-.p-pitch {
+.p-content-droite {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.p-pitch-gauche {
     text-align: justify;
-    padding: 1em 2em 0 2em;
+    padding: 1.5em;
+    background-color: rgb(52, 38, 116);
+    color: rgb(170, 187, 255);
+    border-radius: 30px;
+    position: relative;
+    margin-right: -100px;
+}
+
+.p-pitch-droite {
+    text-align: justify;
+    padding: 1.5em;
+    background-color: rgb(52, 38, 116);
+    color: rgb(170, 187, 255);
+    border-radius: 30px;
+    position: relative;
+    margin-left: -100px;
+}
+
+.titre-projet-gauche p, .titre-projet-droite p {
+    color: aquamarine;
+}
+
+.titre-projet-gauche {
+    margin-left: 1em;
+}
+
+.titre-projet-droite {
+    margin-right: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .git-lan {
     display: flex;
     flex-direction: row;
-    justify-content: baseline;
     align-items: center;
+    margin: 1em;
 }
 
 .langues-prog {
@@ -62,18 +92,29 @@
 }
 
 .video-si, .video-yams {
-    margin-right: 1em;
+    width: 700px;
+    height: 300px;
     border-radius: 30px;
 }
 
 .video-kf {
-    margin-left: 1em;
+    width: 700px;
+    height: 300px;
     border-radius: 30px;
 }
 
-.img-laby, .logo-github {
-    padding: 1em;
+.img-laby {
+    width: 700px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.logo-github {
     border-radius: 50px;
+}
+
+.lien-github_projet {
+    display: flex;
 }
 
 .logo-github:hover {
@@ -85,7 +126,7 @@
 }
 
 .projet a:link {
-    color: rgb(66, 22, 128);
+    color: aquamarine;
 }
 
 .projet a:hover {
@@ -93,7 +134,7 @@
 }
 
 .projet a:visited {
-    color: rgb(66, 22, 128);
+    color: aquamarine;
 }
 
 .projet a:active {
