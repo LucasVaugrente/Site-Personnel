@@ -24,7 +24,7 @@
     color:white;
 }
 
-.projet_1, .projet_2, .projet_3, .projet_4, .projet_5 {
+.projet_1, .projet_2, .projet_3, .projet_4, .projet_5, .projet_6 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -260,7 +260,17 @@
         backdrop-filter: blur(3px);
     }
 
-    .projet_1 > img, .projet_2 > img, .projet_3 > img, .projet_4 > img, .projet_5 > video {
+    .projet_6 {
+        background: url("../img/fond_yams.jpg");
+        background-size: 100vw;
+        border-radius: 30px;
+    }
+    
+    .projet_6 .p-content-droite {
+        backdrop-filter: blur(3px);
+    }
+
+    .projet_1 > img, .projet_2 > img, .projet_3 > img, .projet_4 > img, .projet_5 > video, .projet_6 > video {
         display: none;
     }
 
