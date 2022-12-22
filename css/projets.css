@@ -251,7 +251,7 @@
     }
 
     .projet_5 {
-        background: url("../img/fond_space_inv.png");
+        background: url("../img/portfolio_fond.jpg");
         background-size: 100vw;
         border-radius: 30px;
     }
@@ -260,7 +260,7 @@
         backdrop-filter: blur(3px);
     }
 
-    .projet_1 > img, .projet_2 > img, .projet_3 > img, .projet_4 > img, .projet_5 > img {
+    .projet_1 > img, .projet_2 > img, .projet_3 > img, .projet_4 > img, .projet_5 > video {
         display: none;
     }
 
