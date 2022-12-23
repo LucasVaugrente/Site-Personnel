@@ -43,7 +43,7 @@ html {
 
 body {
     font-family: 'Poppins';
-    min-width: 1080px;
+    overflow-x: hidden;
 }
 
 /* ###### ANIMATION PRESENTATION ###### */
@@ -82,12 +82,4 @@ body {
     opacity: 1;
     transform: translateY(0);
     transition: .6s;
-}
-
-@media screen and (max-width:1100px) {
-
-    body {
-        width: 100vw;
-    }
-
 }
