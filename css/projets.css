@@ -291,6 +291,10 @@
         -webkit-backdrop-filter: blur(4px);
     }
 
+    .projet_6 .titre-projet-droite .p-titre, .projet_6 .titre-projet-droite p, .projet_6 .p-pitch-droite, .projet_6 .git-lan a {
+        color: rgb(23, 17, 54);
+    }
+
     .projet_1 > img, .projet_2 > img, .projet_3 > img, .projet_4 > img, .projet_5 > video, .projet_6 > video {
         display: none;
     }
@@ -300,6 +304,7 @@
         margin: 0;
         color: white;
         box-shadow: none;
+        font-weight: 500;
     }
 
     .p-pitch-gauche:hover, .p-pitch-droite:hover {
@@ -320,5 +325,6 @@
 
     .git-lan {
         margin: 0 1em;
+        font-weight: 600;
     }
 }
