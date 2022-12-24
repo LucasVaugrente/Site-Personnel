@@ -107,6 +107,10 @@
         display:none;
     }
 
+    .titre-skills {
+        font-size: 2.5em;
+    }
+
     .titre_types {
         display: block;
         text-align: center;
@@ -117,5 +121,6 @@
 
     .software, .front, .back {
         display: flex;
+        margin-top: 1em;
     }
 }
