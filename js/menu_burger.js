@@ -1,4 +1,5 @@
 const menuHamburger = document.querySelector(".menu-burger");
+const menuHamburgerClose = document.querySelector(".menu-burger-close");
 const navLinks = document.querySelector(".nav-links");
 
 const LinkAcc = document.querySelector(".link-debut");
@@ -8,6 +9,10 @@ const LinkSki = document.querySelector(".link-skills");
 const LinkCon = document.querySelector(".link-contact");
 
 menuHamburger.addEventListener('click', ()=> {
+    navLinks.classList.toggle('mobile-menu');
+})
+
+menuHamburgerClose.addEventListener('click', ()=> {
     navLinks.classList.toggle('mobile-menu');
 })
 

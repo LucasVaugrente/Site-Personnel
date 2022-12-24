@@ -33,7 +33,7 @@
     font-weight: 600;
 }
 
-.navbar .menu-burger {
+.navbar .menu-burger, .menu-burger-close {
     display: none;
     width: 35px;
 }
@@ -84,6 +84,15 @@
         display: block;
         width: 30px;
         height: 30px;
+    }
+    
+    .menu-burger-close {
+        display: block;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 40px;
+        right: 50px;
     }
     
     .nav-links {
