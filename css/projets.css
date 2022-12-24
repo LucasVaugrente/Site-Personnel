@@ -209,10 +209,11 @@
         margin: 1em 10% 5em 10%;
         width: 80%;
         box-shadow: 0 0 1em black;
+        margin-bottom: 2em;
     }
 
     .titre-projets {
-        font-weight: 900;
+        font-size: 2.5em;
     }
 
     .projet_1 {
@@ -223,8 +224,8 @@
     }
 
     .projet_1 .p-content-gauche {
-        backdrop-filter : opacity(50%);
-        -webkit-backdrop-filter : opacity(50%);
+        backdrop-filter : blur(4px);
+        -webkit-backdrop-filter : blur(4px);
     }
 
     .projet_2 {
