@@ -121,6 +121,7 @@
 @media screen and (max-width:900px) {
 
     .para1, .para2, .parcours_etu {
+        text-align: left;
        font-size: 0.9em;
     }
 
@@ -130,22 +131,17 @@
     }
 
     .titre-myself {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 }
 
 @media screen and (max-width:500px) {
 
     .para1, .para2, .parcours_etu {
-       font-size: 1em;
-       text-align: left;
+        padding: 1em;
     }
 
     .parcours_etu {
         flex-direction: column;
-    }
-
-    .titre-myself {
-        font-size: 3em;
     }
 }
