@@ -53,8 +53,8 @@
 }
 
 .btn-commencer:hover {
-    background-color: rgb(131, 253, 245);
-    color:rgb(23, 17, 54);
+    color: white;
+    background-color: rgba(131, 253, 245, 0.173);
     text-decoration: none;
     transition: all 0.7s ease;
 }
