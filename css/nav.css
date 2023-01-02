@@ -1,6 +1,5 @@
 .navbar {
     position: fixed;
-    background-color: rgb(23, 17, 54);
     padding: 50px;
     display: flex;
     justify-content: space-between;
@@ -9,10 +8,12 @@
     height:5em;
     box-sizing: border-box;
     z-index: 10;
+    pointer-events: none;
 }
 
 .navbar a {
     color: white;
+    pointer-events: all;
 }
 
 .navbar .logo {
@@ -84,6 +85,7 @@
         display: block;
         width: 30px;
         height: 30px;
+        pointer-events: all;
     }
     
     .menu-burger-close {
