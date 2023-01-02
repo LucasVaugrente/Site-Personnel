@@ -35,10 +35,10 @@
         <main>
 
             <nav class="navbar">
-                <a class="logo" href="#debut">Lucas Vaugrente</a>
+                <a class="logo" href="#particles-js">Lucas Vaugrente</a>
                 <div class="nav-links">
                     <ul>
-                        <li><a class="link-debut nav_reveal1" href="#debut">Accueil</a></li>
+                        <li><a class="link-debut nav_reveal1" href="#particles-js">Accueil</a></li>
                         <li><a class="link-myself nav_reveal2" href="#myself">A propos</a></li>
                         <li><a class="link-projets nav_reveal3" href="#projets">Projets</a></li>
                         <li><a class="link-skills nav_reveal4" href="#competences">Compétences</a></li>
@@ -51,17 +51,15 @@
                 <img src="img/menu-btn.png" alt="Menu Burger" title="Menu" class="menu-burger">
             </nav>
 
-            <div id="debut">
+            <div id="particles-js">
+
+                <canvas class="particles-js-canvas-el" width="1864" height="931" style="width: 100%; height: 100%;"></canvas>
 
                 <div class="content">
                     <span class="bienvenue reveal-1">Bienvenue sur mon site, je suis</span>
                     <span class="nom reveal-2">Lucas Vaugrente.</span>
                     <span class="statut reveal-3">Etudiant en Informatique.</span>
                     <span class="pitch reveal-4">J'étudie en ce moment à l'<a class="iut-site" href="https://iut-lannion.univ-rennes1.fr/" target="_blank">IUT de Lannion</a> pour avoir le diplôme du BUT Informatique, durant ma troisième année je compte faire une alternance dans le développement web et d'application.</span>
-        
-                    <div class="fond">
-                        <div class="cercle"></div>
-                    </div>
         
                     <button class="btn-commencer" onclick="window.location.href='#myself';">Commencer</button>
                 </div>
@@ -560,6 +558,10 @@
         <script src="js/menu_burger.js"></script>
         <script src="js/reveal_info.js"></script>
         <script src="js/competences.js"></script>
+        <script src="js/navbar.js"></script>
+
+        <script src="librairies/particles.js"></script>
+        <script src="js/app.js"></script>
 
     </body>
 
