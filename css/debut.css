@@ -1,40 +1,54 @@
-#debut {
-    background-color: rgb(23, 17, 54);
+#particles-js {
     position: relative;
-    height: 70vh;
-    width: 100%;
-    padding: 30vh 10% 0 10%;
-    width: 80%;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(23, 17, 54);
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: baseline;
+    padding: 0px 200px;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    top: 30%;
+    pointer-events: none;
 }
 
 .bienvenue {
     font-size: 1.2em;
     padding-bottom: 0.5em;
-    color:rgb(161, 195, 255);;
+    color:rgb(161, 195, 255);
+    pointer-events: all;
 }
 
 .nom {
     font-size: clamp(40px, 8vw, 60px);
     color: white;
     font-weight: 700;
+    pointer-events: all;
 }
 
 .statut {
     font-size: clamp(40px, 8vw, 50px);
     padding-bottom: 0.3em;
     color: rgb(219, 237, 255);
+    pointer-events: all;
 }
 
 .pitch {
     font-size: 1.1em;
     color: rgb(89, 136, 215);
     white-space: normal;
+    pointer-events: all;
 }
 
 .btn-commencer {
@@ -50,6 +64,7 @@
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.7s ease;
+    pointer-events: all;
 }
 
 .btn-commencer:hover {
@@ -59,19 +74,19 @@
     transition: all 0.7s ease;
 }
 
-#debut a:link {
+#particles-js a:link {
     color: rgb(131, 253, 245);
 }
 
-#debut a:hover {
+#particles-js a:hover {
     text-decoration:underline;
 }
 
-#debut a:visited {
+#particles-js a:visited {
     color: rgb(131, 253, 245);
 }
 
-#debut a:active {
+#particles-js a:active {
     opacity: 0.6;
 }
 
@@ -92,8 +107,7 @@
 
 @media screen and (max-width:1024px) {
 
-    #debut {
-        padding: 20vh 2em 5em;
+    #particles-js {
         width: 100vw;
     }
 
