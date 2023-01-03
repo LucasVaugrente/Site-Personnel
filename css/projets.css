@@ -97,7 +97,7 @@
     padding: 0.5em;
 }
 
-.video-si, .video-yams {
+.video-si, .video-yams, .video-al, .video-pt {
     width: 700px;
     height: 300px;
     border-radius: 30px;
@@ -121,7 +121,7 @@
     transition: all 0.5s ease;
 }
 
-.video-si:hover, .video-yams:hover, .video-kf:hover, .img-laby:hover, .p-pitch-gauche:hover, .p-pitch-droite:hover {
+.video-si:hover, .video-pt:hover, .video-al:hover, .video-yams:hover, .video-kf:hover, .img-laby:hover, .p-pitch-gauche:hover, .p-pitch-droite:hover {
     box-shadow: 0 0 1.5em black;
     transition: all 0.5s ease;
 } 
@@ -237,31 +237,31 @@
     }
 
     .projet_1:before {
-        background-image: url("../img/fond_space_inv.png");
+        background-image: url("../img/projets/fond_space_inv.png");
     }
 
     .projet_2:before {
-        background-image: url("../img/labyrinthe3.png");
+        background-image: url("../img/projets/fond_labyrinthe.png");
     }
 
     .projet_3:before {
-        background-image: url("../img/fond_kohfrais.jpg");
+        background-image: url("../img/projets/fond_kohfrais.jpg");
     }
 
     .projet_4:before {
-        background-image: url("../img/fond_yams.jpg");
+        background-image: url("../img/projets/fond_yams.jpg");
     }
 
     .projet_5:before {
-        background-image: url("../img/portfolio_fond.jpg");
+        background-image: url("../img/projets/fond_portfolio.jpg");
         opacity: 0.8;
     }
 
     .projet_6:before {
-        background-image: url("../img/fond_alizon.png");
+        background-image: url("../img/projets/fond_alizon.png");
     }
 
-    .video-si, .img-laby, .video-kf, .video-yams, .video-si, .video-alizon {
+    .video-si, .img-laby, .video-kf, .video-yams, .video-pt, .video-al {
         display: none;
     }
 
