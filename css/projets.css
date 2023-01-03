@@ -199,6 +199,10 @@
     border-bottom-right-radius: 200%;
 }
 
+.img_projet_responsive {
+    display: none;
+}
+
 @media screen and (max-width:1100px) {
 
     #projets, .block-transition {
@@ -210,93 +214,110 @@
         width: 80%;
         box-shadow: 0 0 1em black;
         margin-bottom: 2em;
+        border-radius: 30px;
     }
 
     .titre-projets {
         font-size: 2.5em;
     }
 
-    .projet_1 {
-        background: url("../img/fond_space_inv.png");
-        background-position: center;
+    .projet_1:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background-image: url("../img/fond_space_inv.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
         background-size: cover;
         border-radius: 30px;
     }
 
-    .projet_1 .p-content-gauche {
-        backdrop-filter : blur(4px);
-        -webkit-backdrop-filter : blur(4px);
-    }
-
-    .projet_2 {
-        background: url("../img/labyrinthe3.png");
-        background-position: center;
+    .projet_2:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background-image: url("../img/labyrinthe3.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
         background-size: cover;
         border-radius: 30px;
     }
 
-    .projet_2 .p-content-droite {
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-    }
-
-    .projet_3 {
-        background: url("../img/fond_kohfrais.jpg");
-        background-position: center;
+    .projet_3:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background-image: url("../img/fond_kohfrais.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
         background-size: cover;
         border-radius: 30px;
     }
 
-    .projet_3 .p-content-gauche {
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-    }
-
-    .projet_3 .git-lan a {
-        color: aquamarine;
-    }
-
-    .projet_4 {
-        background: url("../img/fond_yams.jpg");
-        background-position: center;
-        background-size: cover;
-        border-radius: 30px;
-    }
-    
-    .projet_4 .p-content-droite {
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-    }
-
-    .projet_5 {
-        background: url("../img/portfolio_fond.jpg");
-        background-position: center;
+    .projet_4:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background-image: url("../img/fond_yams.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
         background-size: cover;
         border-radius: 30px;
     }
 
-    .projet_5 .p-content-gauche {
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
-    }
-
-    .projet_6 {
-        background: url("../img/fond_alizon.png");
-        background-position: center;
+    .projet_5:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background-image: url("../img/portfolio_fond.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
         background-size: cover;
         border-radius: 30px;
     }
-    
-    .projet_6 .p-content-droite {
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
+
+    .projet_6:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        background-image: url("../img/fond_alizon.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+        border-radius: 30px;
     }
 
-    .projet_6 .titre-projet-droite .p-titre, .projet_6 .titre-projet-droite p, .projet_6 .p-pitch-droite, .projet_6 .git-lan a {
-        color: rgb(23, 17, 54);
-    }
-
-    .projet_1 > img, .projet_2 > img, .projet_3 > img, .projet_4 > img, .projet_5 > video, .projet_6 > video {
+    .video-si, .img-laby, .video-kf, .video-yams, .video-si, .video-alizon {
         display: none;
     }
 
@@ -306,6 +327,7 @@
         color: white;
         box-shadow: none;
         font-weight: 500;
+        padding-top: 0;
     }
 
     .p-pitch-gauche:hover, .p-pitch-droite:hover {
@@ -322,10 +344,12 @@
         align-items: flex-start;
         padding: 1.5em;
         margin: 0;
+        position: relative;
     }
 
     .git-lan {
         margin: 0 1em;
         font-weight: 600;
+        position: relative;
     }
 }
