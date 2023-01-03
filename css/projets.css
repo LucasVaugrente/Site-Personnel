@@ -122,7 +122,7 @@
 }
 
 .video-si:hover, .video-yams:hover, .video-kf:hover, .img-laby:hover, .p-pitch-gauche:hover, .p-pitch-droite:hover {
-    box-shadow: 0 0 1em black;
+    box-shadow: 0 0 1.5em black;
     transition: all 0.5s ease;
 } 
 
