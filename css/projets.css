@@ -221,7 +221,7 @@
         font-size: 2.5em;
     }
 
-    .projet_1:before {
+    .projet_1:before, .projet_2:before, .projet_3:before, .projet_4:before, .projet_5:before, .projet_6:before {
         content: ' ';
         display: block;
         position: absolute;
@@ -230,91 +230,35 @@
         width: 100%;
         height: 100%;
         opacity: 0.4;
-        background-image: url("../img/fond_space_inv.png");
         background-repeat: no-repeat;
         background-position: 50% 0;
         background-size: cover;
         border-radius: 30px;
+    }
+
+    .projet_1:before {
+        background-image: url("../img/fond_space_inv.png");
     }
 
     .projet_2:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.4;
         background-image: url("../img/labyrinthe3.png");
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        background-size: cover;
-        border-radius: 30px;
     }
 
     .projet_3:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.4;
         background-image: url("../img/fond_kohfrais.jpg");
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        background-size: cover;
-        border-radius: 30px;
     }
 
     .projet_4:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.4;
         background-image: url("../img/fond_yams.jpg");
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        background-size: cover;
-        border-radius: 30px;
     }
 
     .projet_5:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.4;
         background-image: url("../img/portfolio_fond.jpg");
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        background-size: cover;
-        border-radius: 30px;
+        opacity: 0.8;
     }
 
     .projet_6:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.4;
         background-image: url("../img/fond_alizon.png");
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        background-size: cover;
-        border-radius: 30px;
     }
 
     .video-si, .img-laby, .video-kf, .video-yams, .video-si, .video-alizon {
@@ -351,5 +295,6 @@
         margin: 0 1em;
         font-weight: 600;
         position: relative;
+        padding-bottom: 1em;
     }
 }
