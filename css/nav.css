@@ -41,10 +41,12 @@
 
 .navbar a:link {
     color: white;
+    transition: .4s;
 }
 
 .navbar a:hover {
     color: rgb(131, 253, 245);
+    transition: .4s;
 }
 
 .navbar a:active {
@@ -57,7 +59,7 @@
 
 [class*="nav_reveal"] {
     opacity: 0;
-    transform: translateY(60px);
+    transform: translateY(-50px);
 }
 
 .nav_reveal-visible {
@@ -66,17 +68,24 @@
     transition: .6s;
 }
 
+.nav_reveal1 {
+    transition-delay: .9s;
+}
+
 .nav_reveal2 {
-    transition-delay: .1s;
+    transition-delay: .7s;
 }
+
 .nav_reveal3 {
-    transition-delay: .3s;
-}
-.nav_reveal4 {
     transition-delay: .5s;
 }
+
+.nav_reveal4 {
+    transition-delay: .3s;
+}
+
 .nav_reveal5 {
-    transition-delay: .7s;
+    transition-delay: .1s;
 }
 
 @media screen and (max-width:1100px) {
