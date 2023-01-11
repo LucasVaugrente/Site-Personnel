@@ -65,12 +65,23 @@
     -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
     -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
     user-select: none; /* Propriété standard */
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.Cat-langages-W:hover, .Cat-langages-D:hover, .Cat-langages-B:hover {
+    background-color: rgb(198, 182, 211);
+    transition: .4s;
 }
 
 .type_selectionne {
     background-color: rgb(23, 17, 54);
     color: white;
-    border-radius: 20px;
+}
+
+.type_selectionne:hover {
+    background-color: rgb(23, 17, 54);
+    color: white;
 }
 
 .type_non_selectionne {
