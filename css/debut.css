@@ -74,11 +74,12 @@
     transition: all 0.7s ease;
 }
 
-.iut-site a {
+.iut-site:link {
     display: inline-block;
+    color: rgb(131, 253, 245);
 }
 
-.iut-site a::after {
+.iut-site::after {
     content: '';
     width: 0px;
     height: 1px;
@@ -88,11 +89,11 @@
     transition: .5s;
 }
 
-.iut-site a:hover::after {
+.iut-site:hover::after {
     width: 100%;
 }
 
-.iut-site a:visited {
+.iut-site:visited {
     color: rgb(131, 253, 245);
 }
 

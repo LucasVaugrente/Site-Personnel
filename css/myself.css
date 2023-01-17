@@ -34,10 +34,6 @@
 
 .lien_myself a:link {
     color: rgb(194, 47, 47);
-}
-
-
-.lien_myself a {
     display: inline-block;
 }
 

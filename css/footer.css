@@ -26,23 +26,30 @@ footer div {
 }
 
 footer a:link {
-    color: rgb(222, 222, 222);
+    color: white;
+    display: inline-block;
 }
 
-footer a:hover {
-    text-decoration:underline;
+footer a::after {
+    content: '';
+    width: 0px;
+    height: 1.5px;
+    margin-top: -4px;
+    display: block;
+    background: white;
+    transition: .5s;
+}
+
+footer a:hover::after {
+    width: 100%;
 }
 
 footer a:visited {
-    color: rgb(222, 222, 222);
-}
-
-footer a:active {
-    opacity: 0.6;
+    color: white;
 }
 
 footer p {
-    color: rgb(222, 222, 222);;
+    color: rgb(222, 222, 222);
 }
 
 @media screen and (max-width:1080px) {

@@ -32,10 +32,6 @@
     color: rgb(222, 222, 222);
 }
 
-.contact-block a:hover {
-    text-decoration:underline;
-}
-
 .contact-block a:visited {
     color: rgb(222, 222, 222);
 }
