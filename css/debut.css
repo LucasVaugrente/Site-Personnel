@@ -74,20 +74,26 @@
     transition: all 0.7s ease;
 }
 
-#particles-js a:link {
+.iut-site a {
+    display: inline-block;
+}
+
+.iut-site a::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    margin-top: -4px;
+    display: block;
+    background: rgb(131, 253, 245);
+    transition: .5s;
+}
+
+.iut-site a:hover::after {
+    width: 100%;
+}
+
+.iut-site a:visited {
     color: rgb(131, 253, 245);
-}
-
-#particles-js a:hover {
-    text-decoration:underline;
-}
-
-#particles-js a:visited {
-    color: rgb(131, 253, 245);
-}
-
-#particles-js a:active {
-    opacity: 0.6;
 }
 
 .cercle {

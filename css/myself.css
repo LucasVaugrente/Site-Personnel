@@ -32,24 +32,34 @@
     flex-direction: column;
 }
 
-.parcours a:link {
+.lien_myself a:link {
     color: rgb(194, 47, 47);
 }
 
-.parcours a:hover {
-    text-decoration:underline;
+
+.lien_myself a {
+    display: inline-block;
 }
 
-.parcours a:visited {
+.lien_myself a::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    margin-top: -4px;
+    display: block;
+    background: rgb(194, 47, 47);
+    transition: .5s;
+}
+
+.lien_myself a:hover::after {
+    width: 100%;
+}
+
+.lien_myself a:visited {
     color: rgb(194, 47, 47);
-}
-
-.parcours a:active {
-    opacity: 0.6;
 }
 
 .para1, .para2 {
-    text-indent: 20px; 
     padding: 0 2em 1em 2em ;
 }
 
