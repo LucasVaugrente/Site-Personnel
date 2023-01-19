@@ -124,11 +124,11 @@
     }
 
     .nom {
-        font-size: 2em;
+        font-size: 3em;
     }
 
     .statut {
-        font-size: 1.8em;
+        font-size: 2.8em;
         width: 80vw;
     }
 
@@ -139,5 +139,31 @@
 
     .btn-commencer {
         font-size: 1em;
+    }
+}
+
+@media screen and (max-width:730px) {
+    .nom {
+        font-size: 2.5em;
+    }
+
+    .statut {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .content {
+        top: 25%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .content {
+        top: 20%;
+    }
+
+    .nom {
+        font-size: 2.2em;
     }
 }
