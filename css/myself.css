@@ -28,7 +28,7 @@
     font-size: 1.2em;
     padding: 1em;
     padding-top: 3em;
-    display : flex;
+    display: flex;
     flex-direction: column;
 }
 
@@ -55,8 +55,9 @@
     color: rgb(194, 47, 47);
 }
 
-.para1, .para2 {
-    padding: 0 2em 1em 2em ;
+.para1,
+.para2 {
+    padding: 0 2em 1em 2em;
 }
 
 .parcours_etu {
@@ -64,7 +65,8 @@
     flex-wrap: nowrap;
 }
 
-.but-info, .lycee {
+.but-info,
+.lycee {
     background-color: rgb(216, 194, 235);
     padding: 1em;
     margin: 1em;
@@ -103,7 +105,8 @@
 
 @media screen and (max-width:1100px) {
 
-    #myself, .block-transition {
+    #myself,
+    .block-transition {
         width: 100vw;
     }
 
@@ -118,7 +121,9 @@
         padding: 4em 1em 1em 1em;
     }
 
-    .para1, .para2, .parcours_etu {
+    .para1,
+    .para2,
+    .parcours_etu {
         font-size: 1em;
         padding: 0 2em 1em;
     }
@@ -126,9 +131,11 @@
 
 @media screen and (max-width:900px) {
 
-    .para1, .para2, .parcours_etu {
+    .para1,
+    .para2,
+    .parcours_etu {
         text-align: left;
-       font-size: 0.9em;
+        font-size: 0.9em;
     }
 
     .profil img {
@@ -143,7 +150,9 @@
 
 @media screen and (max-width:500px) {
 
-    .para1, .para2, .parcours_etu {
+    .para1,
+    .para2,
+    .parcours_etu {
         padding: 1em;
     }
 

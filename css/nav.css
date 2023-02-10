@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height:5em;
+    height: 5em;
     box-sizing: border-box;
     z-index: 10;
     pointer-events: none;
@@ -30,11 +30,12 @@
 }
 
 .navbar .nav-links ul li.active a {
-    color:red;
+    color: red;
     font-weight: 600;
 }
 
-.navbar .menu-burger, .menu-burger-close {
+.navbar .menu-burger,
+.menu-burger-close {
     display: none;
     width: 35px;
 }
@@ -96,7 +97,7 @@
         height: 30px;
         pointer-events: all;
     }
-    
+
     .menu-burger-close {
         display: block;
         width: 25px;
@@ -105,7 +106,7 @@
         top: 40px;
         right: 50px;
     }
-    
+
     .nav-links {
         top: 0;
         left: 0;

@@ -12,7 +12,9 @@
     color: black;
 }
 
-.software, .front, .back {
+.software,
+.front,
+.back {
     background-color: rgb(203, 184, 218);
     box-shadow: 0 0 0.6em rgb(23, 17, 54);
     margin: 3em 10%;
@@ -55,21 +57,29 @@
     margin: 0 20%;
 }
 
-.Cat-langages-W, .Cat-langages-D, .Cat-langages-B {
+.Cat-langages-W,
+.Cat-langages-D,
+.Cat-langages-B {
     font-size: 1.5em;
     text-align: center;
     margin: 1em;
     padding: 0.5em;
     cursor: pointer;
-    -moz-user-select: none; /* Firefox */
-    -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
-    -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
-    user-select: none; /* Propriété standard */
+    -moz-user-select: none;
+    /* Firefox */
+    -webkit-user-select: none;
+    /* Chrome, Safari, Opéra depuis la version 15 */
+    -ms-user-select: none;
+    /* Internet explorer depuis la version 10 et Edge */
+    user-select: none;
+    /* Propriété standard */
     transition: .4s;
     border-radius: 20px;
 }
 
-.Cat-langages-W:hover, .Cat-langages-D:hover, .Cat-langages-B:hover {
+.Cat-langages-W:hover,
+.Cat-langages-D:hover,
+.Cat-langages-B:hover {
     background-color: rgb(198, 182, 211);
     transition: .4s;
 }
@@ -113,9 +123,9 @@
 }
 
 @media screen and (max-width:900px) {
-    
+
     .types_langages {
-        display:none;
+        display: none;
     }
 
     .titre-skills {
@@ -130,7 +140,9 @@
         font-weight: 900;
     }
 
-    .software, .front, .back {
+    .software,
+    .front,
+    .back {
         display: flex;
         margin-top: 1em;
     }

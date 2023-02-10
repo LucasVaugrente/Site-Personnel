@@ -21,10 +21,15 @@
 
 .p-titre {
     font-size: 2.3em;
-    color:white;
+    color: white;
 }
 
-.projet_1, .projet_2, .projet_3, .projet_4, .projet_5, .projet_6 {
+.projet_1,
+.projet_2,
+.projet_3,
+.projet_4,
+.projet_5,
+.projet_6 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -70,7 +75,8 @@
     transition: all 0.5s ease;
 }
 
-.titre-projet-gauche p, .titre-projet-droite p {
+.titre-projet-gauche p,
+.titre-projet-droite p {
     color: aquamarine;
 }
 
@@ -97,7 +103,10 @@
     padding: 0.5em;
 }
 
-.video-si, .video-yams, .video-al, .video-pt {
+.video-si,
+.video-yams,
+.video-al,
+.video-pt {
     width: 700px;
     height: 300px;
     border-radius: 30px;
@@ -121,10 +130,17 @@
     transition: all 0.5s ease;
 }
 
-.video-si:hover, .video-pt:hover, .video-al:hover, .video-yams:hover, .video-kf:hover, .img-laby:hover, .p-pitch-gauche:hover, .p-pitch-droite:hover {
+.video-si:hover,
+.video-pt:hover,
+.video-al:hover,
+.video-yams:hover,
+.video-kf:hover,
+.img-laby:hover,
+.p-pitch-gauche:hover,
+.p-pitch-droite:hover {
     box-shadow: 0 0 1.5em black;
     transition: all 0.5s ease;
-} 
+}
 
 .logo-github {
     border-radius: 50px;
@@ -143,12 +159,14 @@
     font-size: 1.2em;
 }
 
-.langues-prog:link, .lien_projets:link {
+.langues-prog:link,
+.lien_projets:link {
     display: inline-block;
     color: rgb(131, 253, 245);
 }
 
-.langues-prog::after, .lien_projets::after {
+.langues-prog::after,
+.lien_projets::after {
     content: '';
     width: 0px;
     height: 1px;
@@ -158,11 +176,13 @@
     transition: .5s;
 }
 
-.langues-prog:hover::after, .lien_projets:hover::after {
+.langues-prog:hover::after,
+.lien_projets:hover::after {
     width: 100%;
 }
 
-.langues-prog:visited, .lien_projets:visited {
+.langues-prog:visited,
+.lien_projets:visited {
     color: rgb(131, 253, 245);
 }
 
@@ -212,11 +232,17 @@
 
 @media screen and (max-width:1100px) {
 
-    #projets, .block-transition {
+    #projets,
+    .block-transition {
         width: 100vw;
     }
 
-    .projet_1, .projet_2, .projet_3, .projet_4, .projet_5, .projet_6 {
+    .projet_1,
+    .projet_2,
+    .projet_3,
+    .projet_4,
+    .projet_5,
+    .projet_6 {
         margin: 1em 10% 5em 10%;
         width: 80%;
         box-shadow: 0 0 1em black;
@@ -228,7 +254,12 @@
         font-size: 2.5em;
     }
 
-    .projet_1:before, .projet_2:before, .projet_3:before, .projet_4:before, .projet_5:before, .projet_6:before {
+    .projet_1:before,
+    .projet_2:before,
+    .projet_3:before,
+    .projet_4:before,
+    .projet_5:before,
+    .projet_6:before {
         content: ' ';
         display: block;
         position: absolute;
@@ -268,11 +299,17 @@
         background-image: url("../img/projets/fond_alizon.png");
     }
 
-    .video-si, .img-laby, .video-kf, .video-yams, .video-pt, .video-al {
+    .video-si,
+    .img-laby,
+    .video-kf,
+    .video-yams,
+    .video-pt,
+    .video-al {
         display: none;
     }
 
-    .p-pitch-gauche, .p-pitch-droite {
+    .p-pitch-gauche,
+    .p-pitch-droite {
         background-color: rgba(255, 255, 255, 0);
         margin: 0;
         color: white;
@@ -281,17 +318,20 @@
         padding-top: 0;
     }
 
-    .p-pitch-gauche:hover, .p-pitch-droite:hover {
+    .p-pitch-gauche:hover,
+    .p-pitch-droite:hover {
         box-shadow: none;
     }
 
-    .p-content-gauche, .p-content-droite {
+    .p-content-gauche,
+    .p-content-droite {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .titre-projet-droite, .titre-projet-gauche {
+    .titre-projet-droite,
+    .titre-projet-gauche {
         align-items: flex-start;
         padding: 1.5em;
         margin: 0;

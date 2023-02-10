@@ -40,10 +40,13 @@
     opacity: 0.6;
 }
 
-.block-mail, .block-cv, .block-linkedin, .block-git {
+.block-mail,
+.block-cv,
+.block-linkedin,
+.block-git {
     padding: 1em;
     margin: 0 0.5em 0 0.5em;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }

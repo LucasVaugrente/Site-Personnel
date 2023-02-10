@@ -59,7 +59,7 @@ footer p {
         padding: 5em 0;
     }
 
-    .droit_github > p {
+    .droit_github>p {
         margin-left: 4%;
     }
 
@@ -82,12 +82,12 @@ footer p {
         align-items: center;
     }
 
-    .droit_github > p {
-        margin:0;
+    .droit_github>p {
+        margin: 0;
     }
 
     .github-site {
-        margin:0;
+        margin: 0;
         padding-top: 4em;
     }
 }
