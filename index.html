@@ -2,484 +2,615 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 
-    <head>
+<head>
 
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="description" content="Site Portfolio">
-        <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio">
-        <meta name="author" content="Lucas Vaugrente">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Site Portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio">
+    <meta name="author" content="Lucas Vaugrente">
 
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://www.lucasvaugrente.fr">
-	<meta property="og:image" content="https://www.lucasvaugrente.fr/img/projets/Site.png">
-	<meta property="og:image:url" content="https://www.lucasvaugrente.fr/img/projets/Site.png">
-	<meta property="og:image:secure_url" content="https://www.lucasvaugrente.fr/img/projets/Site.png">
-	<meta property="og:image:type" content="image/png">
-	<meta property="og:image:width" content="1920">
-	<meta property="og:image:height" content="1080">
-	<meta property="og:title" content="Lucas Vaugrente">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lucasvaugrente.fr">
+    <meta property="og:image" content="https://www.lucasvaugrente.fr/img/projets/Site.png">
+    <meta property="og:image:url" content="https://www.lucasvaugrente.fr/img/projets/Site.png">
+    <meta property="og:image:secure_url" content="https://www.lucasvaugrente.fr/img/projets/Site.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1080">
+    <meta property="og:title" content="Lucas Vaugrente">
 
-        <!-- Image Ico dans l'onglet-->
-        <link rel="icon" type="image/png" sizes="16x16" href="img/profil/mateteico.png" style="border-radius: 50px;">
+    <!-- Image Ico dans l'onglet-->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/profil/mateteico.png" style="border-radius: 50px;">
 
-        <!-- Import des fichiers css-->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/nav.css">
-        <link rel="stylesheet" href="css/debut.css">
-        <link rel="stylesheet" href="css/myself.css">
-        <link rel="stylesheet" href="css/projets.css">
-        <link rel="stylesheet" href="css/competences.css">
-        <link rel="stylesheet" href="css/contacts.css">
-        <link rel="stylesheet" href="css/footer.css">
+    <!-- Import des fichiers css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/debut.css">
+    <link rel="stylesheet" href="css/myself.css">
+    <link rel="stylesheet" href="css/projets.css">
+    <link rel="stylesheet" href="css/competences.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/footer.css">
 
-        <!-- Titre de l'onglet de la page -->
-        <title>Lucas Vaugrente</title>
+    <!-- Titre de l'onglet de la page -->
+    <title>Lucas Vaugrente</title>
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <main>
+    <main>
 
-            <nav class="navbar">
-                <a class="logo" href="#particles-js">Lucas Vaugrente</a>
-                <div class="nav-links">
-                    <ul>
-                        <li class="nav_reveal1"><a class="link-debut" href="#particles-js">Accueil</a></li>
-                        <li class="nav_reveal2"><a class="link-myself" href="#myself">A propos</a></li>
-                        <li class="nav_reveal3"><a class="link-projets" href="#projets">Projets</a></li>
-                        <li class="nav_reveal4"><a class="link-skills" href="#competences">Compétences</a></li>
-                        <li class="contact-btn nav_reveal5"><a class="link-contact" href="#contact">Contact</a></li>
-                    </ul>
+        <nav class="navbar">
+            <a class="logo" href="#particles-js">Lucas Vaugrente</a>
+            <div class="nav-links">
+                <ul>
+                    <li class="nav_reveal1"><a class="link-debut" href="#particles-js">Accueil</a></li>
+                    <li class="nav_reveal2"><a class="link-myself" href="#myself">A propos</a></li>
+                    <li class="nav_reveal3"><a class="link-projets" href="#projets">Projets</a></li>
+                    <li class="nav_reveal4"><a class="link-skills" href="#competences">Compétences</a></li>
+                    <li class="contact-btn nav_reveal5"><a class="link-contact" href="#contact">Contact</a></li>
+                </ul>
 
-                    <img src="img/menu_burger/croix.png" alt="Menu Burger" title="Fermer le menu" class="menu-burger-close">
+                <img src="img/menu_burger/croix.png" alt="Menu Burger" title="Fermer le menu" class="menu-burger-close">
+            </div>
+
+            <img src="img/menu_burger/menu-btn.png" alt="Menu Burger" title="Menu" class="menu-burger">
+        </nav>
+
+        <div id="particles-js">
+
+            <canvas class="particles-js-canvas-el" width="1864" height="931"
+                style="width: 100%; height: 100%;"></canvas>
+
+            <div class="content">
+                <span class="bienvenue reveal-1">Bienvenue sur mon site, je suis</span>
+                <span class="nom reveal-2">Lucas Vaugrente.</span>
+                <span class="statut reveal-3">Etudiant en Informatique.</span>
+                <span class="pitch reveal-4">J'étudie en ce moment à l'<a class="iut-site"
+                        href="https://iut-lannion.univ-rennes1.fr/" target="_blank">IUT de Lannion</a> pour avoir le
+                    diplôme du BUT Informatique, durant ma troisième année je compte faire une alternance dans le
+                    développement web et d'application.</span>
+
+                <button class="btn-commencer" onclick="window.location.href='#myself';">Commencer</button>
+            </div>
+
+        </div>
+
+        <div id="myself">
+
+            <h1 class="titre-myself">
+                Qui suis-je ?
+            </h1>
+
+            <div class="parcours-block">
+
+                <div class="profil reveal-">
+                    <img src="img/profil/matete.jpg" alt="Mon portait" title="Mon portait" width='350' height='350'>
                 </div>
 
-                <img src="img/menu_burger/menu-btn.png" alt="Menu Burger" title="Menu" class="menu-burger">
-            </nav>
+                <div class="parcours">
 
-            <div id="particles-js">
+                    <p class="para1">Actuellement en Bachelor Universitaire de Technologie à l'<span
+                            class="lien_myself"><a href="https://iut-lannion.univ-rennes1.fr/" target="_blank">IUT de
+                                Lannion</a></span>, je suis en deuxième année à la recherche d'une <span
+                            class="lien_myself"><a href="#contact">alternance</a></span> dans le développement
+                        d'application web pour septembre 2023. Dans les années à venir, je souhaiterai intégrer une
+                        école d'ingénieurs
+                        ou faire un master en Informatique après ma 3ème année. Mes choix seraient peut-être pour
+                        l'<span class="lien_myself"><a href="https://www.enssat.fr/" target="_blank">ENSSAT</a></span> à
+                        Lannion ou l'<span class="lien_myself"><a href="https://esir.univ-rennes1.fr/"
+                                target="_blank">ESIR</a></span> à Rennes.</p>
 
-                <canvas class="particles-js-canvas-el" width="1864" height="931" style="width: 100%; height: 100%;"></canvas>
+                    <p class="para2">Je fais de plus en plus de <span class="lien_myself"><a
+                                href="#projets">projets</a></span> personnels en dehors de l'activité scolaire afin de
+                        m'améliorer
+                        sur des langages appris durant ma formation. Je suis assez passionné et curieux pour découvrir
+                        de nouveaux langages de programmation,
+                        cela me permet de diversifier ma culture dans l'informatique.
+                    </p>
 
-                <div class="content">
-                    <span class="bienvenue reveal-1">Bienvenue sur mon site, je suis</span>
-                    <span class="nom reveal-2">Lucas Vaugrente.</span>
-                    <span class="statut reveal-3">Etudiant en Informatique.</span>
-                    <span class="pitch reveal-4">J'étudie en ce moment à l'<a class="iut-site" href="https://iut-lannion.univ-rennes1.fr/" target="_blank">IUT de Lannion</a> pour avoir le diplôme du BUT Informatique, durant ma troisième année je compte faire une alternance dans le développement web et d'application.</span>
-        
-                    <button class="btn-commencer" onclick="window.location.href='#myself';">Commencer</button>
+                    <div class="parcours_etu">
+
+                        <article class="but-info">
+                            <h4>Bachelor Universitaire de Technologie <br> (2021 - 2024)</h4>
+                            <p>&nbsp;</p>
+                            <p><span class="lien_myself"><a href="https://iut-lannion.univ-rennes1.fr/"
+                                        target="_blank">IUT de Lannion</a></span></p>
+                        </article>
+
+                        <article class="lycee">
+                            <h4>Baccaleuréat Générale <br> (2018 -2021)</h4>
+                            <p>Option Mathématiques, Numérique Scientifique et Informatique et Maths Expertes.</p>
+                            <p><span class="lien_myself"><a href="https://www.lesrimains.org" target="_blank">Lycée Les
+                                        Rimains Saint-Malo</a></span></p>
+                        </article>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="block-transition">
+            <div class="block-transition_1">
+                <div class="transition_myself_proj1"></div>
+            </div>
+            <div class="block-transition_2">
+                <div class="transition_myself_proj2"></div>
+            </div>
+        </div>
+
+        <div id="projets" class="projets">
+
+            <h1 class="titre-projets">
+                Projets
+            </h1>
+
+            <div class="section-projets">
+
+                <article class="projet_1 revelation">
+
+                    <div class="p-content-gauche">
+
+                        <div class="titre-projet-gauche">
+                            <p>2020 - Projet Lycée</p>
+
+                            <h2 class="p-titre">Space Invaders</h2>
+                        </div>
+
+                        <p class="p-pitch-gauche">Ce projet est une reproduction du jeu vidéo "Space Invaders", qui
+                            consiste à éliminer des obstacles qui s'approchent de nous en se déplacant de gauche à
+                            droite. On peut enregistrer notre score avec un pseudo personnalisé préalablement choisi
+                            avant de commencer une partie.</p>
+
+                        <div class="git-lan">
+
+                            <a class="langues-prog" href="https://www.python.org" target="_blank">Python</a>
+                            <a class="langues-prog" href="https://www.pygame.org/news" target="_blank">Pygame</a>
+                            <a class="lien-github_projet" href="https://github.com/Luvey35/Space_Invaders"
+                                target="_blank">
+                                <img class="logo-github" src="img/icones/logo/GitHub.png" alt="Logo Github"
+                                    title="Lien Github" width="30" height="30">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <video class="video-si" src="videos/space_invaders.mp4" autoplay preload="auto" loop muted></video>
+
+                </article>
+
+                <article class="projet_2 revelation">
+
+                    <img class="img-laby" src="img/projets/fond_labyrinthe.png" alt="Labyrinthe" title="Labyrinthe">
+
+                    <div class="p-content-droite">
+
+                        <div class="titre-projet-droite">
+                            <p>2020 - Projet Lycée</p>
+                            <h2 class="p-titre">Labyrinthe</h2>
+                        </div>
+
+                        <p class="p-pitch-droite">Ce projet est un générateur de labyrinthe qui affiche une
+                            auto-résolution. Celui-ci a été fait à deux au lycée. L'algorithme utilisé est celui de <a
+                                class="lien_projets" href="https://fr.wikipedia.org/wiki/Algorithme_de_Kruskal"
+                                target="_blank">Kruskal</a>. Nous avions envisagé aussi de faire un personnage avec des
+                            caractéristiques que l'utilisateur devait controler pour parcourir le labyrinthe sans la
+                            résolution.</p>
+
+                        <div class="git-lan">
+                            <a class="langues-prog" href="https://www.python.org" target="_blank">Python</a>
+                            <a class="langues-prog" href="https://www.pygame.org/news" target="_blank">Pygame</a>
+                            <a class="lien-github_projet" href="https://github.com/Luvey35/Labyrinthe" target="_blank">
+                                <img class="logo-github" src="img/icones/logo/GitHub.png" alt="Logo Github"
+                                    title="Lien Github" width="30" height="30">
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="projet_3 revelation">
+
+                    <div class="p-content-gauche">
+
+                        <div class="titre-projet-gauche">
+                            <p>2021 - Projet IUT</p>
+                            <h2 class="p-titre">Site Kohfrais</h2>
+                        </div>
+
+                        <p class="p-pitch-gauche">Ce projet est un site web réalisé en groupe de 4 à partir d'une
+                            interview fictive. Avec toutes les informations récoltées, j'ai fait avec mon équipe : une
+                            synthèse des expressions de besoins, l'arborescence du site, la charte graphique, le
+                            maquettage avec le contenu des pages et enfin la réalisation du site.</p>
+
+                        <div class="git-lan">
+                            <a class="langues-prog" href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"
+                                target="_blank">HTML</a>
+                            <a class="langues-prog" href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"
+                                target="_blank">CSS</a>
+                            <a class="langues-prog" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+
+                            <a class="lien-github_projet" href="https://github.com/Luvey35/Site_KohFrais"
+                                target="_blank">
+                                <img class="logo-github" src="img/icones/logo/GitHub.png" alt="Logo Github"
+                                    title="Lien Github" width="30" height="30">
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <video class="video-kf" src="videos/kohfrais.mp4" autoplay preload="auto" loop muted></video>
+
+                </article>
+
+                <article class="projet_4 revelation">
+
+                    <video class="video-yams" src="videos/yams.mp4" autoplay preload="auto" loop muted></video>
+
+                    <div class="p-content-droite">
+
+                        <div class="titre-projet-droite">
+                            <p>2021 - Projet IUT</p>
+                            <h2 class="p-titre">Yams</h2>
+                        </div>
+
+                        <p class="p-pitch-droite">Ce projet est une simulation du jeu du Yams reprenant les mêmes règles
+                            que l'authentique, entre deux joueurs. celui-ci a nécessité plusieurs étapes à rendre, comme
+                            le maquettage, le cahier de tests, le programme en langage algoritme naturel ou la
+                            documentation.</p>
+
+                        <div class="git-lan">
+                            <a class="langues-prog" href="https://fr.wikipedia.org/wiki/C_(langage)"
+                                target="_blank">C</a>
+                            <a class="lien-github_projet" href="https://github.com/Luvey35/Yams" target="_blank">
+                                <img class="logo-github" src="img/icones/logo/GitHub.png" alt="Logo Github"
+                                    title="Lien Github" width="30" height="30">
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="projet_5 revelation">
+
+                    <div class="p-content-gauche">
+
+                        <div class="titre-projet-gauche">
+                            <p>2022 - Projet Personnel</p>
+                            <h2 class="p-titre">Site Portfolio</h2>
+                        </div>
+
+                        <p class="p-pitch-gauche">Ce projet est un site web pour la présentation de mon portfolio, ce
+                            site présente mon parcours, mes projets que j'ai faits jusqu'ici, mes compétences, ainsi que
+                            mes moyens de contact. C'est un projet que j'ai mené hors scolarité en m'entrainant plus en
+                            JavaScript.</p>
+
+                        <div class="git-lan">
+                            <a class="langues-prog" href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"
+                                target="_blank">HTML</a>
+                            <a class="langues-prog" href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"
+                                target="_blank">CSS</a>
+                            <a class="langues-prog" href="https://fr.wikipedia.org/wiki/JavaScript"
+                                target="_blank">JavaScript</a>
+
+                            <a class="lien-github_projet" href="https://github.com/Luvey35/Site-Personnel"
+                                target="_blank">
+                                <img class="logo-github" src="img/icones/logo/GitHub.png" alt="Logo Github"
+                                    title="Lien Github" width="30" height="30">
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <video class="video-pt" src="videos/portfolio.mp4" autoplay preload="auto" loop muted></video>
+
+                </article>
+
+                <article class="projet_6 revelation">
+
+                    <video class="video-al" src="videos/alizon.mp4" autoplay preload="auto" loop muted></video>
+
+                    <div class="p-content-droite">
+
+                        <div class="titre-projet-droite">
+                            <p>2022 - Projet IUT</p>
+                            <h2 class="p-titre">Alizon</h2>
+                        </div>
+
+                        <p class="p-pitch-droite">Ce projet est une marketplace de vente de produits bretons. Celle-ci
+                            répond à un besoin d'un client fictif. Ce projet en groupe de 7, a été suivi avec la méthode
+                            <a class="lien_projets"
+                                href="https://www.planzone.fr/blog/quest-ce-que-la-methodologie-agile"
+                                target="_blank">AGILE</a> en management, j'avais pour rôle le <a class="lien_projets"
+                                href="https://www.atlassian.com/fr/agile/scrum/scrum-master" target="_blank">Scrum
+                                Master</a>.</p>
+
+                        <div class="git-lan">
+                            <a class="langues-prog" href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"
+                                target="_blank">HTML</a>
+                            <a class="langues-prog" href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"
+                                target="_blank">CSS</a>
+                            <a class="langues-prog" href="https://fr.wikipedia.org/wiki/JavaScript"
+                                target="_blank">JavaScript</a>
+                            <a class="langues-prog"
+                                href="https://fr.wikipedia.org/wiki/PHP#:~:text=PHP%3A%20Hypertext%20Preprocessor%2C%20plus%20connu,langage%20interpr%C3%A9t%C3%A9%20de%20fa%C3%A7on%20locale."
+                                target="_blank">PHP</a>
+                            <a class="langues-prog" href="https://www.mysql.com/fr/" target="_blank">MySQL</a>
+
+                            <a class="lien-github_projet" href="https://github.com/Luvey35/Site-Personnel"
+                                target="_blank">
+                                <img class="logo-github" src="img/icones/logo/GitHub.png" alt="Logo Github"
+                                    title="Lien Github" width="30" height="30">
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+        <div class="block-transition">
+            <div class="block-transition_3">
+                <div class="transition_myself_proj3"></div>
+            </div>
+            <div class="block-transition_4">
+                <div class="transition_myself_proj4"></div>
+            </div>
+        </div>
+
+        <div id="competences">
+
+            <h1 class="titre-skills">
+                Compétences
+            </h1>
+
+            <div class="types_langages">
+                <h3 class="Cat-langages-W">Front-Web</h3>
+                <h3 class="Cat-langages-D type_selectionne">Software Developpment</h3>
+                <h3 class="Cat-langages-B ">Back-End</h3>
+            </div>
+
+            <h2 class="titre_types">Software Developpment</h2>
+
+            <div class="software">
+
+                <div class="zoom apparition">
+                    <div class="image">
+                        <a href="https://fr.wikipedia.org/wiki/C_(langage)" target="_blank">
+                            <img src="img/icones/langages/C.svg" width="75" height="75" alt="Logo C" title="C">
+                        </a>
+                        <span>C</span>
+                    </div>
+                </div>
+
+                <div class="zoom apparition">
+                    <div class="image">
+                        <a href="https://www.python.org/" target="_blank">
+                            <img src="img/icones/langages/Python.svg" width="75" height="75" alt="Logo Python"
+                                title="Python">
+                        </a>
+                        <span>Python</span>
+                    </div>
+                </div>
+
+                <div class="zoom apparition">
+                    <div class="image">
+                        <a href="https://fr.wikipedia.org/wiki/Java_(langage)" target="_blank">
+                            <img src="img/icones/langages/Java.svg" width="75" height="75" alt="Logo Java" title="Java">
+                        </a>
+                        <span>Java</span>
+                    </div>
+                </div>
+
+                <div class="zoom apparition">
+                    <div class="image">
+                        <a href="https://fr.wikipedia.org/wiki/PHP#:~:text=PHP%3A%20Hypertext%20Preprocessor%2C%20plus%20connu,langage%20interpr%C3%A9t%C3%A9%20de%20fa%C3%A7on%20locale."
+                            target="_blank">
+                            <img src="img/icones/langages/Php.svg" width="75" height="75" alt="Logo PHP" title="PHP">
+                        </a>
+                        <span>PHP</span>
+                    </div>
+                </div>
+
+                <div class="zoom apparition">
+                    <div class="image">
+                        <a href="https://fr.wikipedia.org/wiki/Bourne-Again_shell" target="_blank">
+                            <img src="img/icones/langages/Bash.svg" width="75" height="75" alt="Logo Bash" title="Bash">
+                        </a>
+                        <span>Bash</span>
+                    </div>
+                </div>
+
+                <div class="zoom apparition">
+                    <div class="image">
+                        <a href="https://fr.wikipedia.org/wiki/JavaFX" target="_blank">
+                            <img src="img/icones/langages/JavaFX.svg" width="75" height="75" alt="Logo JavaFX"
+                                title="JavaFX">
+                        </a>
+                        <span>JavaFX</span>
+                    </div>
+                </div>
+
+                <div class="zoom apparition">
+                    <div class="image">
+                        <a href="https://git-scm.com/" target="_blank">
+                            <img src="img/icones/logo/Git.svg" width="75" height="75" alt="Logo Git" title="Git">
+                        </a>
+                        <span>Git</span>
+                    </div>
                 </div>
 
             </div>
 
-            <div id="myself">
+            <h2 class="titre_types">Front-End</h2>
 
-                <h1 class="titre-myself">
-                    Qui suis-je ?
-                </h1>
+            <div class="front type_non_selectionne">
 
-                <div class="parcours-block">
-
-                    <div class="profil reveal-">
-                        <img src="img/profil/matete.jpg" alt="Mon portait" title="Mon portait" width='350' height='350'>
-                    </div>
-
-                    <div class="parcours">
-
-                        <p class="para1">Actuellement en Bachelor Universitaire de Technologie à l'<span class="lien_myself"><a
-                                href="https://iut-lannion.univ-rennes1.fr/" target="_blank">IUT de Lannion</a></span>, je suis en deuxième année à la recherche d'une <span class="lien_myself"><a href="#contact">alternance</a></span> dans le développement d'application web pour septembre 2023. Dans les années à venir, je souhaiterai intégrer une école d'ingénieurs 
-                            ou faire un master en Informatique après ma 3ème année. Mes choix seraient peut-être pour l'<span class="lien_myself"><a
-                                href="https://www.enssat.fr/" target="_blank">ENSSAT</a></span> à Lannion ou l'<span class="lien_myself"><a
-                                href="https://esir.univ-rennes1.fr/" target="_blank">ESIR</a></span> à Rennes.</p>
-
-                        <p class="para2">Je fais de plus en plus de <span class="lien_myself"><a
-                                href="#projets">projets</a></span> personnels en dehors de l'activité scolaire afin de m'améliorer
-                            sur des langages appris durant ma formation. Je suis assez passionné et curieux pour découvrir de nouveaux langages de programmation, 
-                            cela me permet de diversifier ma culture dans l'informatique.
-                        </p>
-
-                        <div class="parcours_etu">
-
-                            <article class="but-info">
-                                <h4>Bachelor Universitaire de Technologie <br> (2021 - 2024)</h4>
-                                <p>&nbsp;</p>
-                                <p><span class="lien_myself"><a href="https://iut-lannion.univ-rennes1.fr/" target="_blank">IUT de Lannion</a></span></p>
-                            </article>
-
-                            <article class="lycee">
-                                <h4>Baccaleuréat Générale <br> (2018 -2021)</h4>
-                                <p>Option Mathématiques, Numérique Scientifique et Informatique et Maths Expertes.</p>
-                                <p><span class="lien_myself"><a href="https://www.lesrimains.org" target="_blank">Lycée Les Rimains Saint-Malo</a></span></p>
-                            </article>
-
-                        </div>
-
+                <div class="zoom apparition">
+                    <div class="image">
+                        <a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language" target="_blank">
+                            <img src="img/icones/langages/Html.svg" width="75" height="75" alt="Logo HTML" title="HTML">
+                        </a>
+                        <span>HTML</span>
                     </div>
                 </div>
-            </div>
 
-            <div class="block-transition">
-                <div class="block-transition_1">
-                    <div class="transition_myself_proj1"></div>
+                <div class="zoom apparition">
+                    <div class="image">
+                        <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank">
+                            <img src="img/icones/langages/Css.svg" width="75" height="75" alt="Logo CSS" title="CSS">
+                        </a>
+                        <span>CSS</span>
+                    </div>
                 </div>
-                <div class="block-transition_2">
-                    <div class="transition_myself_proj2"></div>
+
+                <div class="zoom apparition">
+                    <div class="image">
+                        <a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank">
+                            <img src="img/icones/langages/JavaScript.svg" width="75" height="75" alt="Logo JavaScript"
+                                title="JavaScript">
+                        </a>
+                        <span>JavaScript</span>
+                    </div>
                 </div>
-            </div>
 
-            <div id="projets" class="projets">
+                <div class="zoom apparition">
+                    <div class="image">
+                        <a href="https://getbootstrap.com/" target="_blank">
+                            <img src="img/icones/langages/Bootstrap.svg" width="75" height="75" alt="Logo Bootstrap"
+                                title="Bootstrap">
+                        </a>
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
 
-                <h1 class="titre-projets">
-                    Projets
-                </h1>
-
-                <div class="section-projets">
-
-                    <article class="projet_1 revelation">                            
-                        
-                        <div class="p-content-gauche">
-
-                            <div class="titre-projet-gauche">
-                                <p>2020 - Projet Lycée</p>
-
-                                <h2 class="p-titre">Space Invaders</h2>
-                            </div>
-
-                            <p class="p-pitch-gauche">Ce projet est une reproduction du jeu vidéo "Space Invaders", qui consiste à éliminer des obstacles qui s'approchent de nous en se déplacant de gauche à droite. On peut enregistrer notre score avec un pseudo personnalisé préalablement choisi avant de commencer une partie.</p>
-
-                            <div class="git-lan">
-
-                                <a class="langues-prog" href="https://www.python.org" target="_blank">Python</a>
-                                <a class="langues-prog" href="https://www.pygame.org/news" target="_blank">Pygame</a>
-                                <a class="lien-github_projet" href="https://github.com/Luvey35/Space_Invaders" target="_blank">
-                                    <img class="logo-github" src="img/icones/logo/GitHub.png" alt="Logo Github" title="Lien Github" width="30" height="30">
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                        <video class="video-si" src="videos/space_invaders.mp4" autoplay preload="auto" loop muted></video>
-
-                    </article>
-
-                    <article class="projet_2 revelation">
-
-                        <img class="img-laby" src="img/projets/fond_labyrinthe.png" alt="Labyrinthe" title="Labyrinthe">
-
-                        <div class="p-content-droite">
-
-                            <div class="titre-projet-droite">
-                                <p>2020 - Projet Lycée</p>
-                                <h2 class="p-titre">Labyrinthe</h2>
-                            </div>
-
-                            <p class="p-pitch-droite">Ce projet est un générateur de labyrinthe qui affiche une auto-résolution. Celui-ci a été fait à deux au lycée. L'algorithme utilisé est celui de <a class="lien_projets" href="https://fr.wikipedia.org/wiki/Algorithme_de_Kruskal" target="_blank">Kruskal</a>. Nous avions envisagé aussi de faire un personnage avec des caractéristiques que l'utilisateur devait controler pour parcourir le labyrinthe sans la résolution.</p>
-
-                            <div class="git-lan">
-                                <a class="langues-prog" href="https://www.python.org" target="_blank">Python</a>
-                                <a class="langues-prog" href="https://www.pygame.org/news" target="_blank">Pygame</a>
-                                <a class="lien-github_projet" href="https://github.com/Luvey35/Labyrinthe" target="_blank">
-                                    <img class="logo-github" src="img/icones/logo/GitHub.png" alt="Logo Github" title="Lien Github" width="30" height="30">
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </article>
-                    
-                    <article class="projet_3 revelation">
-
-                        <div class="p-content-gauche">
-
-                            <div class="titre-projet-gauche">
-                                <p>2021 - Projet IUT</p>
-                                <h2 class="p-titre">Site Kohfrais</h2>
-                            </div>
-
-                            <p class="p-pitch-gauche">Ce projet est un site web réalisé en groupe de 4 à partir d'une interview fictive. Avec toutes les informations récoltées, j'ai fait avec mon équipe : une synthèse des expressions de besoins, l'arborescence du site, la charte graphique, le maquettage avec le contenu des pages et enfin la réalisation du site.</p>
-
-                            <div class="git-lan">
-                                <a class="langues-prog" href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language" target="_blank">HTML</a>
-                                <a class="langues-prog" href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank">CSS</a>
-                                <a class="langues-prog" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
-
-                                <a class="lien-github_projet" href="https://github.com/Luvey35/Site_KohFrais" target="_blank">
-                                    <img class="logo-github" src="img/icones/logo/GitHub.png" alt="Logo Github" title="Lien Github" width="30" height="30">
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <video class="video-kf" src="videos/kohfrais.mp4" autoplay preload="auto" loop muted></video>
-
-                    </article>
-
-                    <article class="projet_4 revelation">
-
-                        <video class="video-yams" src="videos/yams.mp4" autoplay preload="auto" loop muted></video>
-
-                        <div class="p-content-droite">
-                            
-                            <div class="titre-projet-droite">
-                                <p>2021 - Projet IUT</p>
-                                <h2 class="p-titre">Yams</h2>
-                            </div>
-
-                            <p class="p-pitch-droite">Ce projet est une simulation du jeu du Yams reprenant les mêmes règles que l'authentique, entre deux joueurs. celui-ci a nécessité plusieurs étapes à rendre, comme le maquettage, le cahier de tests, le programme en langage algoritme naturel ou la documentation.</p>
-
-                            <div class="git-lan">
-                                <a class="langues-prog" href="https://fr.wikipedia.org/wiki/C_(langage)" target="_blank">C</a>
-                                <a class="lien-github_projet" href="https://github.com/Luvey35/Yams" target="_blank">
-                                    <img class="logo-github" src="img/icones/logo/GitHub.png" alt="Logo Github" title="Lien Github" width="30" height="30">
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </article>
-
-                    <article class="projet_5 revelation">
-
-                        <div class="p-content-gauche">
-
-                            <div class="titre-projet-gauche">
-                                <p>2022 - Projet Personnel</p>
-                                <h2 class="p-titre">Site Portfolio</h2>
-                            </div>
-
-                            <p class="p-pitch-gauche">Ce projet est un site web pour la présentation de mon portfolio, ce site présente mon parcours, mes projets que j'ai faits jusqu'ici, mes compétences, ainsi que mes moyens de contact. C'est un projet que j'ai mené hors scolarité en m'entrainant plus en JavaScript.</p>
-
-                            <div class="git-lan">
-                                <a class="langues-prog" href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language" target="_blank">HTML</a>
-                                <a class="langues-prog" href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank">CSS</a>
-                                <a class="langues-prog" href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
-
-                                <a class="lien-github_projet" href="https://github.com/Luvey35/Site-Personnel" target="_blank">
-                                    <img class="logo-github" src="img/icones/logo/GitHub.png" alt="Logo Github" title="Lien Github" width="30" height="30">
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <video class="video-pt" src="videos/portfolio.mp4" autoplay preload="auto" loop muted></video>
-
-                    </article>
-
-                    <article class="projet_6 revelation">
-
-                        <video class="video-al" src="videos/alizon.mp4" autoplay preload="auto" loop muted></video>
-
-                        <div class="p-content-droite">
-
-                            <div class="titre-projet-droite">
-                                <p>2022 - Projet IUT</p>
-                                <h2 class="p-titre">Alizon</h2>
-                            </div>
-
-                            <p class="p-pitch-droite">Ce projet est une marketplace de vente de produits bretons. Celle-ci répond à un besoin d'un client fictif. Ce projet en groupe de 7, a été suivi avec la méthode <a class="lien_projets" href="https://www.planzone.fr/blog/quest-ce-que-la-methodologie-agile" target="_blank">AGILE</a> en management, j'avais pour rôle le <a class="lien_projets" href="https://www.atlassian.com/fr/agile/scrum/scrum-master" target="_blank">Scrum Master</a>.</p>
-
-                            <div class="git-lan">
-                                <a class="langues-prog" href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language" target="_blank">HTML</a>
-                                <a class="langues-prog" href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank">CSS</a>
-                                <a class="langues-prog" href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
-                                <a class="langues-prog" href="https://fr.wikipedia.org/wiki/PHP#:~:text=PHP%3A%20Hypertext%20Preprocessor%2C%20plus%20connu,langage%20interpr%C3%A9t%C3%A9%20de%20fa%C3%A7on%20locale." target="_blank">PHP</a>
-                                <a class="langues-prog" href="https://www.mysql.com/fr/" target="_blank">MySQL</a>
-
-                                <a class="lien-github_projet" href="https://github.com/Luvey35/Site-Personnel" target="_blank">
-                                    <img class="logo-github" src="img/icones/logo/GitHub.png" alt="Logo Github" title="Lien Github" width="30" height="30">
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </article>
-
+                <div class="zoom apparition">
+                    <div class="image">
+                        <a href="https://git-scm.com/" target="_blank">
+                            <img src="img/icones/logo/Git.svg" width="75" height="75" alt="Logo Git" title="Git">
+                        </a>
+                        <span>Git</span>
+                    </div>
                 </div>
 
             </div>
 
-            <div class="block-transition">
-                <div class="block-transition_3">
-                    <div class="transition_myself_proj3"></div>
+            <h2 class="titre_types">Back-End</h2>
+
+            <div class="back type_non_selectionne">
+
+                <div class="zoom apparition">
+                    <div class="image">
+                        <a href="https://www.python.org/" target="_blank">
+                            <img src="img/icones/langages/Python.svg" width="75" height="75" alt="Logo Python"
+                                title="Python">
+                        </a>
+                        <span>Python</span>
+                    </div>
                 </div>
-                <div class="block-transition_4">
-                    <div class="transition_myself_proj4"></div>
+
+                <div class="zoom apparition">
+                    <div class="image">
+                        <a href="https://fr.wikipedia.org/wiki/PHP#:~:text=PHP%3A%20Hypertext%20Preprocessor%2C%20plus%20connu,langage%20interpr%C3%A9t%C3%A9%20de%20fa%C3%A7on%20locale."
+                            target="_blank">
+                            <img src="img/icones/langages/Php.svg" width="75" height="75" alt="Logo PHP" title="PHP">
+                        </a>
+                        <span>PHP</span>
+                    </div>
                 </div>
+
+                <div class="zoom apparition">
+                    <div class="image">
+                        <a href="https://www.mysql.com/fr/" target="_blank">
+                            <img src="img/icones/langages/MySQL.svg" width="75" height="75" alt="Logo MySQL"
+                                title="MySQL">
+                        </a>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <div class="zoom apparition">
+                    <div class="image">
+                        <a href="https://www.postgresql.org/" target="_blank">
+                            <img src="img/icones/langages/PostgreSQL.png" width="75" height="75" alt="Logo PostgreSQL"
+                                title="PostgreSQL">
+                        </a>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+
             </div>
 
-            <div id="competences">
+        </div>
 
-                <h1 class="titre-skills">
-                    Compétences
-                </h1>
+        <div class="block-transition">
+            <div class="block-transition_1">
+                <div class="transition_myself_proj1"></div>
+            </div>
+            <div class="block-transition_2">
+                <div class="transition_myself_proj2"></div>
+            </div>
+        </div>
 
-                <div class="types_langages">
-                    <h3 class="Cat-langages-W">Front-Web</h3>
-                    <h3 class="Cat-langages-D type_selectionne">Software Developpment</h3>
-                    <h3 class="Cat-langages-B ">Back-End</h3>
-                </div>
+        <div id="contact">
 
-                <h2 class="titre_types">Software Developpment</h2>
+            <h1 class="titre-contacts">
+                Contact
+            </h1>
 
-                <div class="software">
+            <div class="section-contact">
 
-                    <div class="zoom apparition">
+                <div class="contact-block">
+
+                    <div class="block-mail zoom apparition">
                         <div class="image">
-                            <a href="https://fr.wikipedia.org/wiki/C_(langage)" target="_blank">
-                                <img src="img/icones/langages/C.svg" width="75" height="75" alt="Logo C" title="C">
+                            <a href="mailto:lucasvaugrente35@gmail.com" target="_blank">
+                                <img src="img/icones/logo/Mail.png" width="75" height="75" alt="Logo Mail">
                             </a>
-                            <span>C</span>
+                            <a class="info-mail lien_contacts" href="mailto:lucasvaugrente35@gmail.com"
+                                target="_blank">lucasvaugrente35@gmail.com</a>
                         </div>
                     </div>
 
-                    <div class="zoom apparition">
+                    <div class="block-cv zoom apparition">
                         <div class="image">
-                            <a href="https://www.python.org/" target="_blank">
-                                <img src="img/icones/langages/Python.svg" width="75" height="75" alt="Logo Python" title="Python">
+                            <a href="download/CV_Lucas_Vaugrente_A.pdf" target="_blank">
+                                <img src="img/icones/logo/Download.jpg" width="75" height="75"
+                                    alt="Lien Téléchargement CV" style="border-radius: 50px;">
                             </a>
-                            <span>Python</span>
+                            <a class="info-cv lien_contacts" href="download/CV_Lucas_Vaugrente_S.pdf"
+                                target="_blank">Mon CV</a>
                         </div>
                     </div>
 
-                    <div class="zoom apparition">
+                    <div class="block-linkedin zoom apparition">
                         <div class="image">
-                            <a href="https://fr.wikipedia.org/wiki/Java_(langage)" target="_blank">
-                                <img src="img/icones/langages/Java.svg" width="75" height="75" alt="Logo Java" title="Java">
+                            <a href="https://www.linkedin.com/in/lucas-vaugrente-847211214/" target="_blank">
+                                <img src="img/icones/logo/Linkedin.png" width="75" height="75" alt="Lien Linkedin">
                             </a>
-                            <span>Java</span>
+                            <a class="info-linkedin lien_contacts"
+                                href="https://www.linkedin.com/in/lucas-vaugrente-847211214/" target="_blank">Mon
+                                Linkedin</a>
                         </div>
                     </div>
 
-                    <div class="zoom apparition">
+                    <div class="block-git zoom apparition">
                         <div class="image">
-                            <a href="https://fr.wikipedia.org/wiki/PHP#:~:text=PHP%3A%20Hypertext%20Preprocessor%2C%20plus%20connu,langage%20interpr%C3%A9t%C3%A9%20de%20fa%C3%A7on%20locale." target="_blank">
-                                <img src="img/icones/langages/Php.svg" width="75" height="75" alt="Logo PHP" title="PHP">
+                            <a href="https://github.com/Luvey35" target="_blank">
+                                <img src="img/icones/logo/GitHub.png" width="70" height="70" alt="Lien GitHub">
                             </a>
-                            <span>PHP</span>
-                        </div>
-                    </div>
-
-                    <div class="zoom apparition">
-                        <div class="image">
-                            <a href="https://fr.wikipedia.org/wiki/Bourne-Again_shell" target="_blank">
-                                <img src="img/icones/langages/Bash.svg" width="75" height="75" alt="Logo Bash" title="Bash">
-                            </a>
-                            <span>Bash</span>
-                        </div>
-                    </div>
-
-                    <div class="zoom apparition">
-                        <div class="image">
-                            <a href="https://fr.wikipedia.org/wiki/JavaFX" target="_blank">
-                                <img src="img/icones/langages/JavaFX.svg" width="75" height="75" alt="Logo JavaFX" title="JavaFX">
-                            </a>
-                            <span>JavaFX</span>
-                        </div>
-                    </div>
-
-                    <div class="zoom apparition">
-                        <div class="image">
-                            <a href="https://git-scm.com/" target="_blank">
-                                <img src="img/icones/logo/Git.svg" width="75" height="75" alt="Logo Git" title="Git">
-                            </a>
-                            <span>Git</span>
-                        </div>
-                    </div>
-
-                </div>
-
-                <h2 class="titre_types">Front-End</h2>
-
-                <div class="front type_non_selectionne">
-
-                    <div class="zoom apparition">
-                        <div class="image">
-                            <a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language" target="_blank">
-                                <img src="img/icones/langages/Html.svg" width="75" height="75" alt="Logo HTML" title="HTML">
-                            </a>
-                            <span>HTML</span>
-                        </div>
-                    </div>
-
-                    <div class="zoom apparition">
-                        <div class="image">
-                            <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank">
-                                <img src="img/icones/langages/Css.svg" width="75" height="75" alt="Logo CSS" title="CSS">
-                            </a>
-                            <span>CSS</span>
-                        </div>
-                    </div>
-
-                    <div class="zoom apparition">
-                        <div class="image">
-                            <a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank">
-                                <img src="img/icones/langages/JavaScript.svg" width="75" height="75" alt="Logo JavaScript" title="JavaScript">
-                            </a>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-
-                    <div class="zoom apparition">
-                        <div class="image">
-                            <a href="https://getbootstrap.com/" target="_blank">
-                                <img src="img/icones/langages/Bootstrap.svg" width="75" height="75" alt="Logo Bootstrap" title="Bootstrap">
-                            </a>
-                            <span>Bootstrap</span>
-                        </div>
-                    </div>
-
-                    <div class="zoom apparition">
-                        <div class="image">
-                            <a href="https://git-scm.com/" target="_blank">
-                                <img src="img/icones/logo/Git.svg" width="75" height="75" alt="Logo Git" title="Git">
-                            </a>
-                            <span>Git</span>
-                        </div>
-                    </div>
-
-                </div>
-
-                <h2 class="titre_types">Back-End</h2>
-
-                <div class="back type_non_selectionne">
-
-                    <div class="zoom apparition">
-                        <div class="image">
-                            <a href="https://www.python.org/" target="_blank">
-                                <img src="img/icones/langages/Python.svg" width="75" height="75" alt="Logo Python" title="Python">
-                            </a>
-                            <span>Python</span>
-                        </div>
-                    </div>
-
-                    <div class="zoom apparition">
-                        <div class="image">
-                            <a href="https://fr.wikipedia.org/wiki/PHP#:~:text=PHP%3A%20Hypertext%20Preprocessor%2C%20plus%20connu,langage%20interpr%C3%A9t%C3%A9%20de%20fa%C3%A7on%20locale." target="_blank">
-                                <img src="img/icones/langages/Php.svg" width="75" height="75" alt="Logo PHP" title="PHP">
-                            </a>
-                            <span>PHP</span>
-                        </div>
-                    </div>
-
-                    <div class="zoom apparition">
-                        <div class="image">
-                            <a href="https://www.mysql.com/fr/" target="_blank">
-                                <img src="img/icones/langages/MySQL.svg" width="75" height="75" alt="Logo MySQL" title="MySQL">
-                            </a>
-                            <span>MySQL</span>
-                        </div>
-                    </div>
-
-                    <div class="zoom apparition">
-                        <div class="image">
-                            <a href="https://www.postgresql.org/" target="_blank">
-                                <img src="img/icones/langages/PostgreSQL.png" width="75" height="75" alt="Logo PostgreSQL" title="PostgreSQL">
-                            </a>
-                            <span>PostgreSQL</span>
+                            <a class="info-git lien_contacts" href="https://github.com/Luvey35"
+                                target="_blank">Luvey35</a>
                         </div>
                     </div>
 
@@ -487,93 +618,36 @@
 
             </div>
 
-            <div class="block-transition">
-                <div class="block-transition_1">
-                    <div class="transition_myself_proj1"></div>
-                </div>
-                <div class="block-transition_2">
-                    <div class="transition_myself_proj2"></div>
-                </div>
-            </div>
+        </div>
 
-            <div id="contact">
+        <footer>
 
-                <h1 class="titre-contacts">
-                    Contact
-                </h1>
+            <div class="droit_github">
+                <p>Tous droits réservés ©</p>
 
-                <div class="section-contact">
-
-                    <div class="contact-block">
-
-                        <div class="block-mail zoom apparition">
-                            <div class="image">
-                                <a href="mailto:lucasvaugrente35@gmail.com" target="_blank">
-                                    <img src="img/icones/logo/Mail.png" width="75" height="75" alt="Logo Mail">
-                                </a>
-                                <a class="info-mail lien_contacts" href="mailto:lucasvaugrente35@gmail.com" target="_blank">lucasvaugrente35@gmail.com</a>
-                            </div>
-                        </div>
-
-                        <div class="block-cv zoom apparition">
-                            <div class="image">
-                                <a href="download/CV_Lucas_Vaugrente_A.pdf" target="_blank">
-                                    <img src="img/icones/logo/Download.jpg" width="75" height="75" alt="Lien Téléchargement CV" style="border-radius: 50px;">
-                                </a>
-                                <a class="info-cv lien_contacts" href="download/CV_Lucas_Vaugrente_S.pdf" target="_blank">Mon CV</a>
-                            </div>
-                        </div>
-
-                        <div class="block-linkedin zoom apparition">
-                            <div class="image">
-                                <a href="https://www.linkedin.com/in/lucas-vaugrente-847211214/" target="_blank">
-                                    <img src="img/icones/logo/Linkedin.png" width="75" height="75" alt="Lien Linkedin">
-                                </a>
-                                <a class="info-linkedin lien_contacts" href="https://www.linkedin.com/in/lucas-vaugrente-847211214/" target="_blank">Mon Linkedin</a>
-                            </div>
-                        </div>
-
-                        <div class="block-git zoom apparition">
-                            <div class="image">
-                                <a href="https://github.com/Luvey35" target="_blank">
-                                    <img src="img/icones/logo/GitHub.png" width="70" height="70" alt="Lien GitHub">
-                                </a>
-                                <a class="info-git lien_contacts" href="https://github.com/Luvey35" target="_blank">Luvey35</a>
-                            </div>
-                        </div>
-
-                    </div>
-
+                <div class="github-site">
+                    <a href="https://github.com/Luvey35/Site-Personnel" target="_blank">GitHub de ce site</a>
+                    <img src="img/icones/logo/GitHub.png" width="25" height="25" alt="Lien GitHub"
+                        title="GitHub du site">
                 </div>
 
             </div>
 
-            <footer>
+            <p class="thanks">Ce site a été créé par Lucas Vaugrente en HTML, CSS et JavaScript. Merci d'avoir lu
+                jusqu'au bout.</p>
 
-                <div class="droit_github">
-                    <p>Tous droits réservés ©</p>
+        </footer>
 
-                    <div class="github-site">
-                        <a href="https://github.com/Luvey35/Site-Personnel" target="_blank">GitHub de ce site</a>
-                        <img src="img/icones/logo/GitHub.png" width="25" height="25" alt="Lien GitHub" title="GitHub du site">
-                    </div>
+    </main>
 
-                </div>
+    <script src="js/menu_burger.js"></script>
+    <script src="js/reveal_info.js"></script>
+    <script src="js/competences.js"></script>
+    <script src="js/navbar.js"></script>
 
-                <p class="thanks">Ce site a été créé par Lucas Vaugrente en HTML, CSS et JavaScript. Merci d'avoir lu jusqu'au bout.</p>
+    <script src="librairies/particles.js"></script>
+    <script src="js/app.js"></script>
 
-            </footer>
-
-        </main>
-
-        <script src="js/menu_burger.js"></script>
-        <script src="js/reveal_info.js"></script>
-        <script src="js/competences.js"></script>
-        <script src="js/navbar.js"></script>
-
-        <script src="librairies/particles.js"></script>
-        <script src="js/app.js"></script>
-
-    </body>
+</body>
 
 </html>
