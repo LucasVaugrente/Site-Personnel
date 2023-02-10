@@ -9,60 +9,60 @@ let blockBackWeb = document.querySelector(".back");
 let langages = document.getElementsByClassName("zoom");
 
 function getStyle(a, b) {
-    return window.getComputedStyle(b, null)[a];
+  return window.getComputedStyle(b, null)[a];
 }
 
-frontWeb.addEventListener('click', ()=> {
-    if(getStyle('background-color', frontWeb) == "rgb(23, 17, 54)") {}
-    else {
-        frontWeb.classList.toggle('type_selectionne');
-        softwareDev.classList.remove('type_selectionne');
-        softwareDev.style.transition = "all 0.3s ease";
-        backWeb.classList.remove('type_selectionne');
-        backWeb.style.transition = "all 0.3s ease";
+frontWeb.addEventListener("click", () => {
+  if (getStyle("background-color", frontWeb) == "rgb(23, 17, 54)") {
+  } else {
+    frontWeb.classList.toggle("type_selectionne");
+    softwareDev.classList.remove("type_selectionne");
+    softwareDev.style.transition = "all 0.3s ease";
+    backWeb.classList.remove("type_selectionne");
+    backWeb.style.transition = "all 0.3s ease";
 
-        blockSoftwareDev.style.display = "none";
-        blockBackWeb.style.display = "none";
-        blockFrontWeb.style.display = "flex";
+    blockSoftwareDev.style.display = "none";
+    blockBackWeb.style.display = "none";
+    blockFrontWeb.style.display = "flex";
 
-        for (let index = 0; index < langages.length; index++) {
-            langages[index].classList.remove('apparition-visible');  
-        }
-        
-        frontWeb.classList.toggle('transition_langages');
+    for (let index = 0; index < langages.length; index++) {
+      langages[index].classList.remove("apparition-visible");
     }
-})
 
-softwareDev.addEventListener('click', ()=> {
-    if(getStyle('background-color', softwareDev) == "rgb(23, 17, 54)") {}
-    else {
-        softwareDev.classList.toggle('type_selectionne');
-        frontWeb.classList.remove('type_selectionne');
-        backWeb.classList.remove('type_selectionne');
+    frontWeb.classList.toggle("transition_langages");
+  }
+});
 
-        blockFrontWeb.style.display = "none";
-        blockBackWeb.style.display = "none";
-        blockSoftwareDev.style.display = "flex";
+softwareDev.addEventListener("click", () => {
+  if (getStyle("background-color", softwareDev) == "rgb(23, 17, 54)") {
+  } else {
+    softwareDev.classList.toggle("type_selectionne");
+    frontWeb.classList.remove("type_selectionne");
+    backWeb.classList.remove("type_selectionne");
 
-        for (let index = 0; index < langages.length; index++) {
-            langages[index].classList.remove('apparition-visible');  
-        }
+    blockFrontWeb.style.display = "none";
+    blockBackWeb.style.display = "none";
+    blockSoftwareDev.style.display = "flex";
+
+    for (let index = 0; index < langages.length; index++) {
+      langages[index].classList.remove("apparition-visible");
     }
-})
+  }
+});
 
-backWeb.addEventListener('click', ()=> {
-    if(getStyle('background-color', backWeb) == "rgb(23, 17, 54)") {}
-    else {
-        backWeb.classList.toggle('type_selectionne');
-        softwareDev.classList.remove('type_selectionne');
-        frontWeb.classList.remove('type_selectionne');
+backWeb.addEventListener("click", () => {
+  if (getStyle("background-color", backWeb) == "rgb(23, 17, 54)") {
+  } else {
+    backWeb.classList.toggle("type_selectionne");
+    softwareDev.classList.remove("type_selectionne");
+    frontWeb.classList.remove("type_selectionne");
 
-        blockSoftwareDev.style.display = "none";
-        blockFrontWeb.style.display = "none";
-        blockBackWeb.style.display = "flex";
+    blockSoftwareDev.style.display = "none";
+    blockFrontWeb.style.display = "none";
+    blockBackWeb.style.display = "flex";
 
-        for (let index = 0; index < langages.length; index++) {
-            langages[index].classList.remove('apparition-visible');  
-        }
+    for (let index = 0; index < langages.length; index++) {
+      langages[index].classList.remove("apparition-visible");
     }
-})
+  }
+});
