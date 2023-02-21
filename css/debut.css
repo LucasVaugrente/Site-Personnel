@@ -49,6 +49,7 @@
     color: rgb(89, 136, 215);
     white-space: normal;
     pointer-events: all;
+    margin-right: 50%;
 }
 
 .btn-commencer {
@@ -165,5 +166,11 @@
 
     .nom {
         font-size: 2.2em;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .nom {
+        font-size: 2em;
     }
 }
