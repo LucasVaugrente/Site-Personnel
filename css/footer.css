@@ -90,4 +90,8 @@ footer p {
         margin: 0;
         padding-top: 4em;
     }
+
+    footer a {
+        font-size: 0.9em;
+    }
 }
