@@ -171,6 +171,10 @@
 
 @media screen and (max-width:380px) {
     .nom {
-        font-size: 2em;
+        font-size: 1.9em;
+    }
+
+    .statut {
+        font-size: 1.6em;
     }
 }
