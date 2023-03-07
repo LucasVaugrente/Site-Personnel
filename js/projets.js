@@ -75,7 +75,12 @@ xhr.onload = function() {
                 /* ########################## Vidéo PROJET ########################## */
                 let video = document.createElement("video");
                 video.classList.add(data.projets[index].class);
-                video.setAttribute("src", data.projets[index].video);
+                // video.setAttribute("src", data.projets[index].video);
+
+                let source = document.createElement("source");
+                source.setAttribute("src", data.projets[index].video);
+                video.appendChild(source);
+                
                 video.setAttribute("autoplay", "");
                 video.setAttribute("preload", "auto");
                 video.setAttribute("loop", "");
