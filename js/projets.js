@@ -58,7 +58,8 @@ xhr.onload = function() {
                 /* ########################## Lien GitHub PROJET ########################## */
                 let imgGit = document.createElement("img");
                 let agit = document.createElement("a");
-                
+                agit.classList.add("lien-github_projet");
+
                 imgGit.classList.add("logo-github");
                 imgGit.setAttribute("src", "img/icones/logo/GitHub.png");
                 imgGit.setAttribute("alt", "Logo Github");
@@ -76,9 +77,9 @@ xhr.onload = function() {
                 video.classList.add(data.projets[index].class);
                 video.setAttribute("src", data.projets[index].video);
                 video.setAttribute("autoplay", "");
+                video.setAttribute("preload", "auto");
                 video.setAttribute("loop", "");
                 video.setAttribute("muted", "");
-                video.setAttribute("preload", "auto");
 
                 // ##### AJOUT DE TOUS LES ELEMENTS ##### //
                 bloc_content.appendChild(bloc_titre);
@@ -132,6 +133,7 @@ xhr.onload = function() {
                 /* ########################## Lien GitHub PROJET ########################## */
                 let imgGit = document.createElement("img");
                 let agit = document.createElement("a");
+                agit.classList.add("lien-github_projet");
 
                 imgGit.classList.add("logo-github");
                 imgGit.setAttribute("src", "img/icones/logo/GitHub.png");
