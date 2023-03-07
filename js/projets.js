@@ -1,6 +1,4 @@
 let Section_Projets = document.querySelector(".section-projets");
-let Projet_D = document.querySelector(".projet_d");
-let Projet_G = document.querySelector(".projet_g");
 
 let xhr = new XMLHttpRequest();
 
@@ -17,11 +15,14 @@ xhr.onload = function() {
             
             // Projet à gauche
             if(index % 2 === 0) {
-
-                let bloc = document.createElement('div');
-                let bloc2 = document.createElement('div');
-                bloc.classList.add('p-content-gauche');
-                bloc2.classList.add('titre-projet-gauche');
+                
+                let article = document.createElement('article');
+                let bloc_content = document.createElement('div');
+                let bloc_titre = document.createElement('div');
+                article.classList.add('projet_g');
+                // article.classList.add('revelation');
+                bloc_content.classList.add('p-content-gauche');
+                bloc_titre.classList.add('titre-projet-gauche');
 
                 /* ########################## Date, Type et Titre PROJET ########################## */
                 let Text_Date = document.createElement('p');
@@ -31,27 +32,135 @@ xhr.onload = function() {
                 Text_Date.innerHTML = data.projets[index].date + " - " + data.projets[index].type_projet;
                 Text_Titre.innerHTML = data.projets[index].titre;
 
-                bloc2.appendChild(Text_Date);
-                bloc2.appendChild(Text_Titre);
+                bloc_titre.appendChild(Text_Date);
+                bloc_titre.appendChild(Text_Titre);
 
                 /* ########################## Description PROJET ########################## */
                 let Text_Desc = document.createElement('p');
                 Text_Desc.classList.add('p-pitch-gauche');
                 Text_Desc.innerHTML = data.projets[index].description;
 
-                bloc.appendChild(Text_Desc);
-
                 /* ########################## Langages Programmation PROJET ########################## */
-                let bloc4 = document.createElement('div');
-                bloc4.classList.add('git-lan');
+                let bloc_lan_git = document.createElement('div');
+                bloc_lan_git.classList.add('git-lan');
 
+                for (let j = 0; j < data.projets[index].langages.length; j++) {
+
+                    let ahref = document.createElement('a');
+                    ahref.classList.add("langues-prog");
+                    ahref.innerHTML = data.projets[index].langages[j].nom;
+                    ahref.setAttribute("target", "_blank");
+                    ahref.setAttribute("href", data.projets[index].langages[j].url);
+
+                    bloc_lan_git.appendChild(ahref);
+                }
+
+                /* ########################## Lien GitHub PROJET ########################## */
+                let imgGit = document.createElement("img");
+                let agit = document.createElement("a");
                 
-                bloc.appendChild(bloc2);
-                Projet_G.appendChild(bloc);
+                imgGit.classList.add("logo-github");
+                imgGit.setAttribute("src", "img/icones/logo/GitHub.png");
+                imgGit.setAttribute("alt", "Logo Github");
+                imgGit.setAttribute("title", "Lien Github");
+                imgGit.setAttribute("width", "30");
+                imgGit.setAttribute("height", "30");
+
+                agit.setAttribute("href", data.projets[index].lien_git);
+                agit.setAttribute("target", "_blank");
+                agit.appendChild(imgGit)
+                bloc_lan_git.appendChild(agit);
+
+                /* ########################## Vidéo PROJET ########################## */
+                let video = document.createElement("video");
+                video.classList.add(data.projets[index].class);
+                video.setAttribute("src", data.projets[index].video);
+                video.setAttribute("autoplay", "");
+                video.setAttribute("loop", "");
+                video.setAttribute("muted", "");
+                video.setAttribute("preload", "auto");
+
+                // ##### AJOUT DE TOUS LES ELEMENTS ##### //
+                bloc_content.appendChild(bloc_titre);
+                bloc_content.appendChild(Text_Desc);
+                bloc_content.appendChild(bloc_lan_git);
+                article.appendChild(bloc_content);
+                article.appendChild(video);
+                Section_Projets.appendChild(article);
             }
             // Projet à droite
             else {
-                console.log("droite");
+                let article = document.createElement('article');
+                let bloc_content = document.createElement('div');
+                let bloc_titre = document.createElement('div');
+                article.classList.add('projet_d');
+                // article.classList.add('revelation');
+                bloc_content.classList.add('p-content-droite');
+                bloc_titre.classList.add('titre-projet-droite');
+
+                /* ########################## Date, Type et Titre PROJET ########################## */
+                let Text_Date = document.createElement('p');
+                let Text_Titre = document.createElement('h1');
+                Text_Titre.classList.add('p-titre');
+
+                Text_Date.innerHTML = data.projets[index].date + " - " + data.projets[index].type_projet;
+                Text_Titre.innerHTML = data.projets[index].titre;
+
+                bloc_titre.appendChild(Text_Date);
+                bloc_titre.appendChild(Text_Titre);
+
+                /* ########################## Description PROJET ########################## */
+                let Text_Desc = document.createElement('p');
+                Text_Desc.classList.add('p-pitch-droite');
+                Text_Desc.innerHTML = data.projets[index].description;
+
+                /* ########################## Langages Programmation PROJET ########################## */
+                let bloc_lan_git = document.createElement('div');
+                bloc_lan_git.classList.add('git-lan');
+
+                for (let j = 0; j < data.projets[index].langages.length; j++) {
+
+                    let ahref = document.createElement('a');
+                    ahref.classList.add("langues-prog");
+                    ahref.innerHTML = data.projets[index].langages[j].nom;
+                    ahref.setAttribute("target", "_blank");
+                    ahref.setAttribute("href", data.projets[index].langages[j].url);
+
+                    bloc_lan_git.appendChild(ahref);
+                }
+
+                /* ########################## Lien GitHub PROJET ########################## */
+                let imgGit = document.createElement("img");
+                let agit = document.createElement("a");
+
+                imgGit.classList.add("logo-github");
+                imgGit.setAttribute("src", "img/icones/logo/GitHub.png");
+                imgGit.setAttribute("alt", "Logo Github");
+                imgGit.setAttribute("title", "Lien Github");
+                imgGit.setAttribute("width", "30");
+                imgGit.setAttribute("height", "30");
+
+                agit.setAttribute("href", data.projets[index].lien_git);
+                agit.setAttribute("target", "_blank");
+                agit.appendChild(imgGit)
+                bloc_lan_git.appendChild(agit);
+
+                /* ########################## Vidéo PROJET ########################## */
+                let video = document.createElement("video");
+                video.classList.add(data.projets[index].class);
+                video.setAttribute("src", data.projets[index].video);
+                video.setAttribute("autoplay", "");
+                video.setAttribute("loop", "");
+                video.setAttribute("muted", "");
+                video.setAttribute("preload", "auto");
+
+                // ##### AJOUT DE TOUS LES ELEMENTS ##### //
+                bloc_content.appendChild(bloc_titre);
+                bloc_content.appendChild(Text_Desc);
+                bloc_content.appendChild(bloc_lan_git);
+                article.appendChild(video);
+                article.appendChild(bloc_content);
+                Section_Projets.appendChild(article);
             }
         }
 

@@ -24,12 +24,8 @@
     color: white;
 }
 
-.projet_1,
-.projet_2,
-.projet_3,
-.projet_4,
-.projet_5,
-.projet_6 {
+.projet_g,
+.projet_d {
     display: flex;
     flex-direction: row;
     align-items: center;
