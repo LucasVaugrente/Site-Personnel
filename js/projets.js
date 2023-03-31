@@ -6,16 +6,16 @@ xhr.open('GET', '../data/projets.json', true);
 
 xhr.setRequestHeader('Content-Type', 'application/json');
 
-xhr.onload = function() {
+xhr.onload = function () {
     if (xhr.status === 200) {
         let data = JSON.parse(xhr.responseText);
 
         // Boucle qui parcourt tous les projets
         for (let index = 0; index < data.projets.length; index++) {
-            
+
             // Projet à gauche
-            if(index % 2 === 0) {
-                
+            if (index % 2 === 0) {
+
                 let article = document.createElement('article');
                 let bloc_content = document.createElement('div');
                 let bloc_titre = document.createElement('div');
@@ -80,7 +80,7 @@ xhr.onload = function() {
                 let source = document.createElement("source");
                 source.setAttribute("src", data.projets[index].video);
                 video.appendChild(source);
-                
+
                 video.setAttribute("autoplay", "");
                 video.setAttribute("preload", "auto");
                 video.setAttribute("loop", "");
@@ -175,6 +175,5 @@ xhr.onload = function() {
         console.error('Une erreur est survenue');
     }
 };
-
 
 xhr.send();

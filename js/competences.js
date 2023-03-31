@@ -28,8 +28,6 @@ frontWeb.addEventListener("click", () => {
     for (let index = 0; index < langages.length; index++) {
       langages[index].classList.remove("apparition-visible");
     }
-
-    frontWeb.classList.toggle("transition_langages");
   }
 });
 

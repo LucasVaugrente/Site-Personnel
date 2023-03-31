@@ -18,6 +18,11 @@
     justify-content: space-around;
 }
 
+.zoom2 {
+    padding: 1em 1em;
+    text-align: center;
+}
+
 .block {
     background-color: red;
     padding: 1.5em;
