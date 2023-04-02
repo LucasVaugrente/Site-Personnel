@@ -52,7 +52,7 @@ particlesJS(
         },
       },
       size: {
-        value: 4,
+        value: 3,
         random: true,
         anim: {
           enable: false,
@@ -64,9 +64,9 @@ particlesJS(
       line_linked: {
         enable: true,
         distance: 150,
-        color: "#ffffff",
+        color: "#a1c3ff",
         opacity: 0.4,
-        width: 3,
+        width: 2,
       },
       move: {
         enable: true,
@@ -87,7 +87,7 @@ particlesJS(
       events: {
         onhover: {
           enable: true,
-          mode: "repulse",
+          mode: "grab",
         },
         onclick: {
           enable: false,
@@ -97,9 +97,9 @@ particlesJS(
       },
       modes: {
         grab: {
-          distance: 400,
+          distance: 200,
           line_linked: {
-            opacity: 1,
+            opacity: 1.5,
           },
         },
         bubble: {
