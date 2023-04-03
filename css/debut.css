@@ -7,7 +7,9 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-color: rgb(23, 17, 54);
+    /* background-color: rgb(23, 17, 54); */
+    /* background-image: linear-gradient(to top, rgb(56, 47, 104), rgb(23, 17, 54), rgb(23, 17, 54)); */
+    background : radial-gradient(ellipse at bottom, #000000 0%, rgb(23, 17, 54) 100%);
 }
 
 .content {
@@ -58,7 +60,7 @@
     padding: 0.9em;
     width: 10em;
     color: rgb(131, 253, 245);
-    background-color: rgb(23, 17, 54);
+    background-color: rgba(0, 0, 0, 0);
     font-weight: bold;
     font-size: 1.2em;
     border-style: solid;
