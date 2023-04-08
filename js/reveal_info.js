@@ -60,7 +60,9 @@ function sleep(ms) {
 
 async function myFunction() {
 
-  await sleep(1);
+  await sleep(1000);
+
+  console.log(document.querySelectorAll('.revelation'));
 
   // ############################ PROJETS ################################ //
   const handleIntersect2 = function (entries, observer) {
