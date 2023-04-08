@@ -101,42 +101,66 @@
     padding: 0.5em;
 }
 
-.video-si,
-.video-yams,
-.video-al,
-.video-pt {
-    width: 700px;
+video::-webkit-media-controls-play-button {
+    background-color: rgb(52, 38, 116);
+    border-top-right-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+video::-webkit-media-controls-play-button:hover {
+    background-color: rgb(41, 32, 86);
+}
+
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-pause-button {
+    font-size: 100px;
+}
+
+video::-webkit-media-controls-timeline,
+video::-webkit-media-controls-volume-slider,
+video::-webkit-media-controls-current-time-display,
+video::-webkit-media-controls-time-remaining-display,
+video::-webkit-media-controls-fullscreen-button,
+video::-webkit-media-controls-mute-button {
+    display: none;
+}
+
+.video-si video,
+.video-yams video,
+.video-al video,
+.video-pt video {
     height: 300px;
     border-radius: 30px;
+    border-end-start-radius: 10px;
     box-shadow: 0 0 0.6em black;
     transition: all 0.5s ease;
     z-index: 2;
 }
 
-.video-kf {
-    width: 700px;
+.video-kf video {
     height: 300px;
     border-radius: 30px;
+    border-end-start-radius: 10px;
     box-shadow: 0 0 0.6em black;
     transition: all 0.5s ease;
     z-index: 2;
 }
 
-.img-laby {
-    width: 700px;
+.img-laby video {
     height: 300px;
     border-radius: 30px;
+    border-end-start-radius: 10px;
     box-shadow: 0 0 0.6em black;
     transition: all 0.5s ease;
     z-index: 2;
 }
 
-.video-si:hover,
-.video-pt:hover,
-.video-al:hover,
-.video-yams:hover,
-.video-kf:hover,
-.img-laby:hover,
+.video-si video:hover,
+.video-pt video:hover,
+.video-al video:hover,
+.video-yams video:hover,
+.video-kf video:hover,
+.img-laby video:hover,
 .p-pitch-gauche:hover,
 .p-pitch-droite:hover {
     box-shadow: 0 0 1.5em black;
@@ -145,6 +169,7 @@
 
 .logo-github {
     border-radius: 50px;
+    transition: all 0.1s ease-in-out;
 }
 
 .lien-github_projet {
@@ -230,6 +255,22 @@
 .img_projet_responsive {
     display: none;
 }
+
+.click_video {
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.211);
+    z-index: 8;
+    width: 560px;
+    height: 300px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
 
 @media screen and (max-width:1100px) {
 
