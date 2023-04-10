@@ -280,13 +280,13 @@ video::-webkit-media-controls-mute-button {
     color: white;
 }
 
-@media screen and (min-width:1800px) {
+@media screen and (min-width:1900px) {
     .section-projets {
         padding: 0 20%;
     }
 }
 
-@media screen and (max-width:1800px) {
+@media screen and (max-width:1900px) {
     .section-projets {
         padding: 0 10%;
     }
