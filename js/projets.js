@@ -49,7 +49,13 @@ fetch('../data/projets.json')
 
             /* ########################## Langages Programmation PROJET ########################## */
             let bloc_lan_git = document.createElement('div');
-            bloc_lan_git.classList.add('git-lan');
+            
+            // Si le projet est à gauche
+            if (index % 2 === 0) {
+                bloc_lan_git.classList.add('git-lan-g');
+            } else {
+                bloc_lan_git.classList.add('git-lan-d');
+            }
 
             for (let j = 0; j < data.projets[index].langages.length; j++) {
 

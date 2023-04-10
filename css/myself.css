@@ -7,6 +7,10 @@
     z-index: 2;
 }
 
+.parcours-block {
+    padding: 0 5%;
+}
+
 .titre-myself {
     font-size: clamp(40px, 8vw, 55px);
     text-align: center;
@@ -16,7 +20,6 @@
 
 .profil {
     padding: 1em;
-    padding-left: 6em;
 }
 
 .profil img {
@@ -101,6 +104,12 @@
     height: 5em;
     background-color: rgb(223, 202, 240);
     border-bottom-right-radius: 200%;
+}
+
+@media screen and (min-width:1900px) {
+    .parcours-block {
+        padding: 0 20%;
+    }
 }
 
 @media screen and (max-width:1100px) {
