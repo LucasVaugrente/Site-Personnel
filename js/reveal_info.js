@@ -62,8 +62,6 @@ async function myFunction() {
 
   await sleep(1000);
 
-  console.log(document.querySelectorAll('.revelation'));
-
   // ############################ PROJETS ################################ //
   const handleIntersect2 = function (entries, observer) {
     entries.forEach(function (entry) {
