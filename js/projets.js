@@ -49,7 +49,7 @@ fetch('../data/projets.json')
 
             /* ########################## Langages Programmation PROJET ########################## */
             let bloc_lan_git = document.createElement('div');
-            
+
             // Si le projet est à gauche
             if (index % 2 === 0) {
                 bloc_lan_git.classList.add('git-lan-g');
