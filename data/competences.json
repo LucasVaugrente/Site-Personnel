@@ -1,0 +1,115 @@
+{
+    "competences": {
+        "software": [
+            {
+                "nom": "C",
+                "image": "../img/icones/langages/C.svg",
+                "lien": "https://fr.wikipedia.org/wiki/C_(langage)"
+            },
+            {
+                "nom": "Python",
+                "image": "../img/icones/langages/Python.svg",
+                "lien": "https://www.python.org/"
+            },
+            {
+                "nom": "Java",
+                "image": "../img/icones/langages/Java.svg",
+                "lien": "https://fr.wikipedia.org/wiki/Java_(langage)"
+            },
+            {
+                "nom": "PHP",
+                "image": "../img/icones/langages/Php.svg",
+                "lien": "https://fr.wikipedia.org/wiki/PHP#:~:text=PHP%3A%20Hypertext%20Preprocessor%2C%20plus%20connu,langage%20interpr%C3%A9t%C3%A9%20de%20fa%C3%A7on%20locale."
+            },
+            {
+                "nom": "Bash",
+                "image": "../img/icones/langages/Bash.svg",
+                "lien": "https://fr.wikipedia.org/wiki/Bourne-Again_shell"
+            },
+            {
+                "nom": "Docker",
+                "image": "../img/icones/langages/docker.png",
+                "lien": "https://www.docker.com"
+            },
+            {
+                "nom": "JavaFX",
+                "image": "../img/icones/langages/JavaFX.svg",
+                "lien": "https://fr.wikipedia.org/wiki/JavaFX"
+            },
+            {
+                "nom": "Git",
+                "image": "../img/icones/logo/Git.svg",
+                "lien": "https://git-scm.com/"
+            }
+        ],
+        "front": [
+            {
+                "nom": "HTML",
+                "image": "../img/icones/langages/Html.svg",
+                "lien": "https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"
+            },
+            {
+                "nom": "CSS",
+                "image": "../img/icones/langages/Css.svg",
+                "lien": "https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"
+            },
+            {
+                "nom": "JavaScript",
+                "image": "../img/icones/langages/JavaScript.svg",
+                "lien": "https://fr.wikipedia.org/wiki/JavaScript"
+            },
+            {
+                "nom": "Bootstrap",
+                "image": "../img/icones/langages/Bootstrap.svg",
+                "lien": "https://getbootstrap.com/"
+            },
+            {
+                "nom": "JQuery",
+                "image": "../img/icones/langages/jquery.png",
+                "lien": "https://jquery.com"
+            },
+            {
+                "nom": "Git",
+                "image": "../img/icones/logo/Git.svg",
+                "lien": "https://git-scm.com/"
+            }
+        ],
+        "back": [
+            {
+                "nom": "Python",
+                "image": "../img/icones/langages/Python.svg",
+                "lien": "https://www.python.org/"
+            },
+            {
+                "nom": "Vue.JS",
+                "image": "../img/icones/langages/vuejs.png",
+                "lien": "https://vuejs.org"
+            },
+            {
+                "nom": "NodeJS",
+                "image": "../img/icones/langages/nodejs.png",
+                "lien": "https://nodejs.org/en"
+            },
+            {
+                "nom": "CodeIgniter",
+                "image": "../img/icones/langages/codeigniter.jpg",
+                "lien": "https://codeigniter.com"
+            },
+            {
+                "nom": "PHP",
+                "image": "../img/icones/langages/Php.svg",
+                "lien": "https://fr.wikipedia.org/wiki/PHP#:~:text=PHP%3A%20Hypertext%20Preprocessor%2C%20plus%20connu,langage%20interpr%C3%A9t%C3%A9%20de%20fa%C3%A7on%20locale."
+            },
+            {
+                "nom": "MySQL",
+                "image": "../img/icones/logo/MySQL.svg",
+                "lien": "https://www.mysql.com/fr/"
+            },
+            {
+                "nom": "PostgreSQL",
+                "image": "../img/icones/logo/PostgreSQL.png",
+                "lien": "https://www.postgresql.org/"
+            }
+        ]
+    }
+}
