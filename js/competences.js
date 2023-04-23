@@ -6,6 +6,54 @@ let blockFrontWeb = document.querySelector(".front");
 let blockSoftwareDev = document.querySelector(".software");
 let blockBackWeb = document.querySelector(".back");
 
+fetch('../data/competences.json')
+    .then(response => response.json())
+    .then(data => {
+        for (const type in data.competences) {
+            console.log(type);
+            console.log(data.competences[type].length);
+            for (let index = 0; index < data.competences[type].length; index++) {
+
+                console.log("ok");
+    
+                let div = document.createElement('div');
+                let div_image = document.createElement('div');
+                let lien = document.createElement('a');
+                let img = document.createElement('img');
+                let span = document.createElement('span');
+    
+                div.classList.add("zoom");
+                div.classList.add("apparition");
+                div_image.classList.add("image");
+    
+                lien.setAttribute("target", "_blank");
+                lien.setAttribute("href", data.competences[type][index].lien);
+    
+                img.setAttribute("src", data.competences[type][index].image);
+                img.setAttribute("alt", "Logo " + data.competences[type][index].nom);
+                img.setAttribute("title", data.competences[type][index].nom);
+                img.setAttribute("width", "75");
+                img.setAttribute("height", "75");
+    
+                span.innerHTML = data.competences[type][index].nom;
+    
+                lien.appendChild(img);
+                div_image.appendChild(lien)
+                div.appendChild(div_image);
+                div.appendChild(span);
+                if(type === "software") {
+                    blockSoftwareDev.appendChild(div);
+                } else if(type === "front") {
+                    blockFrontWeb.appendChild(div);
+                } else {
+                    blockBackWeb.appendChild(div);
+                }
+            }
+        }
+    })
+    .catch(error => console.error(error));
+
+
 let langages = document.getElementsByClassName("zoom");
 
 function getStyle(a, b) {

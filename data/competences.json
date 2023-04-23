@@ -102,12 +102,12 @@
             },
             {
                 "nom": "MySQL",
-                "image": "../img/icones/logo/MySQL.svg",
+                "image": "../img/icones/langages/MySQL.svg",
                 "lien": "https://www.mysql.com/fr/"
             },
             {
                 "nom": "PostgreSQL",
-                "image": "../img/icones/logo/PostgreSQL.png",
+                "image": "../img/icones/langages/PostgreSQL.png",
                 "lien": "https://www.postgresql.org/"
             }
         ]
