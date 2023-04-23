@@ -37,6 +37,11 @@
                 "lien": "https://fr.wikipedia.org/wiki/JavaFX"
             },
             {
+                "nom": "Android Studio",
+                "image": "../img/icones/langages/android_studio.png",
+                "lien": "https://developer.android.com/studio"
+            },
+            {
                 "nom": "Git",
                 "image": "../img/icones/logo/Git.svg",
                 "lien": "https://git-scm.com/"
