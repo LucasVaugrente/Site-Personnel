@@ -1,0 +1,17 @@
+{
+    "experiences": [
+        {
+            "date": 2023,
+            "type_experience": "Projet Lycée",
+            "titre": "TAC ECONOMICS",
+            "description": "Un stage de 3 mois à <a class='lien_experiences' href='https://www.taceconomics.com' target='_blank'>TAC Economics</a>, ma mission consistait à améliorer et ajouter des fonctionnalités  sur leur application web intéragissant avec une API REST. J'ai effectué le stage en télétravail hybride avec parfois de l'autonomie dans mes tâches de travail.",
+            "langages": [
+                {
+                    "nom": "Vue.JS",
+                    "url": "https://vuejs.org"
+                }
+            ],
+            "image": "../img/experiences/tac_economics.png" 
+        }
+    ]
+}
