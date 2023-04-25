@@ -89,7 +89,7 @@
     transition-delay: .1s;
 }
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width:1220px) {
 
     .navbar .menu-burger {
         display: block;
