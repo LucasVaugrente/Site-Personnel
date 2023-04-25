@@ -6,6 +6,7 @@ const LinkAcc = document.querySelector(".link-debut");
 const LinkMy = document.querySelector(".link-myself");
 const LinkPro = document.querySelector(".link-projets");
 const LinkSki = document.querySelector(".link-skills");
+const LinkExp = document.querySelector(".link-experience");
 const LinkCon = document.querySelector(".link-contact");
 
 menuHamburger.addEventListener("click", () => {
@@ -29,6 +30,10 @@ LinkPro.addEventListener("click", () => {
 });
 
 LinkSki.addEventListener("click", () => {
+  navLinks.classList.toggle("mobile-menu");
+});
+
+LinkExp.addEventListener("click", () => {
   navLinks.classList.toggle("mobile-menu");
 });
 
