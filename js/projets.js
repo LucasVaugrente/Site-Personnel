@@ -105,6 +105,7 @@ fetch('../data/projets.json')
 
             lien_vid.appendChild(video);
 
+            console.log(video);
             // ##### AJOUT DE TOUS LES ELEMENTS ##### //
             bloc_content.appendChild(bloc_titre);
             bloc_content.appendChild(Text_Desc);

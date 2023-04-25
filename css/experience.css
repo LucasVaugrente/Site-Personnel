@@ -21,13 +21,6 @@
     color: white;
 }
 
-
-.exp-g {
-    height: 300px;
-    border-radius: 30px;
-}
-
-
 .section-experiences {
     background-color: rgb(23, 17, 54);
     display: flex;
@@ -35,7 +28,6 @@
     padding-bottom: 4em;
     z-index: 0;
 }
-
 
 .experience_g,
 .experience_d {
