@@ -100,8 +100,11 @@ fetch('../data/projets.json')
 
             video.setAttribute("controls", "true");
             video.setAttribute("preload", "metadata");
+            video.setAttribute("muted","");
+            video.setAttribute("autoplay","");
             video.setAttribute("loop", "");
             video.setAttribute("data-video-id", index + 1);
+            video.volume = 0;
 
             lien_vid.appendChild(video);
 
