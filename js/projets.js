@@ -74,7 +74,7 @@ fetch('../data/projets.json')
             agit.classList.add("lien-github_projet");
 
             imgGit.classList.add("logo-github");
-            imgGit.setAttribute("src", "img/icones/logo/GitHub.png");
+            imgGit.setAttribute("src", "img/icones/logo/GitHub_blanc.png");
             imgGit.setAttribute("alt", "Logo Github");
             imgGit.setAttribute("title", "Lien Github");
             imgGit.setAttribute("width", "30");
