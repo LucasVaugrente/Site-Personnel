@@ -51,11 +51,7 @@ fetch('../data/projets.json')
             let bloc_lan_git = document.createElement('div');
 
             // Si le projet est à gauche
-            if (index % 2 === 0) {
-                bloc_lan_git.classList.add('git-lan-g');
-            } else {
-                bloc_lan_git.classList.add('git-lan-d');
-            }
+            bloc_lan_git.classList.add('git-lan-g');
 
             for (let j = 0; j < data.projets[index].langages.length; j++) {
 
@@ -100,15 +96,14 @@ fetch('../data/projets.json')
 
             video.setAttribute("controls", "true");
             video.setAttribute("preload", "metadata");
-            video.setAttribute("muted","");
-            video.setAttribute("autoplay","");
+            video.setAttribute("muted", "");
+            video.setAttribute("autoplay", "");
             video.setAttribute("loop", "");
             video.setAttribute("data-video-id", index + 1);
             video.volume = 0;
 
             lien_vid.appendChild(video);
 
-            console.log(video);
             // ##### AJOUT DE TOUS LES ELEMENTS ##### //
             bloc_content.appendChild(bloc_titre);
             bloc_content.appendChild(Text_Desc);

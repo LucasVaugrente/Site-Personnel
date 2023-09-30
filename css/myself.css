@@ -136,6 +136,7 @@
     .parcours_etu {
         font-size: 1em;
         padding: 0 2em 1em;
+        text-align: justify;
     }
 }
 
@@ -146,6 +147,7 @@
     .parcours_etu {
         text-align: left;
         font-size: 0.9em;
+        text-align: justify;
     }
 
     .profil img {
@@ -164,6 +166,7 @@
     .para2,
     .parcours_etu {
         padding: 1em;
+        text-align: justify;
     }
 
     .parcours_etu {

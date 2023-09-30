@@ -71,7 +71,6 @@ fetch('../data/experiences.json')
             let img = document.createElement("img");
             img.setAttribute("src", data.experiences[index].image);
 
-            console.log(data.experiences[index].image);
             // ##### AJOUT DE TOUS LES ELEMENTS ##### //
             bloc_content.appendChild(bloc_titre);
             bloc_content.appendChild(Text_Desc);

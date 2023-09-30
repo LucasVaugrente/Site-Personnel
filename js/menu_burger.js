@@ -1,4 +1,6 @@
 const menuHamburger = document.querySelector(".menu-burger");
+const overlay = document.querySelector(".menu-overlay");
+const overlay2 = document.querySelector(".menu-overlay2");
 const menuHamburgerClose = document.querySelector(".menu-burger-close");
 const navLinks = document.querySelector(".nav-links");
 
@@ -11,10 +13,12 @@ const LinkCon = document.querySelector(".link-contact");
 
 menuHamburger.addEventListener("click", () => {
   navLinks.classList.toggle("mobile-menu");
+  overlay.classList.toggle("menu-overlay_display");
 });
 
 menuHamburgerClose.addEventListener("click", () => {
   navLinks.classList.toggle("mobile-menu");
+  overlay2.classList.toggle("menu-overlay2_display");
 });
 
 LinkAcc.addEventListener("click", () => {
