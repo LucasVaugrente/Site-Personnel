@@ -105,6 +105,7 @@
     opacity: 1;
     transform: translateY(0);
     transition: .6s;
+    width: 100px;
 }
 
 .titre_types {
