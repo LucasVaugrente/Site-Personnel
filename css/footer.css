@@ -26,7 +26,7 @@ footer div {
 }
 
 footer a:link {
-    color: white;
+    color: var(--white-color);
     display: inline-block;
 }
 
@@ -36,7 +36,7 @@ footer a::after {
     height: 1.5px;
     margin-top: -4px;
     display: block;
-    background: white;
+    background: var(--white-color);
     transition: .5s;
 }
 
@@ -45,7 +45,7 @@ footer a:hover::after {
 }
 
 footer a:visited {
-    color: white;
+    color: var(--white-color);
 }
 
 footer p {

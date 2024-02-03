@@ -3,7 +3,7 @@
 /*###################################*/
 
 #experiences {
-    background-color: rgb(23, 17, 54);
+    background-color: var(--blue-background);
     padding-bottom: 3em;
 }
 
@@ -13,7 +13,7 @@
     padding-top: 16vh;
     padding-bottom: 1.5em;
     background-color: rgb(23, 17, 54);
-    color: white;
+    color: var(--white-color);
 }
 
 .section-experiences {
@@ -60,7 +60,7 @@
 .langues-prog:link,
 .lien_experiences:link {
     display: inline-block;
-    color: rgb(131, 253, 245);
+    color: var(--link-color-backBlue);
 }
 
 .langues-prog::after,
@@ -70,7 +70,7 @@
     height: 1px;
     margin-top: -4px;
     display: block;
-    background: rgb(131, 253, 245);
+    background: var(--link-color-backBlue);
     transition: .5s;
 }
 
@@ -81,7 +81,7 @@
 
 .langues-prog:visited,
 .lien_experiences:visited {
-    color: rgb(131, 253, 245);
+    color: var(--link-color-backBlue);
 }
 
 .transition_proj_comp {
@@ -99,17 +99,17 @@
 .block-transition {
     height: 5em;
     display: flex;
-    background-color: rgb(223, 202, 240);
+    background-color: var(--pink-background);
 }
 
 .block-transition_3 {
-    background-color: rgb(223, 202, 240);
+    background-color: var(--pink-background);
     width: 50%;
 }
 
 .block-transition_4 {
     width: 50%;
-    background-color: rgb(223, 202, 240);
+    background-color: var(--pink-background);
 }
 
 .transition_myself_proj3 {

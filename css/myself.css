@@ -1,8 +1,8 @@
 #myself div {
     display: flex;
-    background-color: rgb(223, 202, 240);
+    background-color: var(--pink-background);
     align-items: center;
-    color: black;
+    color: var(--black-color);
     padding-bottom: 2em;
     z-index: 2;
 }
@@ -12,10 +12,11 @@
 }
 
 .titre-myself {
+    color: var(--black-color);
     font-size: clamp(40px, 8vw, 55px);
     text-align: center;
     padding-top: 17vh;
-    background-color: rgb(223, 202, 240);
+    background-color: var(--pink-background);
 }
 
 .profil {
@@ -36,7 +37,7 @@
 }
 
 .lien_myself a:link {
-    color: rgb(194, 47, 47);
+    color: var(--link-color-backPink);
     display: inline-block;
 }
 
@@ -46,7 +47,7 @@
     height: 2px;
     margin-top: -4px;
     display: block;
-    background: rgb(194, 47, 47);
+    background: var(--link-color-backPink);
     transition: .5s;
 }
 
@@ -55,7 +56,7 @@
 }
 
 .lien_myself a:visited {
-    color: rgb(194, 47, 47);
+    color: var(--link-color-backPink);
 }
 
 .para1,
@@ -82,28 +83,28 @@
 .block-transition {
     height: 5em;
     display: flex;
-    background-color: rgb(223, 202, 240);
+    background-color: var(--pink-background);
 }
 
 .block-transition_1 {
-    background-color: rgb(23, 17, 54);
+    background-color: var(--blue-background);
     width: 50%;
 }
 
 .block-transition_2 {
     width: 50%;
-    background-color: rgb(23, 17, 54);
+    background-color: var(--blue-background);
 }
 
 .transition_myself_proj1 {
     height: 5em;
-    background-color: rgb(223, 202, 240);
+    background-color: var(--pink-background);
     border-bottom-left-radius: 200%;
 }
 
 .transition_myself_proj2 {
     height: 5em;
-    background-color: rgb(223, 202, 240);
+    background-color: var(--pink-background);
     border-bottom-right-radius: 200%;
 }
 

@@ -7,12 +7,12 @@
     text-align: center;
     padding-top: 16vh;
     padding-bottom: 1em;
-    background-color: rgb(23, 17, 54);
-    color: white;
+    background-color: var(--blue-background);
+    color: var(--white-color);
 }
 
 .section-projets {
-    background-color: rgb(23, 17, 54);
+    background-color: var(--blue-background);
     display: flex;
     flex-direction: column;
     gap: 70px;
@@ -20,7 +20,7 @@
 
 .p-titre {
     font-size: 2em;
-    color: white;
+    color: var(--white-color);
 }
 
 .projet {
@@ -47,8 +47,8 @@
 .p-pitch {
     padding: 20px;
     text-align: justify;
-    background-color: rgb(52, 38, 116);
-    color: rgb(170, 187, 255);
+    background-color: var(--project-pitch-backgroundColor);
+    color: var(--project-pitch-color);
     border-radius: 30px;
     position: relative;
     box-shadow: 0 0 0.6em black;
@@ -88,7 +88,7 @@
 }
 
 video::-webkit-media-controls-play-button {
-    background-color: rgb(52, 38, 116);
+    background-color: var(--project-pitch-backgroundColor);
     border-top-right-radius: 10px;
     transition: all 0.2s ease-in-out;
 }
@@ -135,41 +135,42 @@ video::-webkit-media-controls-mute-button {
 .logo-github:hover {
     filter: invert(80%);
 }
-
+#56dcfc
 .langues-prog {
     font-size: 1.2em;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.langues-prog:link,
+.langues-prog:hover {
+    opacity: 0.7;
+}
+
 .lien_projets:link {
     display: inline-block;
-    color: rgb(131, 253, 245);
+    color: var(--link-color-backBlue);
 }
 
-.langues-prog::after,
 .lien_projets::after {
     content: '';
     width: 0px;
     height: 1px;
     margin-top: -4px;
     display: block;
-    background: rgb(131, 253, 245);
+    background: var(--link-color-backBlue);
     transition: .5s;
 }
 
-.langues-prog:hover::after,
 .lien_projets:hover::after {
     width: 100%;
 }
 
-.langues-prog:visited,
 .lien_projets:visited {
-    color: rgb(131, 253, 245);
+    color: var(--link-color-backBlue);
 }
 
 .transition_proj_comp {
     display: block;
-    background-color: rgb(23, 17, 54);
+    background-color: var(--blue-background);
     height: 8vw;
     width: 100%;
     margin: -4vw 0px -4vw 0px;
@@ -182,28 +183,28 @@ video::-webkit-media-controls-mute-button {
 .block-transition {
     height: 5em;
     display: flex;
-    background-color: rgb(223, 202, 240);
+    background-color: var(--pink-background);
 }
 
 .block-transition_3 {
-    background-color: rgb(223, 202, 240);
+    background-color: var(--pink-background);
     width: 50%;
 }
 
 .block-transition_4 {
     width: 50%;
-    background-color: rgb(223, 202, 240);
+    background-color: var(--pink-background);
 }
 
 .transition_myself_proj3 {
     height: 5em;
-    background-color: rgb(23, 17, 54);
+    background-color: var(--blue-background);
     border-bottom-left-radius: 200%;
 }
 
 .transition_myself_proj4 {
     height: 5em;
-    background-color: rgb(23, 17, 54);
+    background-color: var(--blue-background);
     border-bottom-right-radius: 200%;
 }
 
@@ -222,7 +223,7 @@ video::-webkit-media-controls-mute-button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--white-color);
 }
 
 @media screen and (min-width:1950px) {
@@ -321,7 +322,7 @@ video::-webkit-media-controls-mute-button {
     .p-pitch {
         background-color: rgba(255, 255, 255, 0);
         margin: 0;
-        color: white;
+        color: var(--white-color);
         box-shadow: none;
         font-weight: 500;
         padding: 0;

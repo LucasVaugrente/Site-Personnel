@@ -2,12 +2,12 @@
     font-size: 3em;
     text-align: center;
     padding-top: 16vh;
-    background-color: rgb(223, 202, 240);
-    color: rgb(23, 17, 54);
+    background-color: var(--pink-background);
+    color: var(--blue-background);
 }
 
 .section-contact {
-    background-color: rgb(223, 202, 240);
+    background-color: var(--pink-background);
     padding: 3em 5em 5em 5em;
 }
 
@@ -17,9 +17,9 @@
     flex-direction: row;
     justify-content: space-around;
     margin: 0 20%;
-    border: solid 4px rgb(23, 17, 54);
+    border: solid 4px var(--blue-background);
     border-radius: 30px;
-    box-shadow: 0 5px 10px rgb(23, 17, 54);
+    box-shadow: 0 5px 10px var(--blue-background);
 }
 
 .image {
@@ -81,7 +81,7 @@
     bottom: 0px;
     height: 2px;
     width: 0;
-    background-color: rgb(23, 17, 54);
+    background-color: var(--blue-background);
 }
 
 @keyframes underline {
@@ -112,11 +112,11 @@
 }
 
 .contact-block a:link {
-    color: rgb(23, 17, 54);
+    color: var(--blue-background);
 }
 
 .contact-block a:visited {
-    color: rgb(23, 17, 54);
+    color: var(--blue-background);
 }
 
 .contact-block a:active {

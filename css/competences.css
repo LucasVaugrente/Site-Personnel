@@ -1,5 +1,5 @@
 #competences {
-    background-color: rgb(223, 202, 240);
+    background-color: var(--pink-background);
     padding-bottom: 3em;
 }
 
@@ -8,8 +8,8 @@
     text-align: center;
     padding-top: 16vh;
     padding-bottom: 1.5em;
-    background-color: rgb(223, 202, 240);
-    color: black;
+    background-color: var(--pink-background);
+    color: var(--black-color);
 }
 
 .software,
@@ -22,7 +22,7 @@
     margin: 3em 10%;
     padding: 20px;
     background-color: rgb(203, 184, 218);
-    box-shadow: 0 0 0.6em rgb(23, 17, 54);
+    box-shadow: 0 0 0.6em var(--blue-background);
     border-radius: 20px;
 }
 
@@ -49,7 +49,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background-color: rgb(223, 202, 240);
+    background-color: var(--pink-background);
     box-shadow: 0 0 0.5em rgb(51, 51, 53);
     border-radius: 20px;
     margin: 0 10%;
@@ -70,13 +70,13 @@
 }
 
 .type_selectionne {
-    background-color: rgb(23, 17, 54);
-    color: white;
+    background-color: var(--blue-background);
+    color: var(--white-color);
 }
 
 .type_selectionne:hover {
-    background-color: rgb(23, 17, 54);
-    color: white;
+    background-color: var(--blue-background);
+    color: var(--white-color);
 }
 
 .type_non_selectionne {

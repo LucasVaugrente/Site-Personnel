@@ -12,7 +12,8 @@
 }
 
 .navbar a {
-    color: white;
+    color: var(--white-color);
+    font-size: 20px;
     pointer-events: all;
 }
 
@@ -43,12 +44,12 @@
 }
 
 .navbar a:link {
-    color: white;
+    color: var(--white-color);
     transition: .4s;
 }
 
 .navbar a:hover {
-    color: rgb(131, 253, 245);
+    color: var(--link-color-backBlue);
     transition: .4s;
 }
 
@@ -57,7 +58,7 @@
 }
 
 .navbar p {
-    color: white;
+    color: var(--white-color);
 }
 
 [class*="nav_reveal"] {
@@ -179,15 +180,15 @@
     }
 
     .logo:visited {
-        color: white;
+        color: var(--white-color);
     }
 
     .logo:active {
-        color: white;
+        color: var(--white-color);
     }
 
     .logo:link {
-        color: white;
+        color: var(--white-color);
     }
 
 }
