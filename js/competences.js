@@ -68,7 +68,7 @@ frontWeb.addEventListener("click", () => {
 
         blockSoftwareDev.style.display = "none";
         blockBackWeb.style.display = "none";
-        blockFrontWeb.style.display = "flex";
+        blockFrontWeb.style.display = "grid";
 
         for (let index = 0; index < langages.length; index++) {
             langages[index].classList.remove("apparition-visible");
@@ -86,7 +86,7 @@ softwareDev.addEventListener("click", () => {
 
         blockFrontWeb.style.display = "none";
         blockBackWeb.style.display = "none";
-        blockSoftwareDev.style.display = "flex";
+        blockSoftwareDev.style.display = "grid";
 
         for (let index = 0; index < langages.length; index++) {
             langages[index].classList.remove("apparition-visible");
@@ -103,7 +103,7 @@ backWeb.addEventListener("click", () => {
 
         blockSoftwareDev.style.display = "none";
         blockFrontWeb.style.display = "none";
-        blockBackWeb.style.display = "flex";
+        blockBackWeb.style.display = "grid";
 
         for (let index = 0; index < langages.length; index++) {
             langages[index].classList.remove("apparition-visible");

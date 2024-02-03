@@ -9,6 +9,9 @@ fetch('../data/projets.json')
             let bloc_content = document.createElement('div');
             let bloc_titre = document.createElement('div');
 
+            bloc_content.classList.add('p-content');
+            bloc_titre.classList.add('titre-projet');
+
             // Si le projet est à gauche
             if (index % 2 === 0) {
                 article.classList.add('projet_g');
@@ -20,9 +23,9 @@ fetch('../data/projets.json')
                 bloc_titre.classList.add('titre-projet-droite');
             }
 
-            let p = index + 1;
-            article.classList.add('projet_' + p);
-            // article.classList.add('revelation');
+            article.classList.add('projet');
+            let numProjet = index + 1;
+            article.classList.add('projet_' + numProjet);
 
             /* ########################## Date, Type et Titre PROJET ########################## */
             let Text_Date = document.createElement('p');
@@ -38,6 +41,8 @@ fetch('../data/projets.json')
             /* ########################## Description PROJET ########################## */
             let Text_Desc = document.createElement('p');
 
+            Text_Desc.classList.add('p-pitch');
+
             // Si le projet est à gauche
             if (index % 2 === 0) {
                 Text_Desc.classList.add('p-pitch-gauche');
@@ -50,8 +55,14 @@ fetch('../data/projets.json')
             /* ########################## Langages Programmation PROJET ########################## */
             let bloc_lan_git = document.createElement('div');
 
+            bloc_lan_git.classList.add('git-lan');
+
             // Si le projet est à gauche
-            bloc_lan_git.classList.add('git-lan-g');
+            if (index % 2 === 0) {
+                bloc_lan_git.classList.add('git-lan-g');
+            } else {
+                bloc_lan_git.classList.add('git-lan-d');
+            }
 
             for (let j = 0; j < data.projets[index].langages.length; j++) {
 

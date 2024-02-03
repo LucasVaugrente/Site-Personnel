@@ -15,99 +15,76 @@
     background-color: rgb(23, 17, 54);
     display: flex;
     flex-direction: column;
-    padding-bottom: 4em;
-    z-index: 0;
+    gap: 70px;
 }
 
 .p-titre {
-    font-size: 2.3em;
+    font-size: 2em;
     color: white;
 }
 
-.projet_g,
-.projet_d {
+.projet {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    margin: 1em 0 5em 0;
+}
+
+.p-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    z-index: 3;
 }
 
 .p-content-gauche {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    z-index: 3;
 }
 
 .p-content-droite {
-    display: flex;
-    flex-direction: column;
     align-items: flex-end;
-    justify-content: center;
-    z-index: 3;
+}
+
+.p-pitch {
+    padding: 20px;
+    text-align: justify;
+    background-color: rgb(52, 38, 116);
+    color: rgb(170, 187, 255);
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 0 0 0.6em black;
+    transition: all 0.5s ease;
 }
 
 .p-pitch-gauche {
-    text-align: justify;
-    padding: 1.5em;
-    background-color: rgb(52, 38, 116);
-    color: rgb(170, 187, 255);
-    border-radius: 30px;
-    position: relative;
     margin-right: -100px;
-    box-shadow: 0 0 0.6em black;
-    transition: all 0.5s ease;
 }
 
 .p-pitch-droite {
-    text-align: justify;
-    padding: 1.5em;
-    background-color: rgb(52, 38, 116);
-    color: rgb(170, 187, 255);
-    border-radius: 30px;
-    position: relative;
     margin-left: -100px;
-    box-shadow: 0 0 0.6em black;
-    transition: all 0.5s ease;
 }
 
-.titre-projet-gauche p,
-.titre-projet-droite p {
+.titre-projet {
     color: aquamarine;
 }
 
-.titre-projet-gauche {
-    margin-left: 1em;
+.titre-projet-droite {
+    text-align: right;
 }
 
-.titre-projet-droite {
-    margin-right: 1em;
+.git-lan {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    gap: 15px;
 }
 
 .git-lan-g {
-    display: flex;
-    flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 1em;
 }
 
 .git-lan-d {
-    display: flex;
-    flex-direction: row;
     justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 1em;
-}
-
-.langues-prog {
-    padding: 0.5em;
 }
 
 video::-webkit-media-controls-play-button {
@@ -134,10 +111,7 @@ video::-webkit-media-controls-mute-button {
     display: none;
 }
 
-.video-si video,
-.video-yams video,
-.video-al video,
-.video-pt video {
+.projet video {
     height: 300px;
     border-radius: 30px;
     border-end-start-radius: 10px;
@@ -146,32 +120,9 @@ video::-webkit-media-controls-mute-button {
     z-index: 2;
 }
 
-.video-kf video {
-    height: 300px;
-    border-radius: 30px;
-    border-end-start-radius: 10px;
-    box-shadow: 0 0 0.6em black;
-    transition: all 0.5s ease;
-    z-index: 2;
-}
 
-.img-laby video {
-    height: 300px;
-    border-radius: 30px;
-    border-end-start-radius: 10px;
-    box-shadow: 0 0 0.6em black;
-    transition: all 0.5s ease;
-    z-index: 2;
-}
-
-.video-si video:hover,
-.video-pt video:hover,
-.video-al video:hover,
-.video-yams video:hover,
-.video-kf video:hover,
-.img-laby video:hover,
-.p-pitch-gauche:hover,
-.p-pitch-droite:hover {
+.projet video:hover,
+.p-pitch:hover {
     box-shadow: 0 0 1.5em black;
     transition: all 0.5s ease;
 }
@@ -179,19 +130,13 @@ video::-webkit-media-controls-mute-button {
 .logo-github {
     border-radius: 50px;
     transition: all 0.1s ease-in-out;
-    padding: 0 0.5em;
-}
-
-.lien-github_projet {
-    display: flex;
-    padding-left: 0.5em;
 }
 
 .logo-github:hover {
     filter: invert(80%);
 }
 
-.section-projets .langues-prog {
+.langues-prog {
     font-size: 1.2em;
 }
 
@@ -282,19 +227,19 @@ video::-webkit-media-controls-mute-button {
 
 @media screen and (min-width:1950px) {
     .section-projets {
-        padding: 0 20%;
+        padding: 0 20% 100px 20%;
     }
 }
 
 @media screen and (max-width:1950px) {
     .section-projets {
-        padding: 0 10%;
+        padding: 0 10% 100px 10%;
     }
 }
 
 @media screen and (max-width:1200px) {
     .section-projets {
-        padding: 0 5%;
+        padding: 0 5% 100px 5%;
     }
 }
 
@@ -318,12 +263,7 @@ video::-webkit-media-controls-mute-button {
         font-size: 2.5em;
     }
 
-    .projet_1:before,
-    .projet_2:before,
-    .projet_3:before,
-    .projet_4:before,
-    .projet_5:before,
-    .projet_6:before {
+    .projet:before {
         content: ' ';
         display: block;
         position: absolute;
@@ -363,49 +303,37 @@ video::-webkit-media-controls-mute-button {
         background-image: url("../img/projets/fond_alizon.png");
     }
 
-    .video-si,
-    .img-laby,
-    .video-kf,
-    .video-yams,
-    .video-pt,
-    .video-al {
+    .projet > a {
         display: none;
     }
 
-    .p-pitch-gauche,
-    .p-pitch-droite {
+    .p-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .titre-projet {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .p-pitch {
         background-color: rgba(255, 255, 255, 0);
         margin: 0;
         color: white;
         box-shadow: none;
         font-weight: 500;
-        padding-top: 0;
+        padding: 0;
     }
-
-    .p-pitch-gauche:hover,
-    .p-pitch-droite:hover {
+    
+    .p-pitch:hover {
         box-shadow: none;
     }
 
-    .p-content-gauche,
-    .p-content-droite {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .titre-projet-droite,
-    .titre-projet-gauche {
-        align-items: flex-start;
-        padding: 1.5em;
-        margin: 0;
-        position: relative;
-    }
-
     .git-lan {
-        margin: 0 1em;
+        justify-content: flex-start;
         font-weight: 600;
-        position: relative;
-        padding-bottom: 1em;
+        padding-bottom: 0;
     }
 }

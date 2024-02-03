@@ -9,6 +9,10 @@ fetch('../data/experiences.json')
             let bloc_content = document.createElement('div');
             let bloc_titre = document.createElement('div');
 
+            article.classList.add('experience');
+            bloc_content.classList.add('p-content');
+            bloc_titre.classList.add('titre-experience');
+
             // Si l'experience est à gauche
             if (index % 2 === 0) {
                 article.classList.add('experience_g');
@@ -20,8 +24,8 @@ fetch('../data/experiences.json')
                 bloc_titre.classList.add('titre-experience-droite');
             }
 
-            let p = index + 1;
-            article.classList.add('experience_' + p);
+            let numExperience = index + 1;
+            article.classList.add('experience_' + numExperience);
 
             /* ########################## Date, Type et Titre experience ########################## */
             let Text_Date = document.createElement('p');
@@ -37,6 +41,8 @@ fetch('../data/experiences.json')
             /* ########################## Description experience ########################## */
             let Text_Desc = document.createElement('p');
 
+            Text_Desc.classList.add('p-pitch');
+
             // Si l'experience est à gauche
             if (index % 2 === 0) {
                 Text_Desc.classList.add('p-pitch-gauche');
@@ -48,6 +54,8 @@ fetch('../data/experiences.json')
 
             /* ########################## Langages Programmation experience ########################## */
             let bloc_lan_git = document.createElement('div');
+
+            bloc_lan_git.classList.add('git-lan');
 
             // Si le experience est à gauche
             if (index % 2 === 0) {

@@ -15,19 +15,18 @@
 .software,
 .front,
 .back {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 20px;
+    justify-content: space-around;
+    margin: 3em 10%;
+    padding: 20px;
     background-color: rgb(203, 184, 218);
     box-shadow: 0 0 0.6em rgb(23, 17, 54);
-    margin: 3em 10%;
-    width: 80%;
     border-radius: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .zoom {
-    padding: 1em 1em;
     text-align: center;
 }
 
@@ -49,37 +48,25 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 20px;
     background-color: rgb(223, 202, 240);
     box-shadow: 0 0 0.5em rgb(51, 51, 53);
     border-radius: 20px;
-    margin: 0 20%;
+    margin: 0 10%;
+    padding: 20px;
 }
 
-.Cat-langages-W,
-.Cat-langages-D,
-.Cat-langages-B {
+.types_langages > h3 {
     font-size: 1.5em;
     text-align: center;
-    margin: 1em;
     padding: 0.5em;
     cursor: pointer;
-    -moz-user-select: none;
-    /* Firefox */
-    -webkit-user-select: none;
-    /* Chrome, Safari, Opéra depuis la version 15 */
-    -ms-user-select: none;
-    /* Internet explorer depuis la version 10 et Edge */
-    user-select: none;
-    /* Propriété standard */
     transition: .4s;
     border-radius: 20px;
 }
 
-.Cat-langages-W:hover,
-.Cat-langages-D:hover,
-.Cat-langages-B:hover {
+.types_langages > h3:hover {
     background-color: rgb(198, 182, 211);
-    transition: .4s;
 }
 
 .type_selectionne {
@@ -141,7 +128,7 @@
     .software,
     .front,
     .back {
-        display: flex;
+        display: grid;
         margin-top: 1em;
     }
 }

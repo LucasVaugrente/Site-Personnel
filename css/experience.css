@@ -16,106 +16,29 @@
     color: white;
 }
 
-.p-titre {
-    font-size: 2em;
-    color: white;
-}
-
 .section-experiences {
-    background-color: rgb(23, 17, 54);
     display: flex;
     flex-direction: column;
-    padding-bottom: 4em;
-    z-index: 0;
+    gap: 70px;
+    background-color: rgb(23, 17, 54);
 }
 
-.experience_g,
-.experience_d {
+.experience {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 1em 0 5em 0;
 }
 
-.p-content-gauche {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    z-index: 3;
-}
-
-.p-content-droite {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    z-index: 3;
-}
-
-.p-pitch-gauche {
-    text-align: justify;
-    padding: 1.5em;
-    background-color: rgb(52, 38, 116);
-    color: rgb(170, 187, 255);
-    border-radius: 30px;
-    position: relative;
-    margin-right: -100px;
-    box-shadow: 0 0 0.6em black;
-    transition: all 0.5s ease;
-}
-
-.p-pitch-droite {
-    text-align: justify;
-    padding: 1.5em;
-    background-color: rgb(52, 38, 116);
-    color: rgb(170, 187, 255);
-    border-radius: 30px;
-    position: relative;
-    margin-left: -100px;
-    box-shadow: 0 0 0.6em black;
-    transition: all 0.5s ease;
-}
-
-.titre-experience-gauche p,
-.titre-experience-droite p {
+.titre-experience {
     color: aquamarine;
 }
 
-.titre-experience-gauche {
-    margin-left: 1em;
-}
-
 .titre-experience-droite {
-    margin-right: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    text-align: right;
 }
 
-.git-lan-g {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 1em;
-}
-
-.git-lan-d {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 1em;
-}
-
-.langues-prog {
-    padding: 0.5em;
-}
-
-.experience_1 img {
+.experience_1 img,
+.experience_2 img {
     height: 300px;
     border-radius: 30px;
     box-shadow: 0 0 0.6em black;
@@ -124,8 +47,7 @@
 }
 
 .experience_1 img:hover,
-.p-pitch-gauche:hover,
-.p-pitch-droite:hover {
+.experience_2 img:hover {
     box-shadow: 0 0 1.5em black;
     transition: all 0.5s ease;
 }
@@ -133,11 +55,6 @@
 .logo-github {
     border-radius: 50px;
     transition: all 0.1s ease-in-out;
-    padding: 0 0.5em;
-}
-
-.section-experience .langues-prog {
-    font-size: 1.2em;
 }
 
 .langues-prog:link,
@@ -236,8 +153,7 @@
         width: 100vw;
     }
 
-    .experience_g,
-    .experience_d {
+    .experience {
         margin: 1em 10% 5em 10%;
         width: 80%;
         box-shadow: 0 0 1em black;
@@ -249,7 +165,7 @@
         font-size: 2.5em;
     }
 
-    .experience_1:before {
+    .experience:before {
         content: ' ';
         display: block;
         position: absolute;
@@ -268,44 +184,13 @@
         background-image: url("../img/experiences/tac_economics_resp.jpg");
     }
 
-    .experience_1 img {
+    .experience_1 img,
+    .experience_2 img {
         display: none;
     }
 
-    .p-pitch-gauche,
-    .p-pitch-droite {
-        background-color: rgba(255, 255, 255, 0);
-        margin: 0;
-        color: white;
-        box-shadow: none;
-        font-weight: 500;
-        padding-top: 0;
-    }
-
-    .p-pitch-gauche:hover,
-    .p-pitch-droite:hover {
-        box-shadow: none;
-    }
-
-    .p-content-gauche,
-    .p-content-droite {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .titre-experience-droite,
-    .titre-experience-gauche {
-        align-items: flex-start;
-        padding: 1.5em;
-        margin: 0;
-        position: relative;
-    }
-
-    .git-lan {
-        margin: 0 1em;
-        font-weight: 600;
-        position: relative;
-        padding-bottom: 1em;
+    .titre-experience {
+        text-align: left;
+        margin-bottom: 10px;
     }
 }
