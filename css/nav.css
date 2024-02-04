@@ -1,4 +1,4 @@
-.navbar {
+nav {
     position: fixed;
     padding: 50px;
     display: flex;
@@ -9,33 +9,39 @@
     box-sizing: border-box;
     z-index: 10;
     pointer-events: none;
+    transition: all 0.3s ease;
 }
 
-.navbar a {
+nav.notOnTop {
+    background-color: rgba(23, 17, 54, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+nav a {
     color: var(--white-color);
     font-size: 20px;
     pointer-events: all;
 }
 
-.navbar .logo {
+nav .logo {
     font-size: 2em;
     font-weight: bold;
 }
 
-.navbar .nav-links ul {
+nav .nav-links ul {
     display: flex;
 }
 
-.navbar .nav-links ul li {
+nav .nav-links ul li {
     margin: 0 30px;
 }
 
-.navbar .nav-links ul li.active a {
+nav .nav-links ul li.active a {
     color: red;
     font-weight: 600;
 }
 
-.navbar .menu-burger,
+nav .menu-burger,
 .menu-burger-close,
 .menu-overlay,
 .menu-overlay2 {
@@ -43,21 +49,21 @@
     width: 35px;
 }
 
-.navbar a:link {
+nav a:link {
     color: var(--white-color);
     transition: .4s;
 }
 
-.navbar a:hover {
+nav a:hover {
     color: var(--link-color-backBlue);
     transition: .4s;
 }
 
-.navbar a:active {
+nav a:active {
     opacity: 0.6;
 }
 
-.navbar p {
+nav p {
     color: var(--white-color);
 }
 
@@ -109,7 +115,7 @@
 
 @media screen and (max-width:1220px) {
 
-    .navbar .menu-burger {
+    nav .menu-burger {
         display: block;
         width: 30px;
         height: 30px;
@@ -170,12 +176,12 @@
         align-items: center;
     }
 
-    .navbar .nav-links ul li {
+    nav .nav-links ul li {
         margin: 25px 0;
         font-size: 1.5em;
     }
 
-    .navbar .logo {
+    nav .logo {
         font-size: 1.5em;
     }
 

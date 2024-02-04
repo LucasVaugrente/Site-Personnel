@@ -1,4 +1,4 @@
-#begin {
+#welcome {
     position: relative;
     z-index: 1;
     height: 100vh;
@@ -26,7 +26,7 @@
 .welcome {
     font-size: 1.2em;
     padding-bottom: 0.5em;
-    color: var(--begin-color1);
+    color: var(--welcome-color1);
     pointer-events: all;
 }
 
@@ -40,39 +40,37 @@
 .status {
     font-size: clamp(40px, 8vw, 50px);
     padding-bottom: 0.3em;
-    color: var(--begin-color2);
+    color: var(--welcome-color2);
     pointer-events: all;
 }
 
 .pitch {
     font-size: 1.1em;
-    color: var(--begin-color3);
+    color: var(--welcome-color3);
     white-space: normal;
     pointer-events: all;
     margin-right: 50%;
 }
 
-.btn-begin {
-    margin-top: 2em;
-    padding: 0.9em;
-    width: 10em;
+.btn-welcome {
+    font-family: "calibre_medium";
+    margin-top: 20px;
+    padding: 14px 10px 10px 10px;
+    width: 200px;
     color: var(--link-color-backBlue);
     background-color: rgba(0, 0, 0, 0);
-    font-weight: bold;
-    font-size: 1.2em;
-    border-style: solid;
-    border-color: var(--link-color-backBlue);
+    font-size: 25px;
+    border: 2px solid var(--link-color-backBlue);
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.7s ease;
+    transition: all 0.5s ease;
     pointer-events: all;
 }
 
-.btn-begin:hover {
+.btn-welcome:hover {
     color: var(--white-color);
     background-color: rgba(131, 253, 245, 0.173);
     text-decoration: none;
-    transition: all 0.7s ease;
 }
 
 .iut-site:link {
@@ -115,7 +113,7 @@
 
 @media screen and (max-width:1024px) {
 
-    #begin {
+    #welcome {
         width: 100vw;
     }
 
@@ -138,7 +136,7 @@
         width: 70vw;
     }
 
-    .btn-begin {
+    .btn-welcome {
         font-size: 1em;
     }
 }

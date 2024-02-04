@@ -4,7 +4,7 @@ const overlay2 = document.querySelector(".menu-overlay2");
 const menuHamburgerClose = document.querySelector(".menu-burger-close");
 const navLinks = document.querySelector(".nav-links");
 
-const LinkAcc = document.querySelector(".link_begin");
+const LinkAcc = document.querySelector(".link_welcome");
 const LinkMy = document.querySelector(".link-myself");
 const LinkPro = document.querySelector(".link-projects");
 const LinkSki = document.querySelector(".link-skills");

@@ -4,7 +4,7 @@
 
 /* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
 /*
-particlesJS.load('begin', 'particles.json', function() {
+particlesJS.load('welcome', 'particles.json', function() {
   console.log('particles.js loaded - callback');
 });
 */
@@ -12,7 +12,7 @@ particlesJS.load('begin', 'particles.json', function() {
 /* Otherwise just put the config content (json): */
 
 particlesJS(
-  "begin",
+  "welcome",
 
   {
     particles: {

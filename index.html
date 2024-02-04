@@ -27,7 +27,7 @@
     <!-- Import des fichiers css-->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/begin.css">
+    <link rel="stylesheet" href="css/welcome.css">
     <link rel="stylesheet" href="css/myself.css">
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/skills.css">
@@ -44,14 +44,14 @@
 
     <main>
 
-        <nav class="navbar">
-            <a class="logo" href="#begin">Lucas Vaugrente</a>
+        <nav>
+            <a class="logo" href="#welcome">Lucas Vaugrente</a>
             <div class="nav-links">
                 <ul>
-                    <li class="nav_reveal1"><a class="link_begin" href="#begin">Accueil</a></li>
+                    <li class="nav_reveal1"><a class="link_welcome" href="#welcome">Accueil</a></li>
                     <li class="nav_reveal2"><a class="link-myself" href="#myself">A propos</a></li>
                     <li class="nav_reveal3"><a class="link-projects" href="#projects">Projets</a></li>
-                    <li class="nav_reveal4"><a class="link-skills" href="#competences">Compétences</a></li>
+                    <li class="nav_reveal4"><a class="link-skills" href="#skills">Compétences</a></li>
                     <li class="nav_reveal4"><a class="link-experiences" href="#experiences">Expériences</a></li>
                     <li class="contact-btn nav_reveal5"><a class="link-contact" href="#contact">Contact</a></li>
                 </ul>
@@ -72,9 +72,9 @@
             <img src="img/menu_burger/menu-btn.png" alt="Menu Burger" title="Menu" class="menu-burger">
         </nav>
 
-        <div id="begin">
+        <div id="welcome">
 
-            <canvas class="begin-canvas-el" width="1864" height="931" style="width: 100%; height: 100%;"></canvas>
+            <canvas class="welcome-canvas-el" width="1864" height="931" style="width: 100%; height: 100%;"></canvas>
 
             <div class="content">
                 <span class="welcome reveal-1">Bienvenue sur mon site, je suis</span>
@@ -87,7 +87,7 @@
                     faire
                     une école d'ingénieurs.</span>
 
-                <button class="btn-begin" onclick="window.location.href='#myself';">Commencer</button>
+                <button class="btn-welcome" onclick="window.location.href='#myself';">Commencer</button>
             </div>
 
         </div>
@@ -114,8 +114,8 @@
                     </p>
 
                     <p class="situationNow">
-                        Je fais de plus en plus de <span class="lien_myself"><a href="#projects">projects</a></span> personnels en dehors de l'activité scolaire afin de
-                        m'améliorer sur des langages appris durant ma formation. Je suis assez passionné et curieux pour découvrir de nouveaux langages de programmation, cela me permet de diversifier ma culture dans l'informatique.
+                        Je fais de plus en plus de <span class="lien_myself"><a href="#projects">projets</a></span> personnels en dehors de l'activité scolaire afin de
+                        m'améliorer sur des languages appris durant ma formation. Je suis assez passionné et curieux pour découvrir de nouveaux languages de programmation, cela me permet de diversifier ma culture dans l'informatique.
                     </p>
 
                     <div class="studies_career">
@@ -139,14 +139,7 @@
             </div>
         </div>
 
-        <div class="block-transition">
-            <div class="block-transition_1">
-                <div class="transition_myself_proj1"></div>
-            </div>
-            <div class="block-transition_2">
-                <div class="transition_myself_proj2"></div>
-            </div>
-        </div>
+        <div class="block-transition white myself_end"></div>
 
         <div id="projects">
 
@@ -156,53 +149,39 @@
 
         </div>
 
-        <div class="block-transition">
-            <div class="block-transition_3">
-                <div class="transition_myself_proj3"></div>
-            </div>
-            <div class="block-transition_4">
-                <div class="transition_myself_proj4"></div>
-            </div>
-        </div>
+        <div class="block-transition dark projects_end"></div>
 
-        <div id="competences">
+        <div id="skills">
 
-            <h1 class="titre-skills">
+            <h1 class="title-skills">
                 Compétences
             </h1>
 
-            <div class="types_langages">
-                <h3 class="Cat-langages-W">Front-Web</h3>
-                <h3 class="Cat-langages-D type_selectionne">Software Developpment</h3>
-                <h3 class="Cat-langages-B ">Back-End</h3>
+            <div class="types_languages">
+                <h3 class="Cat-languages-W">Front-Web</h3>
+                <h3 class="Cat-languages-D type_selected">Développement Logiciel</h3>
+                <h3 class="Cat-languages-B ">Back-End</h3>
             </div>
 
-            <h2 class="titre_types">Software Developpment</h2>
+            <h2 class="title_types">Software Developpment</h2>
 
             <div class="software"></div>
 
-            <h2 class="titre_types">Front-End</h2>
+            <h2 class="title_types">Front-End</h2>
 
             <div class="front type_non_selectionne"></div>
 
-            <h2 class="titre_types">Back-End</h2>
+            <h2 class="title_types">Back-End</h2>
 
             <div class="back type_non_selectionne"></div>
 
         </div>
 
-        <div class="block-transition">
-            <div class="block-transition_1">
-                <div class="transition_myself_proj1"></div>
-            </div>
-            <div class="block-transition_2">
-                <div class="transition_myself_proj2"></div>
-            </div>
-        </div>
+        <div class="block-transition white skills_end"></div>
 
         <div id="experiences">
 
-            <h1 class="titre-experiences">
+            <h1 class="title-experiences">
                 Expériences
             </h1>
 
@@ -210,18 +189,11 @@
 
         </div>
 
-        <div class="block-transition">
-            <div class="block-transition_3">
-                <div class="transition_myself_proj3"></div>
-            </div>
-            <div class="block-transition_4">
-                <div class="transition_myself_proj4"></div>
-            </div>
-        </div>
+        <div class="block-transition dark experiences_end"></div>
 
         <div id="contact">
 
-            <h1 class="titre-contacts">
+            <h1 class="title-contacts">
                 Contact
             </h1>
 
@@ -290,7 +262,7 @@
 
             </div>
 
-            <p class="thanks">Ce site a été créé par Lucas Vaugrente en HTML, CSS et JavaScript. Merci d'avoir lu
+            <p class="thanks">Ce site a été créé en HTML, CSS et JavaScript natifs. Merci d'avoir lu
                 jusqu'au bout.</p>
 
         </footer>

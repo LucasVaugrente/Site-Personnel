@@ -7,36 +7,36 @@ fetch('../data/experiences.json')
 
             let article = document.createElement('article');
             let bloc_content = document.createElement('div');
-            let bloc_titre = document.createElement('div');
+            let bloc_title = document.createElement('div');
 
             article.classList.add('experience');
             bloc_content.classList.add('p-content');
-            bloc_titre.classList.add('titre-experience');
+            bloc_title.classList.add('title-experience');
 
             // Si l'experience est à gauche
             if (index % 2 === 0) {
                 article.classList.add('experience_g');
                 bloc_content.classList.add('p-content-gauche');
-                bloc_titre.classList.add('titre-experience-gauche');
+                bloc_title.classList.add('title-experience-gauche');
             } else {
                 article.classList.add('experience_d');
                 bloc_content.classList.add('p-content-droite');
-                bloc_titre.classList.add('titre-experience-droite');
+                bloc_title.classList.add('title-experience-droite');
             }
 
             let numExperience = index + 1;
             article.classList.add('experience_' + numExperience);
 
-            /* ########################## Date, Type et Titre experience ########################## */
+            /* ########################## Date, Type et title experience ########################## */
             let Text_Date = document.createElement('p');
-            let Text_Titre = document.createElement('h2');
-            Text_Titre.classList.add('p-titre');
+            let Text_title = document.createElement('h2');
+            Text_title.classList.add('p-title');
 
-            Text_Date.innerHTML = data.experiences[index].date + " - " + data.experiences[index].type_experience;
-            Text_Titre.innerHTML = data.experiences[index].titre;
+            Text_Date.innerHTML = data.experiences[index].date + " - " + data.experiences[index].experience_type;
+            Text_title.innerHTML = data.experiences[index].title;
 
-            bloc_titre.appendChild(Text_Date);
-            bloc_titre.appendChild(Text_Titre);
+            bloc_title.appendChild(Text_Date);
+            bloc_title.appendChild(Text_title);
 
             /* ########################## Description experience ########################## */
             let Text_Desc = document.createElement('p');
@@ -52,7 +52,7 @@ fetch('../data/experiences.json')
 
             Text_Desc.innerHTML = data.experiences[index].description;
 
-            /* ########################## Langages Programmation experience ########################## */
+            /* ########################## languages Programmation experience ########################## */
             let bloc_lan_git = document.createElement('div');
 
             bloc_lan_git.classList.add('git-lan');
@@ -64,13 +64,13 @@ fetch('../data/experiences.json')
                 bloc_lan_git.classList.add('git-lan-d');
             }
 
-            for (let j = 0; j < data.experiences[index].langages.length; j++) {
+            for (let j = 0; j < data.experiences[index].languages.length; j++) {
 
                 let ahref = document.createElement('a');
                 ahref.classList.add("langues-prog");
-                ahref.innerHTML = data.experiences[index].langages[j].nom;
+                ahref.innerHTML = data.experiences[index].languages[j].name;
                 ahref.setAttribute("target", "_blank");
-                ahref.setAttribute("href", data.experiences[index].langages[j].url);
+                ahref.setAttribute("href", data.experiences[index].languages[j].url);
 
                 bloc_lan_git.appendChild(ahref);
             }
@@ -80,7 +80,7 @@ fetch('../data/experiences.json')
             img.setAttribute("src", data.experiences[index].image);
 
             // ##### AJOUT DE TOUS LES ELEMENTS ##### //
-            bloc_content.appendChild(bloc_titre);
+            bloc_content.appendChild(bloc_title);
             bloc_content.appendChild(Text_Desc);
             bloc_content.appendChild(bloc_lan_git);
 

@@ -2,12 +2,12 @@
     "experiences": [
         {
             "date": "2023",
-            "type_experience": "Stage",
-            "titre": "TAC ECONOMICS",
-            "description": "Un stage de 3 mois à <a class='lien_experiences' href='https://www.taceconomics.com' target='_blank'>TAC Economics</a>, ma mission consistait à améliorer et ajouter des fonctionnalités sur leur application web intéragissant avec une API REST. J'ai effectué le stage en télétravail hybride avec parfois de l'autonomie dans mes tâches de travail.",
-            "langages": [
+            "experience_type": "Stage",
+            "title": "TAC ECONOMICS",
+            "description": "Un stage de 3 mois à <a class='link_experiences' href='https://www.taceconomics.com' target='_blank'>TAC Economics</a>, ma mission consistait à améliorer et ajouter des fonctionnalités sur leur application web intéragissant avec une API REST. J'ai effectué le stage en télétravail hybride avec parfois de l'autonomie dans mes tâches de travail.",
+            "languages": [
                 {
-                    "nom": "Vue.JS",
+                    "name": "Vue.JS",
                     "url": "https://vuejs.org"
                 }
             ],
@@ -15,13 +15,13 @@
         },
         {
             "date": "2023-2024",
-            "type_experience": "Alternance",
-            "titre": "Mobil-Inn",
-            "description": "Une alternance commencée en octobre jusqu'à aujourd'hui à <a class='lien_experiences' href='https://mobil-inn.com' target='_blank'>Mobil-Inn</a>, ma mission consistait à améliorer le visuel des pages de l'application web existant. L'entreprise propose une suite de logiciel : <a class='lien_experiences' href='https://mobil-inn.com/ismartcollect/' target='_blank'>Ismartroad</a> qui permet de géolocaliser les éboueurs et de les accompagner lors de leurs tournées.",
-            "langages": [
+            "experience_type": "Alternance",
+            "title": "Mobil-Inn",
+            "description": "Une alternance commencée en octobre jusqu'à aujourd'hui à <a class='link_experiences' href='https://mobil-inn.com' target='_blank'>Mobil-Inn</a>, ma mission consistait à améliorer le visuel des pages de l'application web existant. L'entreprise propose une suite de logiciel : <a class='link_experiences' href='https://mobil-inn.com/ismartcollect/' target='_blank'>Ismartroad</a> qui permet de géolocaliser les éboueurs et de les accompagner lors de leurs tournées.",
+            "languages": [
                 {
-                    "nom": "JQuery",
-                    "url": "https://vuejs.org"
+                    "name": "JQuery",
+                    "url": "https://jquery.com"
                 }
             ],
             "image": "../img/experiences/mobil-inn.png" 

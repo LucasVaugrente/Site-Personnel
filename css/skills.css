@@ -1,9 +1,11 @@
-#competences {
+#skills {
+    position: relative;
+    z-index: 5;
     background-color: var(--pink-background);
-    padding-bottom: 3em;
+    padding-bottom: 100px;
 }
 
-.titre-skills {
+.title-skills {
     background-color: var(--pink-background);
     color: var(--black-color);
 }
@@ -11,15 +13,16 @@
 .software,
 .front,
 .back {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    grid-gap: 20px;
-    justify-content: space-around;
-    margin: 3em 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin: 0 10%;
     padding: 20px;
-    background-color: rgb(203, 184, 218);
-    box-shadow: 0 0 0.6em var(--blue-background);
-    border-radius: 20px;
+    background-color: var(--pink-background);
+    filter: drop-shadow(0px 10px 10px rgba(28, 28, 51, 0.15));
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .zoom {
@@ -39,38 +42,39 @@
     scale: 1.15;
 }
 
-.types_langages {
+.types_languages {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 20px;
     background-color: var(--pink-background);
-    box-shadow: 0 0 0.5em rgb(51, 51, 53);
-    border-radius: 20px;
+    filter: drop-shadow(0 0 30px rgba(28, 28, 51, 0.15));
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;    
     margin: 0 10%;
     padding: 20px;
 }
 
-.types_langages > h3 {
-    font-size: 1.5em;
+.types_languages > h3 {
+    font-size: 25px;
     text-align: center;
-    padding: 0.5em;
+    padding: 17px 15px 10px 15px;
     cursor: pointer;
     transition: .4s;
     border-radius: 20px;
 }
 
-.types_langages > h3:hover {
+.types_languages > h3:hover {
     background-color: rgb(198, 182, 211);
 }
 
-.type_selectionne {
+.type_selected {
     background-color: var(--blue-background);
     color: var(--white-color);
 }
 
-.type_selectionne:hover {
+.type_selected:hover {
     background-color: var(--blue-background);
     color: var(--white-color);
 }
@@ -91,13 +95,13 @@
     width: 100px;
 }
 
-.titre_types {
+.title_types {
     display: none;
 }
 
 @media screen and (max-width:1100px) {
 
-    #competences {
+    #skills {
         width: 100vw;
     }
 
@@ -105,15 +109,15 @@
 
 @media screen and (max-width:900px) {
 
-    .types_langages {
+    .types_languages {
         display: none;
     }
 
-    .titre-skills {
+    .title-skills {
         font-size: 2.5em;
     }
 
-    .titre_types {
+    .title_types {
         display: block;
         text-align: center;
         font-size: 1.5em;
@@ -124,7 +128,9 @@
     .software,
     .front,
     .back {
-        display: grid;
-        margin-top: 1em;
+        display: flex;
+        border-radius: 20px;
+        filter: drop-shadow(0 0 10px rgba(28, 28, 51, 0.15));
+        margin: 30px 10%;
     }
 }

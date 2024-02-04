@@ -1,119 +1,119 @@
 {
-    "competences": {
+    "skills": {
         "software": [
             {
-                "nom": "C",
-                "image": "../img/icones/langages/C.svg",
-                "lien": "https://fr.wikipedia.org/wiki/C_(langage)"
+                "name": "C",
+                "image": "../img/icones/languages/C.svg",
+                "link": "https://fr.wikipedia.org/wiki/C_(langage)"
             },
             {
-                "nom": "Python",
-                "image": "../img/icones/langages/Python.svg",
-                "lien": "https://www.python.org/"
+                "name": "Python",
+                "image": "../img/icones/languages/Python.svg",
+                "link": "https://www.python.org/"
             },
             {
-                "nom": "Java",
-                "image": "../img/icones/langages/Java.svg",
-                "lien": "https://fr.wikipedia.org/wiki/Java_(langage)"
+                "name": "Java",
+                "image": "../img/icones/languages/Java.svg",
+                "link": "https://fr.wikipedia.org/wiki/Java_(langage)"
             },
             {
-                "nom": "PHP",
-                "image": "../img/icones/langages/Php.svg",
-                "lien": "https://fr.wikipedia.org/wiki/PHP#:~:text=PHP%3A%20Hypertext%20Preprocessor%2C%20plus%20connu,langage%20interpr%C3%A9t%C3%A9%20de%20fa%C3%A7on%20locale."
+                "name": "PHP",
+                "image": "../img/icones/languages/Php.svg",
+                "link": "https://fr.wikipedia.org/wiki/PHP#:~:text=PHP%3A%20Hypertext%20Preprocessor%2C%20plus%20connu,langage%20interpr%C3%A9t%C3%A9%20de%20fa%C3%A7on%20locale."
             },
             {
-                "nom": "Bash",
-                "image": "../img/icones/langages/Bash.svg",
-                "lien": "https://fr.wikipedia.org/wiki/Bourne-Again_shell"
+                "name": "Bash",
+                "image": "../img/icones/languages/Bash.svg",
+                "link": "https://fr.wikipedia.org/wiki/Bourne-Again_shell"
             },
             {
-                "nom": "Docker",
-                "image": "../img/icones/langages/docker.png",
-                "lien": "https://www.docker.com"
+                "name": "Docker",
+                "image": "../img/icones/languages/docker.png",
+                "link": "https://www.docker.com"
             },
             {
-                "nom": "JavaFX",
-                "image": "../img/icones/langages/JavaFX.svg",
-                "lien": "https://fr.wikipedia.org/wiki/JavaFX"
+                "name": "JavaFX",
+                "image": "../img/icones/languages/JavaFX.svg",
+                "link": "https://fr.wikipedia.org/wiki/JavaFX"
             },
             {
-                "nom": "Android Studio",
-                "image": "../img/icones/langages/android_studio.png",
-                "lien": "https://developer.android.com/studio"
+                "name": "Android Studio",
+                "image": "../img/icones/languages/android_studio.png",
+                "link": "https://developer.android.com/studio"
             },
             {
-                "nom": "Git",
+                "name": "Git",
                 "image": "../img/icones/logo/Git.svg",
-                "lien": "https://git-scm.com/"
+                "link": "https://git-scm.com/"
             }
         ],
         "front": [
             {
-                "nom": "HTML",
-                "image": "../img/icones/langages/Html.svg",
-                "lien": "https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"
+                "name": "HTML",
+                "image": "../img/icones/languages/Html.svg",
+                "link": "https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"
             },
             {
-                "nom": "CSS",
-                "image": "../img/icones/langages/Css.svg",
-                "lien": "https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"
+                "name": "CSS",
+                "image": "../img/icones/languages/Css.svg",
+                "link": "https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"
             },
             {
-                "nom": "JavaScript",
-                "image": "../img/icones/langages/JavaScript.svg",
-                "lien": "https://fr.wikipedia.org/wiki/JavaScript"
+                "name": "JavaScript",
+                "image": "../img/icones/languages/JavaScript.svg",
+                "link": "https://fr.wikipedia.org/wiki/JavaScript"
             },
             {
-                "nom": "Bootstrap",
-                "image": "../img/icones/langages/Bootstrap.svg",
-                "lien": "https://getbootstrap.com/"
+                "name": "Bootstrap",
+                "image": "../img/icones/languages/Bootstrap.svg",
+                "link": "https://getbootstrap.com/"
             },
             {
-                "nom": "JQuery",
-                "image": "../img/icones/langages/jquery.png",
-                "lien": "https://jquery.com"
+                "name": "JQuery",
+                "image": "../img/icones/languages/jquery.png",
+                "link": "https://jquery.com"
             },
             {
-                "nom": "Git",
+                "name": "Git",
                 "image": "../img/icones/logo/Git.svg",
-                "lien": "https://git-scm.com/"
+                "link": "https://git-scm.com/"
             }
         ],
         "back": [
             {
-                "nom": "Python",
-                "image": "../img/icones/langages/Python.svg",
-                "lien": "https://www.python.org/"
+                "name": "Python",
+                "image": "../img/icones/languages/Python.svg",
+                "link": "https://www.python.org/"
             },
             {
-                "nom": "Vue.JS",
-                "image": "../img/icones/langages/vuejs.png",
-                "lien": "https://vuejs.org"
+                "name": "Vue.JS",
+                "image": "../img/icones/languages/vuejs.png",
+                "link": "https://vuejs.org"
             },
             {
-                "nom": "NodeJS",
-                "image": "../img/icones/langages/nodejs.png",
-                "lien": "https://nodejs.org/en"
+                "name": "NodeJS",
+                "image": "../img/icones/languages/nodejs.png",
+                "link": "https://nodejs.org/en"
             },
             {
-                "nom": "CodeIgniter",
-                "image": "../img/icones/langages/codeigniter.png",
-                "lien": "https://codeigniter.com"
+                "name": "CodeIgniter",
+                "image": "../img/icones/languages/codeigniter.png",
+                "link": "https://codeigniter.com"
             },
             {
-                "nom": "PHP",
-                "image": "../img/icones/langages/Php.svg",
-                "lien": "https://fr.wikipedia.org/wiki/PHP#:~:text=PHP%3A%20Hypertext%20Preprocessor%2C%20plus%20connu,langage%20interpr%C3%A9t%C3%A9%20de%20fa%C3%A7on%20locale."
+                "name": "PHP",
+                "image": "../img/icones/languages/Php.svg",
+                "link": "https://fr.wikipedia.org/wiki/PHP#:~:text=PHP%3A%20Hypertext%20Preprocessor%2C%20plus%20connu,langage%20interpr%C3%A9t%C3%A9%20de%20fa%C3%A7on%20locale."
             },
             {
-                "nom": "MySQL",
-                "image": "../img/icones/langages/MySQL.svg",
-                "lien": "https://www.mysql.com/fr/"
+                "name": "MySQL",
+                "image": "../img/icones/languages/MySQL.svg",
+                "link": "https://www.mysql.com/fr/"
             },
             {
-                "nom": "PostgreSQL",
-                "image": "../img/icones/langages/PostgreSQL.png",
-                "lien": "https://www.postgresql.org/"
+                "name": "PostgreSQL",
+                "image": "../img/icones/languages/PostgreSQL.png",
+                "link": "https://www.postgresql.org/"
             }
         ]
     }

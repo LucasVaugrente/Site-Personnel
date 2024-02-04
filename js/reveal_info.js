@@ -61,7 +61,7 @@ async function myFunction() {
     observer2.observe(r);
   })
 
-  // ######################### LANGAGES ############################## //
+  // ######################### languages ############################## //
 
   const handleIntersect3 = function (entries, observer) {
     entries.forEach(function (entry) {

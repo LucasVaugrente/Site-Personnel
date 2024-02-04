@@ -1,6 +1,8 @@
 #myself {
-    padding-bottom: 100px;
+    position: relative;
+    z-index: 9;
     background-color: var(--pink-background);
+    padding-bottom: 100px;
 }
 
 .title_myself {
@@ -23,7 +25,7 @@
 .studies {
     display: flex;
     flex-direction: column;
-    font-size: 25px;
+    font-size: 22px;
     gap: 20px;
 }
 
@@ -44,10 +46,10 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: rgb(216, 194, 235);
+    background-color: rgb(229, 205, 251);
     border-radius: 25px;
-    box-shadow: 0 0 10px rgb(103, 103, 103);
     height: 140px;
+    filter: drop-shadow(0px 0px 10px rgba(28, 28, 51, 0.15));
 }
 
 .studies_career h4,
@@ -78,23 +80,6 @@
     color: var(--link-color-backPink);
 }
 
-
-.block-transition {
-    height: 5em;
-    display: flex;
-    background-color: var(--pink-background);
-}
-
-.block-transition_1 {
-    background-color: var(--blue-background);
-    width: 50%;
-}
-
-.block-transition_2 {
-    width: 50%;
-    background-color: var(--blue-background);
-}
-
 .transition_myself_proj1 {
     height: 5em;
     background-color: var(--pink-background);
@@ -115,8 +100,7 @@
 
 @media screen and (max-width:1100px) {
 
-    #myself,
-    .block-transition {
+    #myself {
         width: 100vw;
     }
 

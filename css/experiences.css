@@ -1,13 +1,11 @@
-/*###################################*/
-/*          Les expériences          */
-/*###################################*/
-
 #experiences {
+    position: relative;
+    z-index: 3;
     background-color: var(--blue-background);
-    padding-bottom: 3em;
+    padding-bottom: 100px;
 }
 
-.titre-experiences {
+.title-experiences {
     background-color: rgb(23, 17, 54);
     color: var(--white-color);
 }
@@ -25,11 +23,11 @@
     align-items: center;
 }
 
-.titre-experience {
+.title-experience {
     color: aquamarine;
 }
 
-.titre-experience-droite {
+.title-experience-droite {
     text-align: right;
 }
 
@@ -53,12 +51,12 @@
     transition: all 0.1s ease-in-out;
 }
 
-.lien_experiences {
+.link_experiences {
     display: inline-block;
     color: var(--link-color-backBlue);
 }
 
-.lien_experiences:visited {
+.link_experiences:visited {
     color: var(--link-color-backBlue);
 }
 
@@ -72,22 +70,6 @@
     -ms-transform: rotate(-4deg) scale(1.2, 1);
     transform: rotate(-4deg) scale(1.2, 1);
     z-index: 0;
-}
-
-.block-transition {
-    height: 5em;
-    display: flex;
-    background-color: var(--pink-background);
-}
-
-.block-transition_3 {
-    background-color: var(--pink-background);
-    width: 50%;
-}
-
-.block-transition_4 {
-    width: 50%;
-    background-color: var(--pink-background);
 }
 
 .transition_myself_proj3 {
@@ -126,8 +108,7 @@
 
 @media screen and (max-width:950px) {
 
-    #projects,
-    .block-transition {
+    #projects {
         width: 100vw;
     }
 
@@ -139,7 +120,7 @@
         border-radius: 30px;
     }
 
-    .titre-experiences {
+    .title-experiences {
         font-size: 2.5em;
     }
 
@@ -162,12 +143,16 @@
         background-image: url("../img/experiences/tac_economics_resp.jpg");
     }
 
+    .experience_2:before {
+        background-image: url("../img/experiences/mobil-inn.png");
+    }
+
     .experience_1 img,
     .experience_2 img {
         display: none;
     }
 
-    .titre-experience {
+    .title-experience {
         text-align: left;
         margin-bottom: 10px;
     }
