@@ -8,10 +8,6 @@
 }
 
 .titre-experiences {
-    font-size: 3em;
-    text-align: center;
-    padding-top: 16vh;
-    padding-bottom: 1.5em;
     background-color: rgb(23, 17, 54);
     color: var(--white-color);
 }
@@ -57,29 +53,11 @@
     transition: all 0.1s ease-in-out;
 }
 
-.langues-prog:link,
-.lien_experiences:link {
+.lien_experiences {
     display: inline-block;
     color: var(--link-color-backBlue);
 }
 
-.langues-prog::after,
-.lien_experiences::after {
-    content: '';
-    width: 0px;
-    height: 1px;
-    margin-top: -4px;
-    display: block;
-    background: var(--link-color-backBlue);
-    transition: .5s;
-}
-
-.langues-prog:hover::after,
-.lien_experiences:hover::after {
-    width: 100%;
-}
-
-.langues-prog:visited,
 .lien_experiences:visited {
     color: var(--link-color-backBlue);
 }
@@ -148,7 +126,7 @@
 
 @media screen and (max-width:950px) {
 
-    #projets,
+    #projects,
     .block-transition {
         width: 100vw;
     }

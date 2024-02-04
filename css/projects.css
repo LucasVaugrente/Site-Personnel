@@ -1,25 +1,21 @@
-/*###############################*/
-/*          Les projets          */
-/*###############################*/
-
-.titre-projets {
-    font-size: 3em;
-    text-align: center;
-    padding-top: 16vh;
-    padding-bottom: 1em;
+#projects {
     background-color: var(--blue-background);
+    padding-bottom: 100px;
+}
+
+.title-projects {
     color: var(--white-color);
 }
 
-.section-projets {
-    background-color: var(--blue-background);
+.section-projects {
     display: flex;
     flex-direction: column;
     gap: 70px;
+    padding: 0 20%;
 }
 
 .p-titre {
-    font-size: 2em;
+    font-size: 40px;
     color: var(--white-color);
 }
 
@@ -33,6 +29,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+    gap: 10px;
     z-index: 3;
 }
 
@@ -45,6 +42,7 @@
 }
 
 .p-pitch {
+    font-size: 18px;
     padding: 20px;
     text-align: justify;
     background-color: var(--project-pitch-backgroundColor);
@@ -74,8 +72,9 @@
 .git-lan {
     display: flex;
     flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 15px 0;
+    padding-top: 10px;
     gap: 15px;
 }
 
@@ -86,6 +85,8 @@
 .git-lan-d {
     justify-content: flex-end;
 }
+
+
 
 video::-webkit-media-controls-play-button {
     background-color: var(--project-pitch-backgroundColor);
@@ -127,6 +128,10 @@ video::-webkit-media-controls-mute-button {
     transition: all 0.5s ease;
 }
 
+.lien-github_projet {
+    display: flex;
+}
+
 .logo-github {
     border-radius: 50px;
     transition: all 0.1s ease-in-out;
@@ -135,22 +140,23 @@ video::-webkit-media-controls-mute-button {
 .logo-github:hover {
     filter: invert(80%);
 }
-#56dcfc
+
 .langues-prog {
-    font-size: 1.2em;
+    color: var(--link-color-backBlue);
+    font-size:  20px;
     transition: opacity 0.3s ease-in-out;
 }
 
 .langues-prog:hover {
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
-.lien_projets:link {
+.lien_projects:link {
     display: inline-block;
     color: var(--link-color-backBlue);
 }
 
-.lien_projets::after {
+.lien_projects::after {
     content: '';
     width: 0px;
     height: 1px;
@@ -160,11 +166,11 @@ video::-webkit-media-controls-mute-button {
     transition: .5s;
 }
 
-.lien_projets:hover::after {
+.lien_projects:hover::after {
     width: 100%;
 }
 
-.lien_projets:visited {
+.lien_projects:visited {
     color: var(--link-color-backBlue);
 }
 
@@ -226,43 +232,36 @@ video::-webkit-media-controls-mute-button {
     color: var(--white-color);
 }
 
-@media screen and (min-width:1950px) {
-    .section-projets {
-        padding: 0 20% 100px 20%;
-    }
-}
-
 @media screen and (max-width:1950px) {
-    .section-projets {
-        padding: 0 10% 100px 10%;
+    .section-projects {
+        padding: 0 10%;
     }
 }
 
 @media screen and (max-width:1200px) {
-    .section-projets {
-        padding: 0 5% 100px 5%;
+    .section-projects {
+        padding: 0 5%;
     }
 }
 
 @media screen and (max-width:950px) {
 
-    #projets,
+    .section-projects {
+        padding: 0 10%;
+    }
+
+    #projects,
     .block-transition {
         width: 100vw;
     }
 
     .projet_g,
     .projet_d {
-        margin: 1em 10% 5em 10%;
-        width: 80%;
+        width: 100%;
         box-shadow: 0 0 1em black;
-        margin-bottom: 2em;
         border-radius: 30px;
     }
 
-    .titre-projets {
-        font-size: 2.5em;
-    }
 
     .projet:before {
         content: ' ';
@@ -280,31 +279,31 @@ video::-webkit-media-controls-mute-button {
     }
 
     .projet_1:before {
-        background-image: url("../img/projets/fond_space_inv.png");
+        background-image: url("../img/projects/fond_space_inv.png");
     }
 
     .projet_2:before {
-        background-image: url("../img/projets/fond_labyrinthe.png");
+        background-image: url("../img/projects/fond_labyrinthe.png");
     }
 
     .projet_3:before {
-        background-image: url("../img/projets/fond_kohfrais.jpg");
+        background-image: url("../img/projects/fond_kohfrais.jpg");
     }
 
     .projet_4:before {
-        background-image: url("../img/projets/fond_yams.jpg");
+        background-image: url("../img/projects/fond_yams.jpg");
     }
 
     .projet_5:before {
-        background-image: url("../img/projets/fond_portfolio.jpg");
+        background-image: url("../img/projects/fond_portfolio.jpg");
         opacity: 0.8;
     }
 
     .projet_6:before {
-        background-image: url("../img/projets/fond_alizon.png");
+        background-image: url("../img/projects/fond_alizon.png");
     }
 
-    .projet > a {
+    .projet>a {
         display: none;
     }
 
@@ -313,7 +312,7 @@ video::-webkit-media-controls-mute-button {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .titre-projet {
         text-align: left;
         margin-bottom: 10px;
@@ -327,7 +326,7 @@ video::-webkit-media-controls-mute-button {
         font-weight: 500;
         padding: 0;
     }
-    
+
     .p-pitch:hover {
         box-shadow: none;
     }

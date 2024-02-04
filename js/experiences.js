@@ -29,7 +29,7 @@ fetch('../data/experiences.json')
 
             /* ########################## Date, Type et Titre experience ########################## */
             let Text_Date = document.createElement('p');
-            let Text_Titre = document.createElement('h1');
+            let Text_Titre = document.createElement('h2');
             Text_Titre.classList.add('p-titre');
 
             Text_Date.innerHTML = data.experiences[index].date + " - " + data.experiences[index].type_experience;

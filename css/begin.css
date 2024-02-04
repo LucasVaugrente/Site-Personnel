@@ -1,4 +1,4 @@
-#particles-js {
+#begin {
     position: relative;
     z-index: 1;
     height: 100vh;
@@ -23,21 +23,21 @@
     pointer-events: none;
 }
 
-.bienvenue {
+.welcome {
     font-size: 1.2em;
     padding-bottom: 0.5em;
     color: var(--begin-color1);
     pointer-events: all;
 }
 
-.nom {
+.name {
     font-size: clamp(40px, 8vw, 60px);
     color: var(--white-color);
     font-weight: 700;
     pointer-events: all;
 }
 
-.statut {
+.status {
     font-size: clamp(40px, 8vw, 50px);
     padding-bottom: 0.3em;
     color: var(--begin-color2);
@@ -52,7 +52,7 @@
     margin-right: 50%;
 }
 
-.btn-commencer {
+.btn-begin {
     margin-top: 2em;
     padding: 0.9em;
     width: 10em;
@@ -68,7 +68,7 @@
     pointer-events: all;
 }
 
-.btn-commencer:hover {
+.btn-begin:hover {
     color: var(--white-color);
     background-color: rgba(131, 253, 245, 0.173);
     text-decoration: none;
@@ -115,20 +115,20 @@
 
 @media screen and (max-width:1024px) {
 
-    #particles-js {
+    #begin {
         width: 100vw;
     }
 
-    .bienvenue {
+    .welcome {
         font-size: 1em;
         width: 80vw;
     }
 
-    .nom {
+    .name {
         font-size: 3em;
     }
 
-    .statut {
+    .status {
         font-size: 2.8em;
         width: 80vw;
     }
@@ -138,17 +138,17 @@
         width: 70vw;
     }
 
-    .btn-commencer {
+    .btn-begin {
         font-size: 1em;
     }
 }
 
 @media screen and (max-width:730px) {
-    .nom {
+    .name {
         font-size: 2.5em;
     }
 
-    .statut {
+    .status {
         font-size: 1.8em;
     }
 }
@@ -164,17 +164,17 @@
         top: 20%;
     }
 
-    .nom {
+    .name {
         font-size: 2.2em;
     }
 }
 
 @media screen and (max-width:380px) {
-    .nom {
+    .name {
         font-size: 1.9em;
     }
 
-    .statut {
+    .status {
         font-size: 1.6em;
     }
 }

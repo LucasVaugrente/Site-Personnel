@@ -46,7 +46,7 @@ async function myFunction() {
 
   await sleep(1000);
 
-  // ############################ PROJETS ################################ //
+  // ############################ projects ################################ //
   const handleIntersect2 = function (entries, observer) {
     entries.forEach(function (entry) {
       if (entry.intersectionRatio > ratio) {

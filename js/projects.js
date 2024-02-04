@@ -1,9 +1,9 @@
-let Section_Projets = document.querySelector(".section-projets");
+let Section_projects = document.querySelector(".section-projects");
 
-fetch('../data/projets.json')
+fetch('../data/projects.json')
     .then(response => response.json())
     .then(data => {
-        for (let index = 0; index < data.projets.length; index++) {
+        for (let index = 0; index < data.projects.length; index++) {
 
             let article = document.createElement('article');
             let bloc_content = document.createElement('div');
@@ -29,11 +29,11 @@ fetch('../data/projets.json')
 
             /* ########################## Date, Type et Titre PROJET ########################## */
             let Text_Date = document.createElement('p');
-            let Text_Titre = document.createElement('h1');
+            let Text_Titre = document.createElement('h2');
             Text_Titre.classList.add('p-titre');
 
-            Text_Date.innerHTML = data.projets[index].date + " - " + data.projets[index].type_projet;
-            Text_Titre.innerHTML = data.projets[index].titre;
+            Text_Date.innerHTML = data.projects[index].date + " - " + data.projects[index].type_projet;
+            Text_Titre.innerHTML = data.projects[index].titre;
 
             bloc_titre.appendChild(Text_Date);
             bloc_titre.appendChild(Text_Titre);
@@ -50,7 +50,7 @@ fetch('../data/projets.json')
                 Text_Desc.classList.add('p-pitch-droite');
             }
 
-            Text_Desc.innerHTML = data.projets[index].description;
+            Text_Desc.innerHTML = data.projects[index].description;
 
             /* ########################## Langages Programmation PROJET ########################## */
             let bloc_lan_git = document.createElement('div');
@@ -64,13 +64,13 @@ fetch('../data/projets.json')
                 bloc_lan_git.classList.add('git-lan-d');
             }
 
-            for (let j = 0; j < data.projets[index].langages.length; j++) {
+            for (let j = 0; j < data.projects[index].langages.length; j++) {
 
                 let ahref = document.createElement('a');
                 ahref.classList.add("langues-prog");
-                ahref.innerHTML = data.projets[index].langages[j].nom;
+                ahref.innerHTML = data.projects[index].langages[j].nom;
                 ahref.setAttribute("target", "_blank");
-                ahref.setAttribute("href", data.projets[index].langages[j].url);
+                ahref.setAttribute("href", data.projects[index].langages[j].url);
 
                 bloc_lan_git.appendChild(ahref);
             }
@@ -87,21 +87,21 @@ fetch('../data/projets.json')
             imgGit.setAttribute("width", "30");
             imgGit.setAttribute("height", "30");
 
-            agit.setAttribute("href", data.projets[index].lien_git);
+            agit.setAttribute("href", data.projects[index].lien_git);
             agit.setAttribute("target", "_blank");
             agit.appendChild(imgGit)
             bloc_lan_git.appendChild(agit);
 
             /* ########################## Vidéo PROJET ########################## */
             let lien_vid = document.createElement("a");
-            lien_vid.setAttribute("href", data.projets[index].lien_git);
+            lien_vid.setAttribute("href", data.projects[index].lien_git);
             lien_vid.setAttribute("target", "_blank");
 
-            lien_vid.classList.add(data.projets[index].class);
+            lien_vid.classList.add(data.projects[index].class);
 
             let video = document.createElement("video");
             let source = document.createElement("source");
-            source.src = data.projets[index].video;
+            source.src = data.projects[index].video;
             source.type = "video/mp4"
             video.appendChild(source);
 
@@ -130,7 +130,7 @@ fetch('../data/projets.json')
             }
 
             article.classList.add("revelation");
-            Section_Projets.appendChild(article);
+            Section_projects.appendChild(article);
 
 
         }

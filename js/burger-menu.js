@@ -4,11 +4,11 @@ const overlay2 = document.querySelector(".menu-overlay2");
 const menuHamburgerClose = document.querySelector(".menu-burger-close");
 const navLinks = document.querySelector(".nav-links");
 
-const LinkAcc = document.querySelector(".link-debut");
+const LinkAcc = document.querySelector(".link_begin");
 const LinkMy = document.querySelector(".link-myself");
-const LinkPro = document.querySelector(".link-projets");
+const LinkPro = document.querySelector(".link-projects");
 const LinkSki = document.querySelector(".link-skills");
-const LinkExp = document.querySelector(".link-experience");
+const LinkExp = document.querySelector(".link-experiences");
 const LinkCon = document.querySelector(".link-contact");
 
 menuHamburger.addEventListener("click", () => {

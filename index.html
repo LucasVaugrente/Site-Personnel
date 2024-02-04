@@ -13,26 +13,26 @@
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.lucasvaugrente.fr">
-    <meta property="og:image" content="https://www.lucasvaugrente.fr/img/projets/Site.png">
-    <meta property="og:image:url" content="https://www.lucasvaugrente.fr/img/projets/Site.png">
-    <meta property="og:image:secure_url" content="https://www.lucasvaugrente.fr/img/projets/Site.png">
+    <meta property="og:image" content="https://www.lucasvaugrente.fr/img/projects/Site.png">
+    <meta property="og:image:url" content="https://www.lucasvaugrente.fr/img/projects/Site.png">
+    <meta property="og:image:secure_url" content="https://www.lucasvaugrente.fr/img/projects/Site.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1920">
     <meta property="og:image:height" content="1080">
     <meta property="og:title" content="Lucas Vaugrente">
 
     <!-- Image Ico dans l'onglet-->
-    <link rel="icon" type="image/png" sizes="16x16" href="img/profil/mateteico.png" style="border-radius: 50px;">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/profile/mateteico.png" style="border-radius: 50px;">
 
     <!-- Import des fichiers css-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/debut.css">
+    <link rel="stylesheet" href="css/begin.css">
     <link rel="stylesheet" href="css/myself.css">
-    <link rel="stylesheet" href="css/projets.css">
-    <link rel="stylesheet" href="css/competences.css">
-    <link rel="stylesheet" href="css/experience.css">
-    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/experiences.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/footer.css">
 
     <!-- Titre de l'onglet de la page -->
@@ -45,14 +45,14 @@
     <main>
 
         <nav class="navbar">
-            <a class="logo" href="#particles-js">Lucas Vaugrente</a>
+            <a class="logo" href="#begin">Lucas Vaugrente</a>
             <div class="nav-links">
                 <ul>
-                    <li class="nav_reveal1"><a class="link-debut" href="#particles-js">Accueil</a></li>
+                    <li class="nav_reveal1"><a class="link_begin" href="#begin">Accueil</a></li>
                     <li class="nav_reveal2"><a class="link-myself" href="#myself">A propos</a></li>
-                    <li class="nav_reveal3"><a class="link-projets" href="#projets">Projets</a></li>
+                    <li class="nav_reveal3"><a class="link-projects" href="#projects">Projets</a></li>
                     <li class="nav_reveal4"><a class="link-skills" href="#competences">Compétences</a></li>
-                    <li class="nav_reveal4"><a class="link-experience" href="#experiences">Expériences</a></li>
+                    <li class="nav_reveal4"><a class="link-experiences" href="#experiences">Expériences</a></li>
                     <li class="contact-btn nav_reveal5"><a class="link-contact" href="#contact">Contact</a></li>
                 </ul>
 
@@ -63,20 +63,23 @@
 
             <div class="menu-overlay"></div>
 
+            <!-- <svg class="menu-burger" viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+                <line x1="10" y1="10" x2="130" y2="10"></line>
+                <line x1="30" y1="50" x2="130" y2="50"></line>
+                <line x1="50" y1="90" x2="130" y2="90"></line>
+            </svg> -->
+
             <img src="img/menu_burger/menu-btn.png" alt="Menu Burger" title="Menu" class="menu-burger">
-
-
         </nav>
 
-        <div id="particles-js">
+        <div id="begin">
 
-            <canvas class="particles-js-canvas-el" width="1864" height="931"
-                style="width: 100%; height: 100%;"></canvas>
+            <canvas class="begin-canvas-el" width="1864" height="931" style="width: 100%; height: 100%;"></canvas>
 
             <div class="content">
-                <span class="bienvenue reveal-1">Bienvenue sur mon site, je suis</span>
-                <span class="nom reveal-2">Lucas Vaugrente.</span>
-                <span class="statut reveal-3">Étudiant en Informatique.</span>
+                <span class="welcome reveal-1">Bienvenue sur mon site, je suis</span>
+                <span class="name reveal-2">Lucas Vaugrente.</span>
+                <span class="status reveal-3">Étudiant en Informatique.</span>
                 <span class="pitch reveal-4">J'étudie en ce moment à l'<a class="iut-site"
                         href="https://iut-lannion.univ-rennes1.fr/" target="_blank">IUT de Lannion</a> pour avoir le
                     diplôme du BUT Informatique.</span>
@@ -84,48 +87,41 @@
                     faire
                     une école d'ingénieurs.</span>
 
-                <button class="btn-commencer" onclick="window.location.href='#myself';">Commencer</button>
+                <button class="btn-begin" onclick="window.location.href='#myself';">Commencer</button>
             </div>
 
         </div>
 
         <div id="myself">
 
-            <h1 class="titre-myself">
+            <h1 class="title_myself">
                 Qui suis-je ?
             </h1>
 
-            <div class="parcours-block">
+            <div class="studies-block">
 
-                <div class="profil reveal-">
-                    <img src="img/profil/matete.jpg" alt="Mon portait" title="Portait" width='350' height='350'>
+                <div class="profile reveal-">
+                    <img src="img/profile/matete.jpg" alt="Mon portait" title="Portait" width='350' height='350'>
                 </div>
 
-                <div class="parcours">
+                <div class="studies">
 
-                    <p class="para1">Actuellement en Bachelor Universitaire de Technologie à l'<span
-                            class="lien_myself"><a href="https://iut-lannion.univ-rennes1.fr/" target="_blank">IUT de
-                                Lannion</a></span>, je suis en troisième année en alternance dans le développement
-                        d'application web. L'année prochaine, je compte intégrer une école d'ingénieurs spécialité
-                        Informatique.
-                        Mes choix seraient peut-être pour l'<span class="lien_myself"><a href="https://www.enssat.fr/"
-                                target="_blank">ENSSAT</a></span> à
-                        Lannion ou l'<span class="lien_myself"><a href="https://esir.univ-rennes1.fr/"
-                                target="_blank">ESIR</a></span> à Rennes.</p>
-
-                    <p class="para2">Je fais de plus en plus de <span class="lien_myself"><a
-                                href="#projets">projets</a></span> personnels en dehors de l'activité scolaire afin de
-                        m'améliorer
-                        sur des langages appris durant ma formation. Je suis assez passionné et curieux pour découvrir
-                        de nouveaux langages de programmation,
-                        cela me permet de diversifier ma culture dans l'informatique.
+                    <p class="situationNow">
+                        Actuellement en Bachelor Universitaire de Technologie à l'<span class="lien_myself"><a href="https://iut-lannion.univ-rennes1.fr/" target="_blank">IUT de Lannion</a></span>,
+                        je suis en troisième année en alternance dans le développement d'application web. L'année prochaine, je compte intégrer une école d'ingénieurs spécialité Informatique.
+                        Mes choix seraient peut-être pour l'<span class="lien_myself"><a href="https://www.enssat.fr/" target="_blank">ENSSAT</a></span> à
+                        Lannion ou l'<span class="lien_myself"><a href="https://esir.univ-rennes1.fr/" target="_blank">ESIR</a></span> à Rennes.
                     </p>
 
-                    <div class="parcours_etu">
+                    <p class="situationNow">
+                        Je fais de plus en plus de <span class="lien_myself"><a href="#projects">projects</a></span> personnels en dehors de l'activité scolaire afin de
+                        m'améliorer sur des langages appris durant ma formation. Je suis assez passionné et curieux pour découvrir de nouveaux langages de programmation, cela me permet de diversifier ma culture dans l'informatique.
+                    </p>
+
+                    <div class="studies_career">
 
                         <article class="but-info">
                             <h4>Bachelor Universitaire de Technologie <br> (2021 - 2024)</h4>
-                            <p>&nbsp;</p>
                             <p><span class="lien_myself"><a href="https://iut-lannion.univ-rennes1.fr/"
                                         target="_blank">IUT de Lannion</a></span></p>
                         </article>
@@ -152,11 +148,11 @@
             </div>
         </div>
 
-        <div id="projets" class="projets">
+        <div id="projects">
 
-            <h1 class="titre-projets">Projets</h1>
+            <h1 class="title-projects">Projets</h1>
 
-            <div class="section-projets"></div>
+            <div class="section-projects"></div>
 
         </div>
 
@@ -301,11 +297,11 @@
 
     </main>
 
-    <script src="js/menu_burger.js"></script>
+    <script src="js/burger-menu.js"></script>
     <script src="js/reveal_info.js"></script>
-    <script src="js/competences.js"></script>
+    <script src="js/skills.js"></script>
     <script src="js/navbar.js"></script>
-    <script src="js/projets.js"></script>
+    <script src="js/projects.js"></script>
     <script src="js/experiences.js"></script>
 
     <script src="librairies/particles.js"></script>

@@ -1,39 +1,58 @@
-#myself div {
-    display: flex;
+#myself {
+    padding-bottom: 100px;
     background-color: var(--pink-background);
-    align-items: center;
-    color: var(--black-color);
-    padding-bottom: 2em;
-    z-index: 2;
 }
 
-.parcours-block {
+.title_myself {
+    color: var(--black-color);
+}
+
+.studies-block {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: var(--black-color);
     padding: 0 5%;
 }
 
-.titre-myself {
-    color: var(--black-color);
-    font-size: clamp(40px, 8vw, 55px);
-    text-align: center;
-    padding-top: 17vh;
-    background-color: var(--pink-background);
-}
-
-.profil {
-    padding: 1em;
-}
-
-.profil img {
+.profile img {
     border-radius: 50%;
     box-shadow: 5px 5px 10px rgb(103, 103, 103);
 }
 
-.parcours {
-    font-size: 1.2em;
-    padding: 1em;
-    padding-top: 3em;
+.studies {
     display: flex;
     flex-direction: column;
+    font-size: 25px;
+    gap: 20px;
+}
+
+.situationNow {
+    text-align: justify;
+}
+
+.studies_career {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.studies_career article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(216, 194, 235);
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgb(103, 103, 103);
+    height: 140px;
+}
+
+.studies_career h4,
+.studies_career p {
+    text-align: center;
 }
 
 .lien_myself a:link {
@@ -59,26 +78,6 @@
     color: var(--link-color-backPink);
 }
 
-.para1,
-.para2 {
-    padding: 0 1em 1em 1em;
-    text-align: justify;
-}
-
-.parcours_etu {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.but-info,
-.lycee {
-    background-color: rgb(216, 194, 235);
-    padding: 1em;
-    margin: 1em;
-    border-radius: 25px;
-    box-shadow: 0 0 10px rgb(103, 103, 103);
-    text-align: center;
-}
 
 .block-transition {
     height: 5em;
@@ -109,7 +108,7 @@
 }
 
 @media screen and (min-width:1950px) {
-    .parcours-block {
+    .studies-block {
         padding: 0 20%;
     }
 }
@@ -121,56 +120,42 @@
         width: 100vw;
     }
 
-    .parcours-block {
+    .studies-block {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .profil {
-        padding: 4em 1em 1em 1em;
-    }
-
-    .para1,
-    .para2,
-    .parcours_etu {
-        font-size: 1em;
-        padding: 0 2em 1em;
-        text-align: justify;
+    .studies {
+        gap: 30px;
     }
 }
 
 @media screen and (max-width:900px) {
 
-    .para1,
-    .para2,
-    .parcours_etu {
-        text-align: left;
-        font-size: 0.9em;
-        text-align: justify;
-    }
-
-    .profil img {
+    .profile img {
         width: 300px;
         height: 300px;
     }
 
-    .titre-myself {
-        font-size: 2.5em;
+    .studies {
+        font-size: 20px;
     }
+
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:630px) {
 
-    .para1,
-    .para2,
-    .parcours_etu {
-        padding: 1em;
-        text-align: justify;
+    .studies-block {
+        padding: 0 10% 50px 10%;
     }
 
-    .parcours_etu {
+    .studies_career article {
+        width: 100%;
+    }
+
+    .studies_career {
         flex-direction: column;
     }
 }

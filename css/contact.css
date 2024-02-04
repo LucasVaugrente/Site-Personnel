@@ -1,7 +1,4 @@
 .titre-contacts {
-    font-size: 3em;
-    text-align: center;
-    padding-top: 16vh;
     background-color: var(--pink-background);
     color: var(--blue-background);
 }

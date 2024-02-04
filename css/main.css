@@ -49,6 +49,13 @@ body {
     overflow-x: hidden;
 }
 
+h1 {
+    font-size: clamp(40px, 8vw, 65px);
+    text-align: center;
+    padding-top: 17vh;
+    padding-bottom: 40px;
+}
+
 /* ###### ANIMATION PRESENTATION ###### */
 
 [class*="reveal-"] {
@@ -74,7 +81,7 @@ body {
     transition-delay: 1s;
 }
 
-/* ###### ANIMATION PROJETS ###### */
+/* ###### ANIMATION projects ###### */
 
 .revelation {
     opacity: 0;

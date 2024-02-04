@@ -4,10 +4,6 @@
 }
 
 .titre-skills {
-    font-size: 3em;
-    text-align: center;
-    padding-top: 16vh;
-    padding-bottom: 1.5em;
     background-color: var(--pink-background);
     color: var(--black-color);
 }

@@ -1,5 +1,5 @@
 {
-    "projets": [
+    "projects": [
         {
             "date": 2022,
             "type_projet": "Projet Lycée",
@@ -17,14 +17,14 @@
             ],
             "lien_git": "https://github.com/Luvey35/Space_Invaders",
             "video": "../videos/space_invaders.mp4",
-            "image": "../img/projets/fond_space_inv.png",
+            "image": "../img/projects/fond_space_inv.png",
             "class": "video-si"
         },
         {
             "date": 2020,
             "type_projet": "Projet Lycée",
             "titre": "Labyrinthe",
-            "description": "Ce projet est un générateur de labyrinthe qui affiche une auto-résolution. Celui-ci a été fait à deux au lycée. L'algorithme utilisé est celui de <a class='lien_projets' href=\"https://fr.wikipedia.org/wiki/Algorithme_de_Kruskal\" target='_blank'>Kruskal</a>. Nous avions envisagé aussi de faire un personnage avec des caractéristiques que l'utilisateur devait controler pour parcourir le labyrinthe sans la résolution.",
+            "description": "Ce projet est un générateur de labyrinthe qui affiche une auto-résolution. Celui-ci a été fait à deux au lycée. L'algorithme utilisé est celui de <a class='lien_projects' href=\"https://fr.wikipedia.org/wiki/Algorithme_de_Kruskal\" target='_blank'>Kruskal</a>. Nous avions envisagé aussi de faire un personnage avec des caractéristiques que l'utilisateur devait controler pour parcourir le labyrinthe sans la résolution.",
             "langages": [
                 {
                     "nom": "Python",
@@ -37,7 +37,7 @@
             ],
             "lien_git": "https://github.com/Luvey35/Labyrinthe",
             "video": "../videos/labyrinthe.mp4",
-            "image": "../img/projets/fond_labyrinthe.png",
+            "image": "../img/projects/fond_labyrinthe.png",
             "class": "img-laby"
         }, 
         {
@@ -61,7 +61,7 @@
             ],
             "lien_git": "https://github.com/Luvey35/Site_KohFrais",
             "video": "../videos/kohfrais.mp4",
-            "image": "../img/projets/fond_kohfrais.jpg",
+            "image": "../img/projects/fond_kohfrais.jpg",
             "class": "video-kf"
         },
         {
@@ -77,14 +77,14 @@
             ],
             "lien_git": "https://github.com/Luvey35/Yams",
             "video": "../videos/yams.mp4",
-            "image": "../img/projets/fond_yams.jpg",
+            "image": "../img/projects/fond_yams.jpg",
             "class": "video-yams"
         },
         {
             "date": 2022,
             "type_projet": "Projet Personnel",
             "titre": "Site Portfolio",
-            "description": "Ce projet est un site web pour la présentation de mon portfolio, ce site présente mon parcours, mes projets que j'ai faits jusqu'ici, mes compétences, ainsi que mes moyens de contact. C'est un projet que j'ai mené hors scolarité en m'entrainant plus en JavaScript.",
+            "description": "Ce projet est un site web pour la présentation de mon portfolio, ce site présente mon parcours, mes projects que j'ai faits jusqu'ici, mes compétences, ainsi que mes moyens de contact. C'est un projet que j'ai mené hors scolarité en m'entrainant plus en JavaScript.",
             "langages": [
                 {
                     "nom": "HTML",
@@ -101,14 +101,14 @@
             ],
             "lien_git": "https://github.com/Luvey35/Site-Personnel",
             "video": "../videos/portfolio.mp4",
-            "image": "../img/projets/fond_portfolio.jpg",
+            "image": "../img/projects/fond_portfolio.jpg",
             "class": "video-pt"
         },
         {
             "date": 2022,
             "type_projet": "Projet IUT",
             "titre": "Alizon",
-            "description": "Ce projet est une marketplace de vente de produits bretons. Celle-ci répond à un besoin d'un client fictif. Ce projet en groupe de 7, a été suivi avec la méthode <a class=\"lien_projets\" href=\"https://www.planzone.fr/blog/quest-ce-que-la-methodologie-agile\" target=\"_blank\">AGILE</a> en management, j'avais pour rôle le <a class=\"lien_projets\" href=\"https://www.atlassian.com/fr/agile/scrum/scrum-master\" target=\"_blank\">Scrum Master</a>.",
+            "description": "Ce projet est une marketplace de vente de produits bretons. Celle-ci répond à un besoin d'un client fictif. Ce projet en groupe de 7, a été suivi avec la méthode <a class=\"lien_projects\" href=\"https://www.planzone.fr/blog/quest-ce-que-la-methodologie-agile\" target=\"_blank\">AGILE</a> en management, j'avais pour rôle le <a class=\"lien_projects\" href=\"https://www.atlassian.com/fr/agile/scrum/scrum-master\" target=\"_blank\">Scrum Master</a>.",
             "langages": [
                 {
                     "nom": "HTML",
@@ -133,7 +133,7 @@
             ],
             "lien_git": "https://github.com/8Paprika5/BUT-IUT-Lannion-2021_2024/tree/main/BUT2-2022_2023/Alizon",
             "video": "../videos/alizon.mp4",
-            "image": "../img/projets/fond_alizon.png",
+            "image": "../img/projects/fond_alizon.png",
             "class": "video-al"
         }
     ]

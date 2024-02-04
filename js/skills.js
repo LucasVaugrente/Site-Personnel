@@ -6,7 +6,7 @@ let blockFrontWeb = document.querySelector(".front");
 let blockSoftwareDev = document.querySelector(".software");
 let blockBackWeb = document.querySelector(".back");
 
-fetch('../data/competences.json')
+fetch('../data/skills.json')
     .then(response => response.json())
     .then(data => {
         for (const type in data.competences) {
