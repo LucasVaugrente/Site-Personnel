@@ -24,7 +24,7 @@
             "date": 2020,
             "type_project": "Projet Lycée",
             "title": "Labyrinthe",
-            "description": "Ce projet est un générateur de labyrinthe qui affiche une auto-résolution. Celui-ci a été fait à deux au lycée. L'algorithme utilisé est celui de <a class='lien_projects' href=\"https://fr.wikipedia.org/wiki/Algorithme_de_Kruskal\" target='_blank'>Kruskal</a>. Nous avions envisagé aussi de faire un personnage avec des caractéristiques que l'utilisateur devait controler pour parcourir le labyrinthe sans la résolution.",
+            "description": "Ce projet est un générateur de labyrinthe qui affiche une auto-résolution. Celui-ci a été fait à deux au lycée. L'algorithme utilisé est celui de <a class='link_projects' href=\"https://fr.wikipedia.org/wiki/Algorithme_de_Kruskal\" target='_blank'>Kruskal</a>. Nous avions envisagé aussi de faire un personnage avec des caractéristiques que l'utilisateur devait controler pour parcourir le labyrinthe sans la résolution.",
             "languages": [
                 {
                     "name": "Python",
@@ -108,7 +108,7 @@
             "date": 2022,
             "type_project": "Projet IUT",
             "title": "Alizon",
-            "description": "Ce projet est une marketplace de vente de produits bretons. Celle-ci répond à un besoin d'un client fictif. Ce projet en groupe de 7, a été suivi avec la méthode <a class=\"lien_projects\" href=\"https://www.planzone.fr/blog/quest-ce-que-la-methodologie-agile\" target=\"_blank\">AGILE</a> en management, j'avais pour rôle le <a class=\"lien_projects\" href=\"https://www.atlassian.com/fr/agile/scrum/scrum-master\" target=\"_blank\">Scrum Master</a>.",
+            "description": "Ce projet est une marketplace de vente de produits bretons. Celle-ci répond à un besoin d'un client fictif. Ce projet en groupe de 7, a été suivi avec la méthode <a class=\"link_projects\" href=\"https://www.planzone.fr/blog/quest-ce-que-la-methodologie-agile\" target=\"_blank\">AGILE</a> en management, j'avais pour rôle le <a class=\"link_projects\" href=\"https://www.atlassian.com/fr/agile/scrum/scrum-master\" target=\"_blank\">Scrum Master</a>.",
             "languages": [
                 {
                     "name": "HTML",

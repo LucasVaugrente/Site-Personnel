@@ -51,9 +51,23 @@
     transition: all 0.1s ease-in-out;
 }
 
-.link_experiences {
+.link_experiences:link {
     display: inline-block;
     color: var(--link-color-backBlue);
+}
+
+.link_experiences::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    margin-top: -4px;
+    display: block;
+    background: var(--link-color-backBlue);
+    transition: .5s;
+}
+
+.link_experiences:hover::after {
+    width: 100%;
 }
 
 .link_experiences:visited {
