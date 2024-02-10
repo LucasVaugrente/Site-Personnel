@@ -137,7 +137,7 @@ video::-webkit-media-controls-mute-button {
 }
 
 .logo-github:hover {
-    filter: invert(80%);
+    filter: invert(40%);
 }
 
 .langues-prog {

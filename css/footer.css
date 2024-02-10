@@ -1,99 +1,59 @@
 footer {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
     z-index: 2;
     padding: 5em 5em;
     background-color: rgb(17, 123, 176);
+    font-size: 20px;
 }
 
-footer div {
+footer span {
+    color: var(--white-color);
+}
+
+.droit_github {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.thanks {
-    text-align: center;
-    padding-top: 4em;
+    width: 100%;
 }
 
 .github-site {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
+    transition: all 0.3s ease-in-out;
 }
 
-.github-site img {
-    padding-left: 0.3em;
-}
-
-footer a:link {
-    color: var(--white-color);
-    display: inline-block;
-}
-
-footer a::after {
-    content: '';
-    width: 0px;
-    height: 1.5px;
-    margin-top: -4px;
-    display: block;
-    background: var(--white-color);
-    transition: .5s;
-}
-
-footer a:hover::after {
-    width: 100%;
-}
-
-footer a:visited {
+.github-site:visited {
     color: var(--white-color);
 }
 
-footer p {
-    color: rgb(222, 222, 222);
+.github-site span {
+    margin-top: 3px;
 }
 
-@media screen and (max-width:1080px) {
+.logoGithub {
+    padding-left: 10px;
+}
 
-    footer {
-        width: 100vw;
-        padding: 5em 0;
-    }
+.github-site:hover {
+    filter: opacity(0.6);
+}
 
-    .droit_github>p {
-        margin-left: 4%;
-    }
-
-    .github-site {
-        margin-right: 4%;
-    }
-
-    .thanks {
-        margin: 0 8%;
-    }
-
+.thanks {
+    text-align: center;
 }
 
 @media screen and (max-width:800px) {
 
     .droit_github {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-    }
-
-    .droit_github>p {
-        margin: 0;
-    }
-
-    .github-site {
-        margin: 0;
-        padding-top: 4em;
-    }
-
-    footer a {
-        font-size: 0.9em;
+        justify-content: center;
+        gap: 30px;
     }
 }

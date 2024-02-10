@@ -4,7 +4,8 @@
 
 :root {
    --blue-background: rgb(23, 17, 54);
-   --pink-background: rgb(223, 202, 240);
+   --pink-background: rgb(233, 221, 243);
+   --blockpink-background: rgb(239, 232, 244);
    --black-color: black;
    --white-color: white;
    --link-color-backBlue: rgb(131, 253, 245);
@@ -14,6 +15,7 @@
    --welcome-color3: rgb(89, 136, 215);
    --project-pitch-color: rgb(170, 187, 255);
    --project-pitch-backgroundColor: rgb(52, 38, 116);
+   --width : max-content;
 }
 
 @font-face {
