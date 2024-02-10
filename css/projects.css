@@ -231,7 +231,8 @@ video::-webkit-media-controls-mute-button {
 @media screen and (max-width:950px) {
 
     .section-projects {
-        padding: 0 10%;
+        padding: 0 20px;
+        gap: 30px;
     }
 
     #projects {
