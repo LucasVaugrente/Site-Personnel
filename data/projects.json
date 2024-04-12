@@ -2,110 +2,6 @@
     "projects": [
         {
             "date": 2022,
-            "type_project": "Projet Lycée",
-            "title": "Space Invaders",
-            "description": "Ce projet est une reproduction du jeu vidéo \"Space Invaders\", qui consiste à éliminer des obstacles qui s'approchent de nous en se déplacant de gauche à droite. On peut enregistrer notre score avec un pseudo personnalisé préalablement choisi avant de commencer une partie.",
-            "languages": [
-                {
-                    "name": "Python",
-                    "url": "https://www.python.org"
-                },
-                {
-                    "name": "Pygame",
-                    "url": "https://www.pygame.org/news"
-                }
-            ],
-            "link_git": "https://github.com/Luvey35/Space_Invaders",
-            "video": "../videos/space_invaders.mp4",
-            "image": "../img/projects/fond_space_inv.png",
-            "class": "video-si"
-        },
-        {
-            "date": 2020,
-            "type_project": "Projet Lycée",
-            "title": "Labyrinthe",
-            "description": "Ce projet est un générateur de labyrinthe qui affiche une auto-résolution. Celui-ci a été fait à deux au lycée. L'algorithme utilisé est celui de <a class='link_projects' href=\"https://fr.wikipedia.org/wiki/Algorithme_de_Kruskal\" target='_blank'>Kruskal</a>. Nous avions envisagé aussi de faire un personnage avec des caractéristiques que l'utilisateur devait controler pour parcourir le labyrinthe sans la résolution.",
-            "languages": [
-                {
-                    "name": "Python",
-                    "url": "https://www.python.org"
-                },
-                {
-                    "name": "Pygame",
-                    "url": "https://www.pygame.org/news"
-                }
-            ],
-            "link_git": "https://github.com/Luvey35/Labyrinthe",
-            "video": "../videos/labyrinthe.mp4",
-            "image": "../img/projects/fond_labyrinthe.png",
-            "class": "img-laby"
-        }, 
-        {
-            "date": 2021,
-            "type_project": "Projet IUT",
-            "title": "Site Kohfrais",
-            "description": "Ce projet est un site web réalisé en groupe de 4 à partir d'une interview fictive. Avec toutes les informations récoltées, j'ai fait avec mon équipe : une synthèse des expressions de besoins, l'arborescence du site, la charte graphique, le maquettage avec le contenu des pages et enfin la réalisation du site.",
-            "languages": [
-                {
-                    "name": "HTML",
-                    "url": "https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"
-                },
-                {
-                    "name": "CSS",
-                    "url": "https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"
-                },
-                {
-                    "name": "Bootstrap",
-                    "url": "https://getbootstrap.com/"
-                }
-            ],
-            "link_git": "https://github.com/Luvey35/Site_KohFrais",
-            "video": "../videos/kohfrais.mp4",
-            "image": "../img/projects/fond_kohfrais.jpg",
-            "class": "video-kf"
-        },
-        {
-            "date": 2021,
-            "type_project": "Projet IUT",
-            "title": "Yams",
-            "description": "Ce projet est une simulation du jeu du Yams reprenant les mêmes règles que l'authentique, entre deux joueurs. celui-ci a nécessité plusieurs étapes à rendre, comme le maquettage, le cahier de tests, le programme en langage algoritme naturel ou la documentation.",
-            "languages": [
-                {
-                    "name": "C",
-                    "url": "https://fr.wikipedia.org/wiki/C_(langage)"
-                }
-            ],
-            "link_git": "https://github.com/Luvey35/Yams",
-            "video": "../videos/yams.mp4",
-            "image": "../img/projects/fond_yams.jpg",
-            "class": "video-yams"
-        },
-        {
-            "date": 2022,
-            "type_project": "Projet Personnel",
-            "title": "Site Portfolio",
-            "description": "Ce projet est un site web pour la présentation de mon portfolio, ce site présente mon parcours, mes projects que j'ai faits jusqu'ici, mes compétences, ainsi que mes moyens de contact. C'est un projet que j'ai mené hors scolarité en m'entrainant plus en JavaScript.",
-            "languages": [
-                {
-                    "name": "HTML",
-                    "url": "https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"
-                },
-                {
-                    "name": "CSS",
-                    "url": "https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"
-                },
-                {
-                    "name": "JavaScript",
-                    "url": "https://fr.wikipedia.org/wiki/JavaScript"
-                }
-            ],
-            "link_git": "https://github.com/Luvey35/Site-Personnel",
-            "video": "../videos/portfolio.mp4",
-            "image": "../img/projects/fond_portfolio.jpg",
-            "class": "video-pt"
-        },
-        {
-            "date": 2022,
             "type_project": "Projet IUT",
             "title": "Alizon",
             "description": "Ce projet est une marketplace de vente de produits bretons. Celle-ci répond à un besoin d'un client fictif. Ce projet en groupe de 7, a été suivi avec la méthode <a class=\"link_projects\" href=\"https://www.planzone.fr/blog/quest-ce-que-la-methodologie-agile\" target=\"_blank\">AGILE</a> en management, j'avais pour rôle le <a class=\"link_projects\" href=\"https://www.atlassian.com/fr/agile/scrum/scrum-master\" target=\"_blank\">Scrum Master</a>.",
@@ -134,7 +30,119 @@
             "link_git": "https://github.com/8Paprika5/BUT-IUT-Lannion-2021_2024/tree/main/BUT2-2022_2023/Alizon",
             "video": "../videos/alizon.mp4",
             "image": "../img/projects/fond_alizon.png",
-            "class": "video-al"
+            "class": "video-al",
+            "skills": {
+                "competence1": "oui",
+                "competence2": "oui",
+                "competence3": "oui",
+                "competence4": "oui",
+                "competence5": "oui",
+                "competence6": "oui"
+            }
+        },
+        {
+            "date": 2022,
+            "type_project": "Projet Personnel",
+            "title": "Site Portfolio",
+            "description": "Ce projet est un site web pour la présentation de mon portfolio, ce site présente mon parcours, mes projects que j'ai faits jusqu'ici, mes compétences, ainsi que mes moyens de contact. C'est un projet que j'ai mené hors scolarité en m'entrainant plus en JavaScript.",
+            "languages": [
+                {
+                    "name": "HTML",
+                    "url": "https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"
+                },
+                {
+                    "name": "CSS",
+                    "url": "https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"
+                },
+                {
+                    "name": "JavaScript",
+                    "url": "https://fr.wikipedia.org/wiki/JavaScript"
+                }
+            ],
+            "link_git": "https://github.com/Luvey35/Site-Personnel",
+            "video": "../videos/portfolio.mp4",
+            "image": "../img/projects/fond_portfolio.jpg",
+            "class": "video-pt"
+        },
+        {
+            "date": 2021,
+            "type_project": "Projet IUT",
+            "title": "Yams",
+            "description": "Ce projet est une simulation du jeu du Yams reprenant les mêmes règles que l'authentique, entre deux joueurs. celui-ci a nécessité plusieurs étapes à rendre, comme le maquettage, le cahier de tests, le programme en langage algoritme naturel ou la documentation.",
+            "languages": [
+                {
+                    "name": "C",
+                    "url": "https://fr.wikipedia.org/wiki/C_(langage)"
+                }
+            ],
+            "link_git": "https://github.com/Luvey35/Yams",
+            "video": "../videos/yams.mp4",
+            "image": "../img/projects/fond_yams.jpg",
+            "class": "video-yams"
+        },
+        {
+            "date": 2021,
+            "type_project": "Projet IUT",
+            "title": "Site Kohfrais",
+            "description": "Ce projet est un site web réalisé en groupe de 4 à partir d'une interview fictive. Avec toutes les informations récoltées, j'ai fait avec mon équipe : une synthèse des expressions de besoins, l'arborescence du site, la charte graphique, le maquettage avec le contenu des pages et enfin la réalisation du site.",
+            "languages": [
+                {
+                    "name": "HTML",
+                    "url": "https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"
+                },
+                {
+                    "name": "CSS",
+                    "url": "https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"
+                },
+                {
+                    "name": "Bootstrap",
+                    "url": "https://getbootstrap.com/"
+                }
+            ],
+            "link_git": "https://github.com/Luvey35/Site_KohFrais",
+            "video": "../videos/kohfrais.mp4",
+            "image": "../img/projects/fond_kohfrais.jpg",
+            "class": "video-kf"
+        },
+        {
+            "date": 2020,
+            "type_project": "Projet Lycée",
+            "title": "Labyrinthe",
+            "description": "Ce projet est un générateur de labyrinthe qui affiche une auto-résolution. Celui-ci a été fait à deux au lycée. L'algorithme utilisé est celui de <a class='link_projects' href=\"https://fr.wikipedia.org/wiki/Algorithme_de_Kruskal\" target='_blank'>Kruskal</a>. Nous avions envisagé aussi de faire un personnage avec des caractéristiques que l'utilisateur devait controler pour parcourir le labyrinthe sans la résolution.",
+            "languages": [
+                {
+                    "name": "Python",
+                    "url": "https://www.python.org"
+                },
+                {
+                    "name": "Pygame",
+                    "url": "https://www.pygame.org/news"
+                }
+            ],
+            "link_git": "https://github.com/Luvey35/Labyrinthe",
+            "video": "../videos/labyrinthe.mp4",
+            "image": "../img/projects/fond_labyrinthe.png",
+            "class": "img-laby"
+        }, 
+        {
+            "date": 2022,
+            "type_project": "Projet Lycée",
+            "title": "Space Invaders",
+            "description": "Ce projet est une reproduction du jeu vidéo \"Space Invaders\", qui consiste à éliminer des obstacles qui s'approchent de nous en se déplacant de gauche à droite. On peut enregistrer notre score avec un pseudo personnalisé préalablement choisi avant de commencer une partie.",
+            "languages": [
+                {
+                    "name": "Python",
+                    "url": "https://www.python.org"
+                },
+                {
+                    "name": "Pygame",
+                    "url": "https://www.pygame.org/news"
+                }
+            ],
+            "link_git": "https://github.com/Luvey35/Space_Invaders",
+            "video": "../videos/space_invaders.mp4",
+            "image": "../img/projects/fond_space_inv.png",
+            "class": "video-si"
         }
     ]
 }

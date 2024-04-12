@@ -1,4 +1,11 @@
-let Section_projects = document.querySelector(".section-projects");
+const Section_projects = document.querySelector(".section-projects");
+
+const removeChilds = (parent) => {
+    console.log(parent);
+    while (parent.lastChild) {
+        parent.removeChild(parent.lastChild);
+    }
+};
 
 fetch('../data/projects.json')
     .then(response => response.json())
@@ -92,6 +99,18 @@ fetch('../data/projects.json')
             agit.appendChild(imgGit)
             bloc_lan_git.appendChild(agit);
 
+            /* ########################## Compétences Portfolio project ########################## */
+            let imgPortfolio = document.createElement("img");
+            imgPortfolio.classList.add("skills-portfolio_project");
+
+            imgPortfolio.setAttribute("src", "img/icones/logo/list_checked.png");
+            imgPortfolio.setAttribute("alt", "Logo Skills Portfolio");
+            imgPortfolio.setAttribute("title", "Compétences Portfolio");
+            imgPortfolio.setAttribute("width", "30");
+            imgPortfolio.setAttribute("height", "30");
+
+            bloc_lan_git.appendChild(imgPortfolio);
+
             /* ########################## Vidéo project ########################## */
             let lien_vid = document.createElement("a");
             lien_vid.setAttribute("href", data.projects[index].link_git);
@@ -132,7 +151,55 @@ fetch('../data/projects.json')
             article.classList.add("revelation");
             Section_projects.appendChild(article);
 
+            if(index === data.projects.length - 1) {
+                const portfolioSkills_Container = document.querySelector("#container-skills_portoflio");
+                const portfolioSkills_OpenButtons = document.querySelectorAll(".skills-portfolio_project");
+                const portfolioSkills_CloseButton = document.querySelector(".portfolio-skills-close");
+                const portfolioSkills_List = document.querySelector(".skills-list");
+    
+                portfolioSkills_OpenButtons.forEach(button => {
+                    button.addEventListener("click", (event) => {
+                        document.querySelector("body").style.overflow = "hidden";
+                        removeChilds(portfolioSkills_List);
+                        portfolioSkills_Container.style.display = "block";
+                        const num = event.target.closest(".project").classList[2].split('_')[1];
+                        const title_project_label = data.projects[num-1].title;
+                        const data_skills = data.projects[num-1].skills;
+                        
+                        let title_project = document.createElement("h2");
+                        title_project.classList.add("title_project_skills_portfolio");
+                        title_project.innerHTML = "Projet : " + title_project_label;
+                        portfolioSkills_List.appendChild(title_project);
 
+                        if(data_skills !== undefined) {
+                            for (let index = 1; index <= 6; index++) {
+                                let div = document.createElement("div");
+                                let title_skills = document.createElement("h3");
+                                let comment_skills = document.createElement("span");
+
+                                div.classList.add("skills_line");
+                                
+                                let competenceNum = "competence" + index;
+                                title_skills.innerHTML = "Compétence " + index + " : ";   
+                                comment_skills.innerHTML = data_skills[competenceNum];   
+    
+                                div.appendChild(title_skills);
+                                div.appendChild(comment_skills);
+                                portfolioSkills_List.appendChild(div);
+                            }
+                        } else {
+                            let span = document.createElement("span");
+                            span.innerHTML = "Aucune compétence portfolio";
+                            portfolioSkills_List.appendChild(span);
+                        }
+                    });
+                });
+    
+                portfolioSkills_CloseButton.addEventListener("click", () => {
+                    portfolioSkills_Container.style.display = "none";
+                    document.querySelector("body").style.overflow = "auto";
+                });
+            }
         }
 
     })
