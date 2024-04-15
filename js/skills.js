@@ -1,10 +1,10 @@
-let frontWeb = document.querySelector(".Cat-languages-W");
-let softwareDev = document.querySelector(".Cat-languages-D");
-let backWeb = document.querySelector(".Cat-languages-B");
+const buttonFrontEnd = document.querySelector(".button-category-language-front");
+const buttonSoftwareDev = document.querySelector(".button-category-language-dev");
+const buttonBackEnd = document.querySelector(".button-category-language-back");
 
-let blockFrontWeb = document.querySelector(".front");
-let blockSoftwareDev = document.querySelector(".software");
-let blockBackWeb = document.querySelector(".back");
+const blockFrontEnd = document.querySelector(".front");
+const blockSoftwareDev = document.querySelector(".software");
+const blockBackEnd = document.querySelector(".back");
 
 fetch('../data/skills.json')
     .then(response => response.json())
@@ -13,11 +13,11 @@ fetch('../data/skills.json')
 
             for (let index = 0; index < data.skills[type].length; index++) {
 
-                let div = document.createElement('div');
-                let div_image = document.createElement('div');
-                let link = document.createElement('a');
-                let img = document.createElement('img');
-                let span = document.createElement('span');
+                const div = document.createElement('div');
+                const div_image = document.createElement('div');
+                const link = document.createElement('a');
+                const img = document.createElement('img');
+                const span = document.createElement('span');
 
                 div.classList.add("zoom");
                 div.classList.add("apparition");
@@ -41,72 +41,70 @@ fetch('../data/skills.json')
                 if (type === "software") {
                     blockSoftwareDev.appendChild(div);
                 } else if (type === "front") {
-                    blockFrontWeb.appendChild(div);
+                    blockFrontEnd.appendChild(div);
                 } else {
-                    blockBackWeb.appendChild(div);
+                    blockBackEnd.appendChild(div);
                 }
             }
         }
     })
     .catch(error => console.error(error));
 
+const languages = document.getElementsByClassName("zoom");
 
-let languages = document.getElementsByClassName("zoom");
+buttonFrontEnd.addEventListener("click", () => {
+    if(!buttonFrontEnd.classList.contains("type_selected")) {
 
-function getStyle(a, b) {
-    return window.getComputedStyle(b, null)[a];
+        buttonFrontEnd.classList.toggle("type_selected");
+        buttonSoftwareDev.classList.remove("type_selected");
+        buttonBackEnd.classList.remove("type_selected");
+    
+        toggleClass(blockBackEnd, 'hide');
+        toggleClass(blockSoftwareDev, 'hide');
+        toggleClass(blockFrontEnd, 'show');
+    
+        for (let index = 0; index < languages.length; index++) {
+            languages[index].classList.remove("apparition-visible");
+        }
+    }
+});
+
+
+buttonSoftwareDev.addEventListener("click", () => {
+    if(!buttonSoftwareDev.classList.contains("type_selected")) {
+
+        buttonSoftwareDev.classList.toggle("type_selected");
+        buttonFrontEnd.classList.remove("type_selected");
+        buttonBackEnd.classList.remove("type_selected");
+
+        toggleClass(blockBackEnd, 'hide');
+        toggleClass(blockSoftwareDev, 'show');
+        toggleClass(blockFrontEnd, 'hide');
+
+        for (let index = 0; index < languages.length; index++) {
+            languages[index].classList.remove("apparition-visible");
+        }
+    }
+});
+
+buttonBackEnd.addEventListener("click", () => {
+    if(!buttonBackEnd.classList.contains("type_selected")) {
+
+        buttonBackEnd.classList.toggle("type_selected");
+        buttonSoftwareDev.classList.remove("type_selected");
+        buttonFrontEnd.classList.remove("type_selected");
+
+        toggleClass(blockBackEnd, 'show');
+        toggleClass(blockSoftwareDev, 'hide');
+        toggleClass(blockFrontEnd, 'hide');
+
+        for (let index = 0; index < languages.length; index++) {
+            languages[index].classList.remove("apparition-visible");
+        }
+    }
+});
+
+function toggleClass(element, className) {
+    element.classList.add(className);
+    element.classList.remove(className === 'show' ? 'hide' : 'show');
 }
-
-frontWeb.addEventListener("click", () => {
-    if (getStyle("background-color", frontWeb) == "rgb(23, 17, 54)") {
-    } else {
-        frontWeb.classList.toggle("type_selected");
-        softwareDev.classList.remove("type_selected");
-        softwareDev.style.transition = "all 0.3s ease";
-        backWeb.classList.remove("type_selected");
-        backWeb.style.transition = "all 0.3s ease";
-
-        blockSoftwareDev.style.display = "none";
-        blockBackWeb.style.display = "none";
-        blockFrontWeb.style.display = "flex";
-
-        for (let index = 0; index < languages.length; index++) {
-            languages[index].classList.remove("apparition-visible");
-        }
-    }
-});
-
-
-softwareDev.addEventListener("click", () => {
-    if (getStyle("background-color", softwareDev) == "rgb(23, 17, 54)") {
-    } else {
-        softwareDev.classList.toggle("type_selected");
-        frontWeb.classList.remove("type_selected");
-        backWeb.classList.remove("type_selected");
-
-        blockFrontWeb.style.display = "none";
-        blockBackWeb.style.display = "none";
-        blockSoftwareDev.style.display = "flex";
-
-        for (let index = 0; index < languages.length; index++) {
-            languages[index].classList.remove("apparition-visible");
-        }
-    }
-});
-
-backWeb.addEventListener("click", () => {
-    if (getStyle("background-color", backWeb) == "rgb(23, 17, 54)") {
-    } else {
-        backWeb.classList.toggle("type_selected");
-        softwareDev.classList.remove("type_selected");
-        frontWeb.classList.remove("type_selected");
-
-        blockSoftwareDev.style.display = "none";
-        blockFrontWeb.style.display = "none";
-        blockBackWeb.style.display = "flex";
-
-        for (let index = 0; index < languages.length; index++) {
-            languages[index].classList.remove("apparition-visible");
-        }
-    }
-});
