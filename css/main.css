@@ -16,6 +16,7 @@
    --project-pitch-color: rgb(170, 187, 255);
    --project-pitch-backgroundColor: rgb(52, 38, 116);
    --width : max-content;
+   --color-background-welcome: #317156;
 }
 
 @font-face {

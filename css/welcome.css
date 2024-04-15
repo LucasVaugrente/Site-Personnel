@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background : radial-gradient(ellipse at bottom, #55231c 0%, var(--blue-background) 100%);
+    background : radial-gradient(ellipse at bottom, var(--color-background-welcome) 0%, var(--blue-background) 100%);
 }
 
 .content {
