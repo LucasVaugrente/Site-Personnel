@@ -1,7 +1,6 @@
 const Section_projects = document.querySelector(".section-projects");
 
 const removeChilds = (parent) => {
-    console.log(parent);
     while (parent.lastChild) {
         parent.removeChild(parent.lastChild);
     }
@@ -180,8 +179,8 @@ fetch('../data/projects.json')
                                 div.classList.add("skills_line");
                                 
                                 let competenceNum = "competence" + index;
-                                title_skills.innerHTML = "Compétence " + index + " : ";   
-                                comment_skills.innerHTML = data_skills[competenceNum];   
+                                title_skills.innerHTML = "Compétence " + index + " : " + data_skills[competenceNum][0];   
+                                comment_skills.innerHTML = data_skills[competenceNum][1];   
     
                                 div.appendChild(title_skills);
                                 div.appendChild(comment_skills);

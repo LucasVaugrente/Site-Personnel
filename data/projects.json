@@ -32,12 +32,12 @@
             "image": "../img/projects/fond_alizon.png",
             "class": "video-al",
             "skills": {
-                "competence1": "oui",
-                "competence2": "oui",
-                "competence3": "oui",
-                "competence4": "oui",
-                "competence5": "oui",
-                "competence6": "oui"
+                "competence1": ["Réaliser", "oui"],
+                "competence2": ["Optimiser", "oui"],
+                "competence3": ["Administrer", "oui"],
+                "competence4": ["Gérer", "oui"],
+                "competence5": ["Conduire un projet", "oui"],
+                "competence6": ["Elaborer", "oui"]
             }
         },
         {
@@ -62,7 +62,15 @@
             "link_git": "https://github.com/Luvey35/Site-Personnel",
             "video": "../videos/portfolio.mp4",
             "image": "../img/projects/fond_portfolio.jpg",
-            "class": "video-pt"
+            "class": "video-pt",
+            "skills": {
+                "competence1": ["Réaliser", "oui"],
+                "competence2": ["Optimiser", "oui"],
+                "competence3": ["Administrer", "oui"],
+                "competence4": ["Gérer", "oui"],
+                "competence5": ["Conduire un projet", "oui"],
+                "competence6": ["Elaborer", "oui"]
+            }
         },
         {
             "date": 2021,
@@ -78,7 +86,15 @@
             "link_git": "https://github.com/Luvey35/Yams",
             "video": "../videos/yams.mp4",
             "image": "../img/projects/fond_yams.jpg",
-            "class": "video-yams"
+            "class": "video-yams",
+            "skills": {
+                "competence1": ["Réaliser", "oui"],
+                "competence2": ["Optimiser", "oui"],
+                "competence3": ["Administrer", "oui"],
+                "competence4": ["Gérer", "oui"],
+                "competence5": ["Conduire un projet", "oui"],
+                "competence6": ["Elaborer", "oui"]
+            }
         },
         {
             "date": 2021,
@@ -102,7 +118,15 @@
             "link_git": "https://github.com/Luvey35/Site_KohFrais",
             "video": "../videos/kohfrais.mp4",
             "image": "../img/projects/fond_kohfrais.jpg",
-            "class": "video-kf"
+            "class": "video-kf",
+            "skills": {
+                "competence1": ["Réaliser", "oui"],
+                "competence2": ["Optimiser", "oui"],
+                "competence3": ["Administrer", "oui"],
+                "competence4": ["Gérer", "oui"],
+                "competence5": ["Conduire un projet", "oui"],
+                "competence6": ["Elaborer", "oui"]
+            }
         },
         {
             "date": 2020,
@@ -122,7 +146,15 @@
             "link_git": "https://github.com/Luvey35/Labyrinthe",
             "video": "../videos/labyrinthe.mp4",
             "image": "../img/projects/fond_labyrinthe.png",
-            "class": "img-laby"
+            "class": "img-laby",
+            "skills": {
+                "competence1": ["Réaliser", "oui"],
+                "competence2": ["Optimiser", "oui"],
+                "competence3": ["Administrer", "oui"],
+                "competence4": ["Gérer", "oui"],
+                "competence5": ["Conduire un projet", "oui"],
+                "competence6": ["Elaborer", "oui"]
+            }
         }, 
         {
             "date": 2022,
@@ -142,7 +174,15 @@
             "link_git": "https://github.com/Luvey35/Space_Invaders",
             "video": "../videos/space_invaders.mp4",
             "image": "../img/projects/fond_space_inv.png",
-            "class": "video-si"
+            "class": "video-si",
+            "skills": {
+                "competence1": ["Réaliser", "oui"],
+                "competence2": ["Optimiser", "oui"],
+                "competence3": ["Administrer", "oui"],
+                "competence4": ["Gérer", "oui"],
+                "competence5": ["Conduire un projet", "oui"],
+                "competence6": ["Elaborer", "oui"]
+            }
         }
     ]
 }
