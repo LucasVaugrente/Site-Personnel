@@ -6,7 +6,7 @@ footer {
     align-items: center;
     gap: 40px;
     z-index: 2;
-    padding: 5em 5em;
+    padding: 5em 20%;
     background-color: rgb(17, 123, 176);
     font-size: 20px;
 }

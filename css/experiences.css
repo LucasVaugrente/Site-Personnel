@@ -13,7 +13,8 @@
 .section-experiences {
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    padding: 0 20%;
+    gap: 100px;
     background-color: rgb(23, 17, 54);
 }
 
@@ -102,15 +103,9 @@
     display: none;
 }
 
-@media screen and (min-width:1950px) {
+@media screen and (max-width:1500px) {
     .section-experiences {
-        padding: 0 20%;
-    }
-}
-
-@media screen and (max-width:1950px) {
-    .section-experiences {
-        padding: 0 10%;
+        padding: 0 5%;
     }
 }
 
@@ -121,7 +116,7 @@
     }
 
     .section-experiences {
-        padding: 0 20px;
+        padding: 0 10%;
         gap: 30px;
     }
 

@@ -12,7 +12,7 @@
 .section-projects {
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    gap: 100px;
     padding: 0 20%;
 }
 
@@ -281,13 +281,7 @@ video::-webkit-media-controls-mute-button {
     color: var(--white-color);
 }
 
-@media screen and (max-width:1950px) {
-    .section-projects {
-        padding: 0 10%;
-    }
-}
-
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1500px) {
     .section-projects {
         padding: 0 5%;
     }
@@ -296,7 +290,7 @@ video::-webkit-media-controls-mute-button {
 @media screen and (max-width:950px) {
 
     .section-projects {
-        padding: 0 20px;
+        padding: 0 10%;
         gap: 30px;
     }
 
