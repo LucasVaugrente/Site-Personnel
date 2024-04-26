@@ -93,7 +93,7 @@ fetch('../data/experiences.json')
                 article.appendChild(bloc_content);
             }
 
-            article.classList.add("revelation");
+            article.classList.add("revealBlock");
             Section_experiences.appendChild(article);
 
         }

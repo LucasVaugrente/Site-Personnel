@@ -147,7 +147,7 @@ fetch('../data/projects.json')
                 article.appendChild(bloc_content);
             }
 
-            article.classList.add("revelation");
+            article.classList.add("revealBlock");
             Section_projects.appendChild(article);
 
             if(index === data.projects.length - 1) {

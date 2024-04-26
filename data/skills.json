@@ -64,6 +64,16 @@
                 "link": "https://fr.wikipedia.org/wiki/JavaScript"
             },
             {
+                "name": "Vue.JS",
+                "image": "../img/icones/languages/vuejs.png",
+                "link": "https://vuejs.org"
+            },
+            {
+                "name": "React  ",
+                "image": "../img/icones/languages/react.png",
+                "link": "https://fr.legacy.reactjs.org/"
+            },
+            {
                 "name": "Bootstrap",
                 "image": "../img/icones/languages/Bootstrap.svg",
                 "link": "https://getbootstrap.com/"
@@ -84,11 +94,6 @@
                 "name": "Python",
                 "image": "../img/icones/languages/Python.svg",
                 "link": "https://www.python.org/"
-            },
-            {
-                "name": "Vue.JS",
-                "image": "../img/icones/languages/vuejs.png",
-                "link": "https://vuejs.org"
             },
             {
                 "name": "NodeJS",

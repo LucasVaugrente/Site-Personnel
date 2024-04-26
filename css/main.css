@@ -118,12 +118,12 @@ h1 {
 
 /* ###### ANIMATION projects ###### */
 
-.revelation {
+.revealBlock {
     opacity: 0;
     transform: translateY(-30px);
 }
 
-.revelation-visible {
+.revealBlock-visible {
     opacity: 1;
     transform: translateY(0);
     transition: .6s;

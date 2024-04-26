@@ -20,7 +20,7 @@ fetch('../data/skills.json')
                 const span = document.createElement('span');
 
                 div.classList.add("zoom");
-                div.classList.add("apparition");
+                div.classList.add("revealSkills");
                 div_image.classList.add("image");
 
                 link.setAttribute("target", "_blank");
@@ -64,7 +64,7 @@ buttonFrontEnd.addEventListener("click", () => {
         toggleClass(blockFrontEnd, 'show');
     
         for (let index = 0; index < languages.length; index++) {
-            languages[index].classList.remove("apparition-visible");
+            languages[index].classList.remove("revealSkills-visible");
         }
     }
 });
@@ -82,7 +82,7 @@ buttonSoftwareDev.addEventListener("click", () => {
         toggleClass(blockFrontEnd, 'hide');
 
         for (let index = 0; index < languages.length; index++) {
-            languages[index].classList.remove("apparition-visible");
+            languages[index].classList.remove("revealSkills-visible");
         }
     }
 });
@@ -99,7 +99,7 @@ buttonBackEnd.addEventListener("click", () => {
         toggleClass(blockFrontEnd, 'hide');
 
         for (let index = 0; index < languages.length; index++) {
-            languages[index].classList.remove("apparition-visible");
+            languages[index].classList.remove("revealSkills-visible");
         }
     }
 });

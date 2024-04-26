@@ -98,12 +98,12 @@
     color: var(--white-color);
 }
 
-.apparition {
+.revealSkills {
     opacity: 0;
     transform: translateY(-10px);
 }
 
-.apparition-visible {
+.revealSkills-visible {
     opacity: 1;
     transform: translateY(0);
     transition: .6s;

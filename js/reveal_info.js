@@ -50,14 +50,14 @@ async function myFunction() {
   const handleIntersect2 = function (entries, observer) {
     entries.forEach(function (entry) {
       if (entry.intersectionRatio > ratio) {
-        entry.target.classList.add('revelation-visible');
+        entry.target.classList.add('revealBlock-visible');
         observer.unobserve(entry.target);
       }
     });
   }
 
   const observer2 = new IntersectionObserver(handleIntersect2, options);
-  document.querySelectorAll('.revelation').forEach(function (r) {
+  document.querySelectorAll('.revealBlock').forEach(function (r) {
     observer2.observe(r);
   })
 
@@ -66,15 +66,31 @@ async function myFunction() {
   const handleIntersect3 = function (entries, observer) {
     entries.forEach(function (entry) {
       if (entry.intersectionRatio > ratio) {
-        entry.target.classList.add("apparition-visible");
+        entry.target.classList.add("revealSkills-visible");
         observer.observe(entry.target);
       }
     });
   };
 
   const observer3 = new IntersectionObserver(handleIntersect3, options);
-  document.querySelectorAll(".apparition").forEach(function (r) {
+  document.querySelectorAll(".revealSkills").forEach(function (r) {
     observer3.observe(r);
+  });
+
+  // ######################### contact ############################## //
+
+  const handleIntersect4 = function (entries, observer) {
+    entries.forEach(function (entry) {
+      if (entry.intersectionRatio > ratio) {
+        entry.target.classList.add("revealBlock-visible");
+        observer.observe(entry.target);
+      }
+    });
+  };
+
+  const observer4 = new IntersectionObserver(handleIntersect4, options);
+  document.querySelectorAll(".revealBlock").forEach(function (r) {
+    observer4.observe(r);
   });
 
 
