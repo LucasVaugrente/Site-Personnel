@@ -355,6 +355,7 @@ video::-webkit-media-controls-mute-button {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        padding: 20px;
     }
 
     .title-project {
