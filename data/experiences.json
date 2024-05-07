@@ -29,7 +29,7 @@
             "date": "2023-2024",
             "experience_type": "Alternance",
             "title": "Mobil-Inn",
-            "description": "Une alternance commencée en octobre jusqu'à aujourd'hui à <a class='link_experiences' href='https://mobil-inn.com' target='_blank'>Mobil-Inn</a>, ma mission consistait à améliorer le visuel des pages de l'application web existant. L'entreprise propose une suite de logiciel : <a class='link_experiences' href='https://mobil-inn.com/ismartcollect/' target='_blank'>Ismartroad</a> qui permet de géolocaliser les éboueurs et de les accompagner lors de leurs tournées.",
+            "description": "Une alternance commencée en octobre jusqu'à aujourd'hui à <a class='link_experiences' href='https://mobil-inn.com' target='_blank'>Mobil-Inn</a>, ma mission consistait à améliorer le visuel des pages de l'application web existant. L'entreprise propose une suite de logiciel : <a class='link_experiences' href='https://mobil-inn.com/ismartcollect/' target='_blank'>Ismartroad</a> qui permet de géolocaliser les éboueurs et de les accompagner lors de leurs tournées. Ma dernière mission est mettre en place un environnement de gestion de l'entreprise avec <a class='link_experiences' href='https://www.odoo.com/fr_FR' target='_blank'>Odoo</a> pour avoir plus de faciliter dans la personnalisation d'affichage de données des clients.",
             "languages": [
                 {
                     "name": "HTML",
