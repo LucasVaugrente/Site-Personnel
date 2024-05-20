@@ -78,6 +78,7 @@ fetch('../data/experiences.json')
             /* ########################## Image experience ########################## */
             let img = document.createElement("img");
             img.setAttribute("src", data.experiences[index].image);
+            img.setAttribute("alt", "Image Experience");
 
             // ##### AJOUT DE TOUS LES ELEMENTS ##### //
             bloc_content.appendChild(bloc_title);
