@@ -1,4 +1,6 @@
 const Section_projects = document.querySelector(".section-projects");
+const dynamicStyles = document.getElementById("project-styles");
+const mediaQuery = "@media screen and (max-width:950px) {";
 
 const removeChilds = (parent) => {
     while (parent.lastChild) {
@@ -109,6 +111,22 @@ fetch('../data/projects.json')
             imgPortfolio.setAttribute("height", "30");
 
             bloc_lan_git.appendChild(imgPortfolio);
+
+            /* ########################## Background Image Projects Responsive ########################## */
+            let cssRules = mediaQuery;
+            for (let index = 0; index < data.projects.length; index++) {
+                const numproject = index + 1;
+                const backgroundImage = data.projects[index].image;
+    
+                cssRules += `
+                    .project_${numproject}:before {
+                        background-image: url("${backgroundImage}");
+                    }
+                `;
+            }
+            cssRules += '}';
+    
+            dynamicStyles.innerHTML = cssRules;
 
             /* ########################## Vidéo project ########################## */
             let lien_vid = document.createElement("a");

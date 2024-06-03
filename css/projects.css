@@ -322,31 +322,6 @@ video::-webkit-media-controls-mute-button {
         border-radius: 30px;
     }
 
-    .project_1:before {
-        background-image: url("../img/projects/fond_space_inv.png");
-    }
-
-    .project_2:before {
-        background-image: url("../img/projects/fond_labyrinthe.png");
-    }
-
-    .project_3:before {
-        background-image: url("../img/projects/fond_kohfrais.jpg");
-    }
-
-    .project_4:before {
-        background-image: url("../img/projects/fond_yams.jpg");
-    }
-
-    .project_5:before {
-        background-image: url("../img/projects/fond_portfolio.jpg");
-        opacity: 0.8;
-    }
-
-    .project_6:before {
-        background-image: url("../img/projects/fond_alizon.png");
-    }
-
     .project>a {
         display: none;
     }
