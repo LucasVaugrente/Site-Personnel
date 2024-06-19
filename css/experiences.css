@@ -1,6 +1,6 @@
 #experiences {
     position: relative;
-    z-index: 3;
+    z-index: 1;
     background-color: var(--blue-background);
     padding-bottom: 100px;
 }

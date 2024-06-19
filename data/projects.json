@@ -30,15 +30,7 @@
             "link_git": "https://github.com/8Paprika5/BUT-IUT-Lannion-2021_2024/tree/main/BUT2-2022_2023/Alizon",
             "video": "../videos/alizon.mp4",
             "image": "../img/projects/fond_alizon.png",
-            "class": "video-al",
-            "skills": {
-                "competence1": ["Réaliser", "Sur ce projet à 7, nous avons réalisé un site web, ainsi qu'un simulateur de livraison."],
-                "competence2": ["Optimiser", "Plusieurs algorithmes ont été utilisés pour faire fonctionner le site web comme l'algorithme qui permet de faire des achats sur le site."],
-                "competence3": ["Administrer", "Nous avons utilisé des containeurs Docker qui permet d'administrer le site dans son intégralité."],
-                "competence4": ["Gérer", "Nous avons créé la base de données de A à Z en gérant les conditions, l'architecture des données, etc."],
-                "competence5": ["Conduire un projet", "Nous avons utilisés la méthode AGILE où j'ai été le ScrumMaster durant toute l'année de ce projet, j'ai donc assisté chaque Daily Meeting à distribuer la parole à tous les membres de l'équipe."],
-                "competence6": ["Travailler dans une équipe informatique", "Ce projet a été réalisé à 7."]
-            }
+            "class": "video-al"
         },
         {
             "date": 2022,
@@ -62,15 +54,7 @@
             "link_git": "https://github.com/Luvey35/Site-Personnel",
             "video": "../videos/portfolio.mp4",
             "image": "../img/projects/fond_portfolio.jpg",
-            "class": "video-pt",
-            "skills": {
-                "competence1": ["Réaliser", "J'ai réalisé ce site tout seul en HTML, CSS et JavaScript sans framework."],
-                "competence2": ["Optimiser", "Dans mon code JavaScript, j'ai du optimiser la lecture de fichier JSON pour récupérer les données des projets et des expériences pour les afficher sur le site."],
-                "competence3": ["Administrer", ""],
-                "competence4": ["Gérer", ""],
-                "competence5": ["Conduire un projet", "Je suis tout seul à gérer ce projet, donc j'essaye de tenir un rythme régulier sur la mise à jour du site web avec les remarques de personnes."],
-                "competence6": ["Travailler dans une équipe informatique", ""]
-            }
+            "class": "video-pt"
         },
         {
             "date": 2021,
@@ -86,15 +70,7 @@
             "link_git": "https://github.com/Luvey35/Yams",
             "video": "../videos/yams.mp4",
             "image": "../img/projects/fond_yams.jpg",
-            "class": "video-yams",
-            "skills": {
-                "competence1": ["Réaliser", "Ce projet est une application en langage C  pour une école maternelle comme contexte fictif."],
-                "competence2": ["Optimiser", "Ce projet a pour but d'étre accessible pour 2 joueurs, il fallait que cette application a la meilleure accessiblité pour avoir la meilleure expérience possible."],
-                "competence3": ["Administrer", ""],
-                "competence4": ["Gérer", ""],
-                "competence5": ["Conduire un projet", "J'étais tout seul lors de ce projet avec plusieurs rendus à rendre."],
-                "competence6": ["Travailler dans une équipe informatique", ""]
-            }
+            "class": "video-yams"
         },
         {
             "date": 2021,
@@ -118,15 +94,7 @@
             "link_git": "https://github.com/Luvey35/Site_KohFrais",
             "video": "../videos/kohfrais.mp4",
             "image": "../img/projects/fond_kohfrais.jpg",
-            "class": "video-kf",
-            "skills": {
-                "competence1": ["Réaliser", "Ce projet est un site web créé en groupe de 4 pour une entreprise de glaces et de produits surgelés."],
-                "competence2": ["Optimiser", ""],
-                "competence3": ["Administrer", ""],
-                "competence4": ["Gérer", ""],
-                "competence5": ["Conduire un projet", ""],
-                "competence6": ["Travailler dans une équipe informatique", "Nous étions en groupe de 4 pour réaliser ce projet."]
-            }
+            "class": "video-kf"
         },
         {
             "date": 2020,
@@ -146,15 +114,7 @@
             "link_git": "https://github.com/Luvey35/Labyrinthe",
             "video": "../videos/labyrinthe.mp4",
             "image": "../img/projects/fond_labyrinthe.png",
-            "class": "img-laby",
-            "skills": {
-                "competence1": ["Réaliser", "J'ai réalisé une petite application qui affiche un labyrinthe avec sa résolution en Python en groupe de 2."],
-                "competence2": ["Optimiser", "Plusieurs algorithmes ont été utilisés pour construire et résoudre le labyrinthe, il fallait que ce soit optimiser pour rendre l'expérience plus fluide."],
-                "competence3": ["Administrer", ""],
-                "competence4": ["Gérer", ""],
-                "competence5": ["Conduire un projet", ""],
-                "competence6": ["Travailler dans une équipe informatique", "Nous étions en groupe de 2 pour réaliser ce projet, nous nous étions répartis simplement les tâches."]
-            }
+            "class": "img-laby"
         }, 
         {
             "date": 2022,
@@ -174,15 +134,7 @@
             "link_git": "https://github.com/Luvey35/Space_Invaders",
             "video": "../videos/space_invaders.mp4",
             "image": "../img/projects/fond_space_inv.png",
-            "class": "video-si",
-            "skills": {
-                "competence1": ["Réaliser", "J'ai réalisé une petit jeu vidéo en groupe de 4 qui reprend le jeu Space Invaders."],
-                "competence2": ["Optimiser", "Le jeu prend beaucoup de ressources pour l'affichage du jeu en lui-même, beaucoup de portions de code ont dû être optimiser pour rendre cela plus fluide."],
-                "competence3": ["Administrer", ""],
-                "competence4": ["Gérer", ""],
-                "competence5": ["Conduire un projet", ""],
-                "competence6": ["Travailler dans une équipe informatique", "Nous étions en groupe de 4 pour réaliser ce projet, nous nous étions répartis les tâches."]
-            }
+            "class": "video-si"
         }
     ]
 }

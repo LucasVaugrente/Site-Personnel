@@ -1,6 +1,6 @@
 #projects {
     position: relative;
-    z-index: 7;
+    z-index: 1;
     background-color: var(--blue-background);
     padding-bottom: 100px;
 }
@@ -137,72 +137,7 @@ video::-webkit-media-controls-mute-button {
     transition: all 0.1s ease-in-out;
 }
 
-#container-skills_portoflio {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 80vw;
-    height: 90vh;
-    background-color: #22283d;
-    color: var(--white-color);
-    border-radius: 20px;
-    z-index: 10;
-    margin-top: -45vh;
-    margin-left: -40vw;
-    box-shadow: 0 0 10px black;
-}
-
-.skills_portfolio_title {
-    padding: 1.4em 0 1em 0;
-}
-
-.title_project_skills_portfolio {
-    font-size: 40px;
-}
-
-.skills-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 20px;
-    padding: 2em 5em;
-}
-
-.skills_line {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-}
-
-.portfolio-skills-close {
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    padding: 0.5em;
-    border-radius: 50px;
-    top: 20px;
-    right: 20px;
-    transition: all 0.2s ease-in-out;
-}
-
-.portfolio-skills-close:hover {
-    background-color: #53516a;
-}
-
-.portfolio-skills-close:active {
-    background-color: #3b394e;
-}
-
-.skills-portfolio_project {
-    cursor: pointer;
-    transition: all 0.1s ease-in-out;
-}
-
-.logo-github:hover,
-.skills-portfolio_project:hover {
+.logo-github:hover {
     filter: invert(40%);
 }
 

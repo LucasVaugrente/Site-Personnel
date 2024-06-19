@@ -55,7 +55,7 @@
 .btn-welcome {
     font-family: "calibre_medium";
     margin-top: 20px;
-    padding: 14px 10px 10px 10px;
+    padding: 17px 10px 10px 10px;
     width: 200px;
     color: var(--link-color-backBlue);
     background-color: rgba(0, 0, 0, 0);
@@ -137,7 +137,7 @@
     }
 
     .btn-welcome {
-        font-size: 1em;
+        font-size: 20px;
     }
 }
 
