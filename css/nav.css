@@ -23,9 +23,12 @@ nav.notOnTop {
 }
 
 .logo {
-    font-size: 35px;
-    font-weight: bold;
-    margin-top: 8px;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.637));
+    transition: all 0.3s ease-in-out;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 20px var(--link-color-backBlue));
 }
 
 .nav-links {
@@ -65,11 +68,7 @@ nav a:hover {
 
 nav a:active {
     transition: .1s;
-    color: var(--color-click-navbar_links);
-}
-
-nav p {
-    color: var(--white-color);
+    opacity: 0.6;
 }
 
 [class*="nav_reveal"] {
