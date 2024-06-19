@@ -23,18 +23,25 @@ footer span {
     width: 100%;
 }
 
-.github-site {
+.github-site,
+.link-license {
     display: flex;
     align-items: center;
     gap: 5px;
     transition: all 0.3s ease-in-out;
 }
 
-.github-site:visited {
+.link-license {
+    gap: 2px;
+}
+
+.github-site:visited,
+.link-license:visited {
     color: var(--white-color);
 }
 
-.github-site:hover {
+.github-site:hover,
+.link-license:hover {
     filter: opacity(0.6);
 }
 
