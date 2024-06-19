@@ -116,7 +116,6 @@ video::-webkit-media-controls-mute-button {
 .project video {
     height: 300px;
     border-radius: 30px;
-    border-end-start-radius: 10px;
     box-shadow: 0 0 0.6em black;
     transition: all 0.5s ease;
     z-index: 2;

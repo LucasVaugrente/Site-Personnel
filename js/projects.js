@@ -130,6 +130,7 @@ fetch('../data/projects.json')
             video.appendChild(source);
 
             video.setAttribute("autoplay", "");
+            video.setAttribute("loop", "");
             video.volume = 0;
 
             lien_vid.appendChild(video);
