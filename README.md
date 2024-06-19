@@ -19,4 +19,4 @@
 <br/>
 
 # 🙎‍♂️ Crédits
-* [Lucas Vaugrente](https://github.com/Luvey35 "Mon compte GitHub") : créateur du site.
+* [Lucas Vaugrente](https://github.com/LucasVaugrente "Mon compte GitHub") : créateur du site.
