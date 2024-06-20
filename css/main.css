@@ -100,6 +100,10 @@ h1 {
     transition-delay: 1s;
 }
 
+.reveal-5 {
+    transition-delay: 1.3s;
+}
+
 /* ###### ANIMATION projects ###### */
 
 .revealBlock {

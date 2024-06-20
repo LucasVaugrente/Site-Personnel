@@ -6,9 +6,7 @@ const options = {
   threshold: 0.1,
 };
 
-// ######################### DEBUT ############################## //
-
-const handleIntersect = function (entries, observer) {
+const handleIntersectHome = function (entries, observer) {
   entries.forEach(function (entry) {
     if (entry.intersectionRatio > ratio) {
       entry.target.classList.add("reveal-visible");
@@ -17,14 +15,12 @@ const handleIntersect = function (entries, observer) {
   });
 };
 
-const observer = new IntersectionObserver(handleIntersect, options);
+const observerHome = new IntersectionObserver(handleIntersectHome, options);
 document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
-  observer.observe(r);
+  observerHome.observe(r);
 });
 
-// ######################### NAVIGATION ############################## //
-
-const handleIntersect4 = function (entries, observer) {
+const handleIntersectNav = function (entries, observer) {
   entries.forEach(function (entry) {
     if (entry.intersectionRatio > ratio) {
       entry.target.classList.add("nav_reveal-visible");
@@ -33,21 +29,35 @@ const handleIntersect4 = function (entries, observer) {
   });
 };
 
-const observer4 = new IntersectionObserver(handleIntersect4, options);
+const observerNav = new IntersectionObserver(handleIntersectNav, options);
 document.querySelectorAll('[class*="nav_reveal"]').forEach(function (r) {
-  observer4.observe(r);
+  observerNav.observe(r);
+});
+
+const handleIntersectContact = function (entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.intersectionRatio > ratio) {
+      entry.target.classList.add("revealBlock-visible");
+      observer.unobserve(entry.target);
+    }
+  });
+};
+
+const observerContact = new IntersectionObserver(handleIntersectContact, options);
+console.log(document.querySelectorAll('.revealBlock'));
+document.querySelectorAll('.revealBlock').forEach(function (r) {
+  observerContact.observe(r);
 });
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function myFunction() {
+async function displayProjectSkillsExperience() {
 
   await sleep(1000);
 
-  // ############################ projects ################################ //
-  const handleIntersect2 = function (entries, observer) {
+  const handleIntersectProjectExperience = function (entries, observer) {
     entries.forEach(function (entry) {
       if (entry.intersectionRatio > ratio) {
         entry.target.classList.add('revealBlock-visible');
@@ -56,14 +66,12 @@ async function myFunction() {
     });
   }
 
-  const observer2 = new IntersectionObserver(handleIntersect2, options);
+  const observerProjetExperience = new IntersectionObserver(handleIntersectProjectExperience, options);
   document.querySelectorAll('.revealBlock').forEach(function (r) {
-    observer2.observe(r);
+    observerProjetExperience.observe(r);
   })
 
-  // ######################### languages ############################## //
-
-  const handleIntersect3 = function (entries, observer) {
+  const handleIntersectSkills = function (entries, observer) {
     entries.forEach(function (entry) {
       if (entry.intersectionRatio > ratio) {
         entry.target.classList.add("revealSkills-visible");
@@ -72,28 +80,11 @@ async function myFunction() {
     });
   };
 
-  const observer3 = new IntersectionObserver(handleIntersect3, options);
+  const observerSkills = new IntersectionObserver(handleIntersectSkills, options);
   document.querySelectorAll(".revealSkills").forEach(function (r) {
-    observer3.observe(r);
+    observerSkills.observe(r);
   });
-
-  // ######################### contact ############################## //
-
-  const handleIntersect4 = function (entries, observer) {
-    entries.forEach(function (entry) {
-      if (entry.intersectionRatio > ratio) {
-        entry.target.classList.add("revealBlock-visible");
-        observer.observe(entry.target);
-      }
-    });
-  };
-
-  const observer4 = new IntersectionObserver(handleIntersect4, options);
-  document.querySelectorAll(".revealBlock").forEach(function (r) {
-    observer4.observe(r);
-  });
-
 
 }
 
-myFunction()
+displayProjectSkillsExperience()
