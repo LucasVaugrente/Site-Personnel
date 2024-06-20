@@ -1,6 +1,6 @@
 const Section_projects = document.querySelector(".section-projects");
-const dynamicStyles = document.getElementById("project-styles");
-const mediaQuery = "@media screen and (max-width:950px) {";
+const dynamicStylesProject = document.getElementById("project-styles");
+const mediaQueryProject = "@media screen and (max-width:950px) {";
 
 const removeChilds = (parent) => {
     while (parent.lastChild) {
@@ -20,7 +20,6 @@ fetch('../data/projects.json')
             bloc_content.classList.add('p-content');
             bloc_title.classList.add('title-project');
 
-            // Si le project est à gauche
             if (index % 2 === 0) {
                 article.classList.add('project_g');
                 bloc_content.classList.add('p-content-gauche');
@@ -35,7 +34,7 @@ fetch('../data/projects.json')
             let numproject = index + 1;
             article.classList.add('project_' + numproject);
 
-            /* ########################## Date, Type et title project ########################## */
+            /* ########################## Project date, type and title ########################## */
             let Text_Date = document.createElement('p');
             let Text_title = document.createElement('h2');
             Text_title.classList.add('p-title');
@@ -46,12 +45,11 @@ fetch('../data/projects.json')
             bloc_title.appendChild(Text_Date);
             bloc_title.appendChild(Text_title);
 
-            /* ########################## Description project ########################## */
+            /* ########################## Project description ########################## */
             let Text_Desc = document.createElement('p');
 
             Text_Desc.classList.add('p-pitch');
 
-            // Si le project est à gauche
             if (index % 2 === 0) {
                 Text_Desc.classList.add('p-pitch-gauche');
             } else {
@@ -60,12 +58,11 @@ fetch('../data/projects.json')
 
             Text_Desc.innerHTML = data.projects[index].description;
 
-            /* ########################## languages Programmation project ########################## */
+            /* ########################## Project skills ########################## */
             let bloc_lan_git = document.createElement('div');
 
             bloc_lan_git.classList.add('git-lan');
 
-            // Si le project est à gauche
             if (index % 2 === 0) {
                 bloc_lan_git.classList.add('git-lan-g');
             } else {
@@ -83,7 +80,7 @@ fetch('../data/projects.json')
                 bloc_lan_git.appendChild(ahref);
             }
 
-            /* ########################## Lien GitHub project ########################## */
+            /* ########################## Project github ########################## */
             let imgGit = document.createElement("img");
             let agit = document.createElement("a");
             agit.classList.add("lien-github_project");
@@ -101,7 +98,7 @@ fetch('../data/projects.json')
             bloc_lan_git.appendChild(agit);
 
             /* ########################## Background Image Projects Responsive ########################## */
-            let cssRules = mediaQuery;
+            let cssRules = mediaQueryProject;
             for (let index = 0; index < data.projects.length; index++) {
                 const numproject = index + 1;
                 const backgroundImage = data.projects[index].image;
@@ -114,9 +111,9 @@ fetch('../data/projects.json')
             }
             cssRules += '}';
     
-            dynamicStyles.innerHTML = cssRules;
+            dynamicStylesProject.innerHTML = cssRules;
 
-            /* ########################## Vidéo project ########################## */
+            /* ########################## Video project ########################## */
             let lien_vid = document.createElement("a");
             lien_vid.setAttribute("href", data.projects[index].link_git);
             lien_vid.setAttribute("target", "_blank");
@@ -135,12 +132,10 @@ fetch('../data/projects.json')
 
             lien_vid.appendChild(video);
 
-            // ##### AJOUT DE TOUS LES ELEMENTS ##### //
             bloc_content.appendChild(bloc_title);
             bloc_content.appendChild(Text_Desc);
             bloc_content.appendChild(bloc_lan_git);
 
-            // Si le project est à gauche
             if (index % 2 === 0) {
                 article.appendChild(bloc_content);
                 article.appendChild(lien_vid);

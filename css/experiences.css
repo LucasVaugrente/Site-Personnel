@@ -2,7 +2,7 @@
     position: relative;
     z-index: 1;
     background-color: var(--blue-background);
-    padding-bottom: 100px;
+    padding: 200px 0;
 }
 
 .title-experiences {
@@ -32,8 +32,7 @@
     text-align: right;
 }
 
-.experience_1 img,
-.experience_2 img {
+.experience img {
     height: 300px;
     border-radius: 30px;
     box-shadow: 0 0 0.6em black;
@@ -41,8 +40,7 @@
     z-index: 2;
 }
 
-.experience_1 img:hover,
-.experience_2 img:hover {
+.experience img:hover {
     box-shadow: 0 0 1.5em black;
     transition: all 0.5s ease;
 }
@@ -144,16 +142,7 @@
         border-radius: 30px;
     }
 
-    .experience_1:before {
-        background-image: url("../img/experiences/tac_economics_resp.jpg");
-    }
-
-    .experience_2:before {
-        background-image: url("../img/experiences/mobil-inn.png");
-    }
-
-    .experience_1 img,
-    .experience_2 img {
+    .experience img {
         display: none;
     }
 

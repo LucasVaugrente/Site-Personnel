@@ -18,6 +18,10 @@ nav a {
     pointer-events: all;
 }
 
+nav img {
+    pointer-events: all;
+}
+
 nav.notOnTop {
     background-color: rgb(23 17 54 / 93%);
     backdrop-filter: blur(10px);
@@ -27,6 +31,7 @@ nav.notOnTop {
 .logo {
     filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.637));
     transition: all 0.3s ease-in-out;
+    margin-top: 7px;
 }
 
 .logo:hover {

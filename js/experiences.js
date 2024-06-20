@@ -1,4 +1,6 @@
-let Section_experiences = document.querySelector(".section-experiences");
+const Section_experiences = document.querySelector(".section-experiences");
+const dynamicStylesExperience = document.getElementById("experience-styles");
+const mediaQueryExperience = "@media screen and (max-width:950px) {";
 
 fetch('../data/experiences.json')
     .then(response => response.json())
@@ -13,7 +15,6 @@ fetch('../data/experiences.json')
             bloc_content.classList.add('p-content');
             bloc_title.classList.add('title-experience');
 
-            // Si l'experience est à gauche
             if (index % 2 === 0) {
                 article.classList.add('experience_g');
                 bloc_content.classList.add('p-content-gauche');
@@ -43,7 +44,6 @@ fetch('../data/experiences.json')
 
             Text_Desc.classList.add('p-pitch');
 
-            // Si l'experience est à gauche
             if (index % 2 === 0) {
                 Text_Desc.classList.add('p-pitch-gauche');
             } else {
@@ -52,12 +52,11 @@ fetch('../data/experiences.json')
 
             Text_Desc.innerHTML = data.experiences[index].description;
 
-            /* ########################## languages Programmation experience ########################## */
+            /* ########################## Languages Programmation experience ########################## */
             let bloc_lan_git = document.createElement('div');
 
             bloc_lan_git.classList.add('git-lan');
 
-            // Si le experience est à gauche
             if (index % 2 === 0) {
                 bloc_lan_git.classList.add('git-lan-g');
             } else {
@@ -80,12 +79,26 @@ fetch('../data/experiences.json')
             img.setAttribute("src", data.experiences[index].image);
             img.setAttribute("alt", "Image Experience");
 
-            // ##### AJOUT DE TOUS LES ELEMENTS ##### //
+            /* ########################## Background Image Projects Responsive ########################## */
+            let cssRules = mediaQueryExperience;
+            for (let index = 0; index < data.experiences.length; index++) {
+                const numproject = index + 1;
+                const backgroundImage = data.experiences[index].image;
+    
+                cssRules += `
+                    .experience_${numproject}:before {
+                        background-image: url("${backgroundImage}");
+                    }
+                `;
+            }
+            cssRules += '}';
+    
+            dynamicStylesExperience.innerHTML = cssRules;
+
             bloc_content.appendChild(bloc_title);
             bloc_content.appendChild(Text_Desc);
             bloc_content.appendChild(bloc_lan_git);
 
-            // Si l'experience est à gauche
             if (index % 2 === 0) {
                 article.appendChild(bloc_content);
                 article.appendChild(img);
