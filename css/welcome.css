@@ -14,48 +14,54 @@
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    padding: 0px 200px;
-    max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
     position: absolute;
-    top: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
     pointer-events: none;
 }
 
+.content span {
+    padding-top: 5px;
+}
+
 .welcome {
-    font-size: 1.2em;
-    padding-bottom: 0.5em;
-    color: var(--welcome-color1);
+    font-size: 20px;
+    color: var(--link-color-backBlue);
     pointer-events: all;
 }
 
 .name {
-    font-size: clamp(40px, 8vw, 60px);
+    font-size: clamp(40px, 8vw, 80px);
     color: var(--white-color);
     font-weight: 700;
+    margin-top: 10px;
     pointer-events: all;
 }
 
 .status {
-    font-size: clamp(40px, 8vw, 50px);
-    padding-bottom: 0.3em;
+    font-size: clamp(40px, 8vw, 70px);
     color: var(--welcome-color2);
     pointer-events: all;
 }
 
 .pitch {
-    font-size: 1.1em;
+    font-size: 20px;
     color: var(--welcome-color3);
     white-space: normal;
+    margin-top: 15px;
+    width: 70%;
     pointer-events: all;
-    margin-right: 50%;
 }
 
 .btn-welcome {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
     font-family: "calibre_medium";
-    margin-top: 20px;
     padding: 17px 10px 10px 10px;
+    margin-top: 50px;
     width: 200px;
     color: var(--link-color-backBlue);
     background-color: rgba(0, 0, 0, 0);
@@ -66,12 +72,36 @@
     transition: all 0.5s ease;
     pointer-events: all;
 }
-
-.btn-welcome:hover {
-    color: var(--white-color);
-    background-color: rgba(131, 253, 245, 0.173);
-    text-decoration: none;
+  
+.btn-welcome:before,
+.btn-welcome:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: rgba(131, 253, 245, 0.253);
+    z-index: -1;
+    transform: translate3D(0,-100%,0);
+    transition: all .5s;
 }
+  
+.btn-welcome:before{
+    background: transparent;
+    z-index: -2;
+    transform: translate3D(0,0,0);
+}
+  
+.btn-welcome:hover{
+    color: white;
+}
+  
+.btn-welcome:hover:after{
+    transform: translate3D(0,0,0);
+    transition: all .5s;
+} 
 
 .iut-site:link {
     display: inline-block;
@@ -107,72 +137,11 @@
     filter: blur(220px);
 }
 
-/*===================================================*/
-/*============    Responsive Design     =============*/
-/*===================================================*/
-
-@media screen and (max-width:1024px) {
-
-    #welcome {
-        width: 100vw;
-    }
-
-    .welcome {
-        font-size: 1em;
-        width: 80vw;
-    }
-
-    .name {
-        font-size: 3em;
-    }
-
-    .status {
-        font-size: 2.8em;
-        width: 80vw;
-    }
+@media screen and (max-width:700px) {
 
     .pitch {
-        font-size: 1em;
-        width: 70vw;
+        font-size: 18px;
+        width: 100%;
     }
 
-    .btn-welcome {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width:730px) {
-    .name {
-        font-size: 2.5em;
-    }
-
-    .status {
-        font-size: 1.8em;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .content {
-        top: 25%;
-    }
-}
-
-@media screen and (max-width:500px) {
-    .content {
-        top: 20%;
-    }
-
-    .name {
-        font-size: 2.2em;
-    }
-}
-
-@media screen and (max-width:380px) {
-    .name {
-        font-size: 1.9em;
-    }
-
-    .status {
-        font-size: 1.6em;
-    }
 }
