@@ -4,12 +4,21 @@ const menuBurger = document.querySelector(".menu-burger");
 const menuBurgerClose = document.querySelector(".menu-burger-close");
 const navLinks = document.querySelector(".nav-links");
 
+const changeLanguageButton = document.querySelector("#selectLanguage");
+const optionsLanguages = document.querySelector(".optionsLanguages");
+const languageSelected = document.querySelector(".languageSelected");
+
 const LinkAcc = document.querySelector(".link_welcome");
 const LinkMy = document.querySelector(".link-myself");
 const LinkPro = document.querySelector(".link-projects");
 const LinkSki = document.querySelector(".link-skills");
 const LinkExp = document.querySelector(".link-experiences");
 const LinkCon = document.querySelector(".link-contact");
+
+changeLanguageButton.addEventListener("click", () => {
+  optionsLanguages.classList.toggle("active");
+});
+
 
 menuBurger.addEventListener("click", () => {
   navLinks.classList.toggle("open-menu");
